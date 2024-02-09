@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        body{
+            background-color: slategray;
+        }
+    </style>
+</head>
+<body>
+    <h2> +  SOMANDO  + numeros com DOM</h2>
+    <hr>
+    <input type="number" name="txt1" id="txt1"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="somar" onclick="somar()">
+   <div id="res"> valor</div>
+   <script>
+     function somar(){
+        var tx1 = window.document.getElementById('txt1')
+        var tx2 = window.document.getElementById('txt2')
+        var res = window.document.getElementById('res')
+        var n1  = Number.parseInt(tx1.value)
+        var n2  = Number.parseInt(tx2.value)
+        var s   = n1 + n2 
+        res.innerText = s
+     }
+     
+
+
+   </script>
+
+</body>
+</html>

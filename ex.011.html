@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTIONS</title>
+    <style>
+        body{
+            background-color: darkslateblue;
+        }
+        div#msg{
+            font: 30px normal arial;
+            color: fuchsia;
+            background-color: midnightblue;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+  <h1> usando FUNCTIONS</h1>
+  <p>DOM</p>
+  <div id="msg" onclick="clicou()" onmousemove="movendo()" onmouseout="saiu()" onmouseenter="entrou()"> CLICK AQUI </div>
+  <script>
+    var i = window.document.getElementById('msg')
+     function clicou() {
+      
+        i.innerHTML = 'clicou ;D'
+        i.style.backgroundColor = 'darkgreen'
+     }
+     function movendo(){
+        i.style.backgroundColor = 'pink'
+     }
+
+     function saiu() {
+        i.innerHTML = 'saiu ;c'
+        i.style.backgroundColor = 'midnightblue'
+     }
+     function entrou(){
+        i.innerHTML = 'entrou'
+        i.backgroundColor = 'white'
+     }
+
+     // i.addtoeventlistener('click,clicou')
+     // i.addtoeventlistener('onmousemove,movendo')
+     // i.addtoeventlistener('onmouseout,saiu')
+     // i.addtoeventlistener('onmousenter,entrou')
+     // funçoes usando apenas o js ;D
+    
+  </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM AULA 09 </title>
+    <style>
+        body { background-color: darkred;
+            color: dimgray;
+            font : normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Estudando o DOM</p>
+    <p>como usar <strong>DOM</strong> em JavaScript</p>
+    <div id = 'msg'> Clique em mim </div>
+    <script> 
+    var p1 = window.document.getElementsByTagName('p')[1]; // "[1]" é o 2 paragrafo "<p>" começa com o "[0]"
+    p1.style.color = 'green' // apenas modifiquei o paragrafo para verde 
+    //caso eu queira modificar e escrever na tela teria que por " document.write('esta escrito ' + p1.innerHTML ou innerText")
+    var corpo = document.body // mudando a cor do fundo "body" 
+    corpo.style.background = 'white'; // escolhendo a cor de fundo
+    // posso por window.alert('p1.innertext') que vai copiar o que esta escrito no <p> e por no alert
+    var d = window.document.getElementById ('msg'); // adicionei por DOM a minha <div> 'msg' agora posso modificar 
+        d.style.background = 'darkred'; //  coloquei o fundo da palavra modificando pelo DOM 
+        d.innerText = ' estudando o dom'; 
+    // podemos fazer a seleção que queira modificar  a <div> <div id ='msg > <div name = 'msg'> etc por ID, NAME e CLASS .
+    // lembrando sempre de criar uma variavel para fazer uma modificação com o DOM.
+    // var d = window.document.querySelector('div#msg'); // sempre quando for ID É # quando for alguma class é apena o . ex:
+    // ('div#msg') quando é ID ('div.msg') quando é  alguma class. 
+    </script>
+</body>
+</html> 
