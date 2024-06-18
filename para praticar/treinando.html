@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: lightgreen;
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+      label#bar{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    
+
+    <form action="#" method="get">
+        <h1>teste</h1>
+        <p>
+            <label id="bar" class="ss" for="n1">n1</label>
+            <input type="number" name="numero" id="n1" required min="0" max="10" oninput="soma.innerHTML= Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="n2">n2</label>
+            <input type="number" name="numero" id="n2" required min="0" max="10" oninput="soma.innerHTML= Number(n1.value) + Number(n2.value)">
+
+        </p>
+
+        <p>
+            <label for="soma"><strong style="background-color: rgba(0, 0, 0, 0.206);">s</strong></label>
+            <output id="soma">saida</output>
+        </p>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
