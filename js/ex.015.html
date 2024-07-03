@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detran</title>
+</head>
+<body>
+    <h2>condição simples de velocidade</h2>
+
+    a velocidade do meu carro é <input type="number" name="s1" id="s2"> km/h
+    <input type="button" value="saida" onclick="calcular()">
+    <div id="res"></div>
+
+<script>
+    function calcular(){
+        var soma1 = window.document.querySelector('input#s2')
+        var vel = Number(soma1.value)
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `sua velocidade atual é de ${vel} km/h<br>`
+        if (vel >= 60){
+            res.innerHTML += 'voce ultrapassou a velocidade permitida MULTADO<br>'
+        }
+        res.innerHTML += '<br>dirija sempre com cinto de segurança'
+    }
+</script>
+</body>
+</html>
