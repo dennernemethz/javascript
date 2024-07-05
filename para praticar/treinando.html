@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,21 @@
 </head>
 <body>
     <h1>treining</h1>
+    <input type="number" name="num" id="num1" max="20" min="0" placeholder=" 0 a 20">
+    <input type="button" value="enviar" onclick="clicar()">
+    <div id="res"></div>
 <script>
-
-
+    function clicar(){
+     var n = window.document.getElementById('num1')
+     var n1 = Number(n.value)
+     var s = window.document.getElementById('res')
+     res.innerHTML = ` o numero que voce escolheu foi ${n1}`
+     if(n1 >= 15){
+        res.innerHTML = 'esse numero é maior'
+     }else{
+        res.innerHTML = 'esse é menor'
+     }
+    }
 
 </script>    
 </body>
