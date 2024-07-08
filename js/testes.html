@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        id#cor{
+            width: 130px;
+            height: 130px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="cor" onmouseenter="mouse()" onmouseout="ms()" onclick="clicou()"> mouse</div>
+
+<script>
+  function onmouseenter(){
+    var msg = window.document.getElementById('cor')
+    msg.style.background = 'red'
+  }
+
+
+</script>
+</body>
+</html>
