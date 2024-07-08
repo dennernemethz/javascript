@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        id#cor{
+        section{
+            
+            display: flex;
+            background-color: violet;
+            width: 90vw;
+            height: 90vh;
+            flex-flow: nowrap wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        div#cor{
             width: 130px;
             height: 130px;
             border-radius: 10px;
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-<div id="cor" onmouseenter="mouse()" onmouseout="ms()" onclick="clicou()"> mouse</div>
+            <section>
+                <div id="cor" onmouseenter="mouse()" onmouseout="ms()" onclick="clicou()"> mouse</div>
+            </section>
 
 <script>
-  function onmouseenter(){
-    var msg = window.document.getElementById('cor')
+var msg = window.document.getElementById('cor')
+  function mouse(){
+    
+    msg.innerHTML= 'entrou'
+  }
+  function ms(){
+    msg.innerHTML = 'mouse'
+    msg.style.background = ' yellow'
+  }
+  function clicou(){
+    msg.innerHTML = 'clicou'
     msg.style.background = 'red'
   }
 
