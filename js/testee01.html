@@ -6,13 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>testando</h1>
-
-    <script>
-        var n1 = 1
-        var n2 = 'nome'
-        var n3 = []
-        window.document.write(typeof n3)
-</script>
+   <form action="#" method="get">
+    <input type="number" name="nn" id="num" max="10" min="0">
+    <input type="number" name="numero" id="num2" max="10" min="0">
+    <input type="button" value="calc" onclick="calcular()">
+   </form>
+   <div id="res"></div>
+<script>
+    function calcular(){
+    var n1 = window.document.getElementById('num')
+    var n2 = window.document.getElementById('num2')
+    var numero1 = Number(n1.value)
+    var numero2 = Number(n2.value)
+    var s = numero1 + numero2
+    window.document.getElementById('res')
+    res.innerHTML= `a soma entre ${numero1} e ${numero2} é igual a ${s}`
+    if(s  >=6  ){
+        res.innerHTML = 'maior'
+        window.document.style.background= 'blue'
+    }else if (s == 5){
+        res.innerHTML = 'metade'
+        window.document.body.style.background = 'red'
+    }else{
+        res.innerHTML = 'baixo'
+        window.document.body.background = 'yellow'
+    }
+    }
+    
+</script>    
 </body>
 </html>
