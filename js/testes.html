@@ -1,49 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        section{
-            
-            display: flex;
-            background-color: violet;
-            width: 90vw;
-            height: 90vh;
-            flex-flow: nowrap wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        div#cor{
-            width: 130px;
-            height: 130px;
-            border-radius: 10px;
-            background-color: yellow;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-            <section>
-                <div id="cor" onmouseenter="mouse()" onmouseout="ms()" onclick="clicou()"> mouse</div>
-            </section>
+ <input type="checkbox" name="radio" id="t">
+  <div id="res">box</div>
+  <input type="button" value="calcular" onclick="calcular()">
+ <script>
+  function calcular(){
+var n1 = window.document.getElementById('t').checked
+window.document.getElementById('res').innerHTML = n1
 
-<script>
-var msg = window.document.getElementById('cor')
-  function mouse(){
-    
-    msg.innerHTML= 'entrou'
-  }
-  function ms(){
-    msg.innerHTML = 'mouse'
-    msg.style.background = ' yellow'
-  }
-  function clicou(){
-    msg.innerHTML = 'clicou'
-    msg.style.background = 'red'
   }
 
 
-</script>
+
+ </script> 
 </body>
 </html>

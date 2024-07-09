@@ -5,43 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            
-        }
         body{
-            background-color: slateblue;
-
+            background-color: darkturquoise;
         }
-        div{
+        section{
+            background-color: wheat;
+            width: 90vw;
+            height: 90vh;
             display: flex;
+            margin: auto;
             flex-flow: row wrap;
             align-items: center;
             justify-content: center;
+        }
+        form#bg{
+            background-color: darkslateblue;
+            width: 290px;
+            height: 200px;
+            border-radius: 10px;
+
+        }
         
-        }
-        div#id{
-            background-color: yellow;
-            border: 1px solid black;
-            padding: 10px;
-            width: 150px;
-            height: 150px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
-
-
-<div>
-    <div id="itens"> quadrado</div>
-</div>
-
-<script>
-
-
-
-</script>
+    <section>
+        <form id="bg" action="#" method="get">
+            <p><input type="number" name="idade" id="txtano">
+                <label for="txtano"></label>
+            </p>
+            <p>
+               
+                <input type="radio" name="tsex" id="hm">
+                <label for="hm">homem</label>
+                <input type="radio" name="tsex" id="fm">
+                <label for="fm">feminino</label>
+            </p>
+            <input type="button" value="calcular" onclick="clicar()">
+            
+        </form>
+        <div id="res"></div>
+    </section>
+ <script>
+    function clicar(){
+        var data = new Date()
+        var ano = data.getFullYear()
+        var fano = document.getElementById('txtano')
+        var res = document.querySelector('div#res')
+        if(fano.value == 0 || Number(fano.value)>ano){
+            window.alert('deu erro')
+        }else{
+           var fsex = document.getElementsByClassName('tsex')
+           var idade = ano - Number(fano.value)
+           var genero = ''
+           var img = document.createElement('img')
+           img.setAttribute('id','foto')
+           if(fsex[0].checked){
+            genero = 'homem'
+           }else if (fsex[1].checked){
+            genero = ' feminino'
+           }
+        }
+       res.innerHTML = `genero é ${genero} com ${idade} de idade `
+    }
+ </script>   
 </body>
 </html>
