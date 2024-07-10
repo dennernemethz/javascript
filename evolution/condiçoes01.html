@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>condição simples em js</p>
+<input type="number" name="numero1" id="number" min="0" max="10">
+<input type="button" value="enviar" onclick="clicar()">
+<div id="s"></div>
+<script>
+function clicar(){
+    var x = window.document.getElementById('number')
+    var n1 = Number(x.value)
+    if(n1 <= 5){
+        s.innerHTML = 'baixo'
+    }
+}
+</script>
+</body>
+</html>

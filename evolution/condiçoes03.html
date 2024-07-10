@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>condiçoes aninhada em javascript</p>
+
+<input type="number" name="numb" id="num" min=" 0"  max="10">
+<input type="button" value="enviar" onclick="clicar()">
+<div id="s"></div>
+
+<script>
+function clicar(){
+    var x = window.document.getElementById('num')
+    var y = Number(x.value)
+    if(y < 0){
+        s.innerHTML = 'indiferente'
+    }else if (y <=5 ){
+        s.innerHTML = ' medio'
+    }else{
+        s.innerHTML = ' alto'
+    }
+}
+</script>
+</body>
+</html>

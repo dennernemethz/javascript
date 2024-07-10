@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Não é mais uma condição e sim uma expressão </p>
+
+<input type="button" value="clique" onclick="clicar()">
+<div id="s"></div>
+<script>
+    function clicar(){
+        var diasem = new Date()
+        var dia = 6
+        window.document.getElementById('s')
+        s.innerHTML = dia
+         switch (dia){
+            case 0:
+            s.innerHTML ='domingo'
+            break
+            case 1:
+            s.innerHTML ='segundoa'
+            break
+            case 2: 
+            s.innerHTML =' terça'
+            break
+            case 3:
+            s.innerHTML = 'quarta'
+            break
+            case 4: 
+            s.innerHTML = 'quinta'
+            break
+            case 5: 
+            s.innerHTML = 'sexta'
+            break
+            case 6:
+            s.innerHTML = 'sabado'
+            break
+            default:
+            s.innerHTML = 'erro'
+
+
+         }
+    }
+</script>
+</body>
+</html>
