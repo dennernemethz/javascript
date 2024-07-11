@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>vamos checar se a caixa esta selecionada com condiçoes</p>
+<input type="checkbox" name="ch" id="che1" onclick="clicar()" >
+<label for="che1"></label>
+<div id="d"></div>
+<script>
+    function clicar(){
+
+var r = window.document.getElementById('che1')
+var t = window.document.getElementById('d')
+
+if((r.checked)){
+    t.innerHTML = 'true'
+}else{
+    t.innerHTML ='false'
+}
+}
+ 
+</script>
+</body>
+</html>

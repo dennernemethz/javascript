@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>repetição</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+      section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        height: 90vh;
+      }
+      form{
+        background-color: lightseagreen;
+        width: 190px;
+        height: 70px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black;
+      }
+      input#num1{
+        border-radius: 2px;
+        position: absolute;
+        display: block;
+        background-color: black;
+        color: rgb(60, 102, 251);
+        text-align: center;
+        transform: translate(50%, 10%);
+      }
+      input#but{
+        display: block;
+       position: absolute;
+       transform: translate(234%, 10%);
+       background-color: darkslategrey;
+       color: white;
+      }
+    </style>
+</head>
+<body>
+    <p>repetição com o for</p>
+    <section>
+        <form action="#" method="get">
+            <label for="num1"></label>
+            <input type="number" name="nu" id="num1" min="0" max="10">
+            <input id="but" type="button" value="enviar" onclick="clicar()">
+        
+        </form>
+    </section>
+<script>
+    function clicar(){
+
+var s = window.document.getElementById('num1')
+var n = Number(s.value)
+for (var n = Number(s.value); n <= 8; n++){
+    document.write(n)
+}
+
+    }
+
+</script>
+</body>
+</html>
