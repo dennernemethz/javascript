@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+<p>testando scripts e logicas</p>
+<input type="number" name="nn" id="n1">
+<input type="button" value="enviar" onclick="clicar()">
+<div id="msg"></div>
 <script>
-    var primos = [0, 1, 2,]
-    window.document.write(primos.length)
+ function clicar(){
+    let s = window.document.getElementById('n1')
+    var r = window.document.getElementById('msg')
+    let so = Number(s.value) 
+    let soma = so++
+    r.innerHTML = soma
+
+ }
 </script>
 </body>
 </html>
