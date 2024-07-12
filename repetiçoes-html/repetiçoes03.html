@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>repetiçoes com DO e while</p>
+     <label for="n1">valor:</label>
+     <input type="number" name="nn" id="n1" min="0" max="10">
+     <input type="button" value="enviar" onclick="clicar()">
+     <div id="tr"></div>
+
+<script>
+    function clicar(){
+        var r = window.document.getElementById('n1')
+        var s = Number(r.value)
+        do{
+            document.write(s)
+            s++
+
+        }while(s <= 20)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>condição false or true</p>
+    <h4>são iguais ?</h4>
+<label for="num1">numero 1</label>
+<input type="number" name="nn" id="num1" min="0" max="10">
+<label for="num2">numero 2</label>
+<input type="number" name="nn" id="num2" min="0" max="10">
+<input type="button" value="enviar" onclick="clicar()">
+<div id="tnt"></div>
+
+<script>
+function clicar(){
+    var n = window.document.getElementById('num1')
+    var r = window.document.getElementById('num2')
+    var s = Number(n.value)
+    var x = Number(r.value)
+    var res = window.document.getElementById('tnt')
+    if( s === x){
+        res.innerHTML = 'true'
+      document.body.style.background ='red'
+    }else{
+        res.innerHTML = 'false'
+    }
+}
+
+
+</script>
+
+</body>
+</html>

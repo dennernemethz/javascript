@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="n1">valor:</label>
+    <input type="number" name="nn" id="n1" min="0" max="10">
+    <input type="button" value="enviar" onclick="clicar()">
+
+<div id="rr"></div>
+<script>
+    function clicar(){
+var n = window.document.getElementById('n1')
+var s = Number(n.value)
+var res = window.document.getElementById('rr')
+while(s <= 20){
+ document.write(s)
+ s++
+
+    }
+
+}
+</script>    
+</body>
+</html>
