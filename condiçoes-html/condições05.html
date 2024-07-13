@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: gray;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            width: 100vw;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgrey;
+        }
+
+        form{
+            background-color: darkgrey;
+            width: 200px;
+            height: 130px;
+            border-radius: 4px;
+        }
+        input#but{
+            background-color: darkslategray;
+            color: white;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>equals numbers ? true and false</h1>
+    </header>
+    <main>
+        <section>
+          <form action="#" method="get">
+            <p>
+                <label for="n1"> <strong>numero 1:</strong> </label>
+                <input type="number" name="nn1" id="n1" min="0" max="10">
+            </p>
+            <p>
+                <label for="n2"> <strong>numero 2:</strong> </label>
+                <input type="number" name="nn2" id="n2" min="0" max="10">
+            </p>
+            <input id="but" type="button" value="enviar" onclick="clicar()">
+            <div id="res">resultado</div>
+          </form>
+        </section>
+    </main>
+   
+<script>
+function clicar(){
+    let r = window.document.getElementById('n1')
+    let s = window.document.getElementById('n2')
+    let so = Number(r.value)
+    let si = Number(s.value)
+    let res = window.document.getElementById('res')
+    if(so === si ){
+        res.innerHTML = 'true'
+    }else {
+        res.innerHTML = 'false'
+    }
+    if(so === 0 && si === 0){
+        window.alert('[ERRO] pro favor digite um numero de 1 a 10')
+    }
+
+
+}
+</script>    
+</body>
+</html>
