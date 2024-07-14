@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>fazendo conta em condições</p>
+
+    <input type="button" value="enviar" onclick="calcular()">
+<div id="res"></div>
+<script>
+  function calcular(){
+let res =  window.document.getElementById('res')
+let n1 = 10
+if(n1 <=10){
+    var n2 = n1 + 5
+    res.innerHTML = n2
+}else{
+    res.innerHTML = 'maior que 10'
+}
+  }  
+
+</script>
+</body>
+</html>
