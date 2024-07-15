@@ -6,11 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-<div id="msg"></div>
+    <p>adicionando elementos no arrays</p>
+<div id="res"> </div>
 <input type="button" value="enviar" onclick="clicar()">
 
 <script>
-  
+    function clicar(){
+  let res = window.document.getElementById('res')
+  let numero = [ 2,3,5,1,7,4]
+   for(let pos = 0; pos < numero.length; pos++){
+    res.innerHTML = pos
+   }
+    
+    }
 </script>
 </body>
 </html>
