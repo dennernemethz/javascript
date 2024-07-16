@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>usando OR e AND</p>
+
+<input type="button" value="enviar" onclick="clicar()">
+
+<div id="res"></div>
+
+<script> 
+function clicar(){
+ let res = window.document.getElementById('res')
+ let num1 = 3 
+ let num2 = 5
+ let num3 = 6 
+ let num4 = 7 
+
+let r = (num1 > num2 ) || (num4 < num2)
+res.innerHTML = r 
+
+if(r){
+    res.innerHTML = ' true '
+}else{
+    res.innerHTML = ' false '
+}
+}
+</script>
+</body>
+</html>
