@@ -5,4 +5,5 @@ let n2 = 20
 
 let soma =  ((n1 + n2) >= 30 ? "verdadeiro": "falso")
 
-console.log(soma)
+console.log(soma)   
+
