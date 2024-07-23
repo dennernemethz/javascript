@@ -2,10 +2,10 @@
 
 
 // math() é um objeto que define como funçoes e constantes par afazer operaços matematicas mais complexas 
-/*let n1 =10 
+let n1 =10 
 res = Math.pow(10,20)   
 
-console.log(res)*/ // 10 é elevado a potencia por 20 
+console.log(res) // 10 é elevado a potencia por 20 
 
 /*let n1 = 10 
 res = Math.round(.8)
