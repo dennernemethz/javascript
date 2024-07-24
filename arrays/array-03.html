@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           margin: 0px;
+           padding: 0px;
+       }
+       body{
+        background-color: dimgrey;
+        background-image: url(binario-850x510.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+       }
+       header > h1 {
+        text-align: center;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+       }
+       header  p {
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        text-shadow: 0px 0px 4px lightskyblue;
+       }
+       main{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 90vh;
+       }
+       article{
+        padding-top: 9px;
+        background-color: lightgray;
+        width: 170px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px white;
+       }
+       input#but{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: darkslategray;
+        color: white;
+       }
+       div#res{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>vetores</h1>
+        <p>verificando a posição do elemento de um array</p>
+    </header>
+    <main>
+        <article>
+            <p><input id="but" type="button" value="clicar" onclick="clicar()"></p><br>
+
+          <div id="res"></div>
+        </article>
+    </main>
+<script>
+    function clicar(){
+   let res = window.document.getElementById('res')
+   let n1 = [0,4,5,63,2,8,9,0]
+     for (let i=0 ; i<n1.length ; i++){
+        res.innerHTML= `a posição ${i} tem os valores ${n1[i]}`
+     }
+    }
+</script>
+</body>
+</html>
