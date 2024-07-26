@@ -2,5 +2,5 @@
 
 
 function calc (n){
-    return ((n<20) && (n>30))
-} console.log(calc(22))
+    return ((n<10)|| (n>20))
+}console.log(calc(14))
