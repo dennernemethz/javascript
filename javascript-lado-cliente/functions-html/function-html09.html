@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;   
+        }
+        div#conteiner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95vw;
+            height: 90vh;
+        }
+        div#res{
+           background-color: white;
+           width: 150px;
+           height: 120px;
+           border-radius: 10px;
+           text-align: center;
+           box-shadow: 0px 0px 12px white; 
+        }
+        h1{
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>function e manipulação DOM</h1>
+
+<div id="conteiner">
+    <div id="res">
+        <div id="n1">Parte 1</div>
+        <div id="n2">Parte 2</div>
+        <div id="n3">Parte 3</div>
+    </div>
+</div>
+<script>
+    function verdorfal(){
+        let res = window.document.getElementById('res')
+        let n1  = window.document.getElementById('n1')
+        let n2  = window.document.getElementById('n2')
+        let n3  = window.document.getElementById('n3')
+        n1.innerHTML = 'md1'
+        n2.innerHTML = 'md2'
+        n3.innerHTML = 'md3'
+        
+
+    } verdorfal()
+</script>
+</body>
+</html>
