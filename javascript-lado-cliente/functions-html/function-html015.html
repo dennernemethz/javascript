@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>funçoes parametrizadas com construtor</p>
+    <div id="msg"></div>
+
+<script>
+    let res = window.document.getElementById('msg')
+    const num= new Function('n1','n2', 'return n1+n2')
+    res.innerHTML = num(1,2)
+</script>
+</body>
+</html>
