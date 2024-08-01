@@ -1,7 +1,11 @@
-function soma(n1){
-    let res = n1
-    for(let i = 10; i <= res; i++){
-        console.log(res)
-    }
+const soma =(v1)=>{
+
+const n1 =n=>{
+    let n2 = 10+v1
+    return n2
+
+} 
+return n1(v1)
+
 }
-soma()
+console.log(soma(9))
