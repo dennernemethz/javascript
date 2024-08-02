@@ -1,11 +1,6 @@
-function soma(){
+let n1 = 0 
 
-const num=n=>{
-    let num =10 
-    let num2 = 10 
-    let res = num + num2
-    return res
+while (n1<=30 ){
+       n1++
+       console.log(n1)
 }
-return num ()
-}
-console.log(soma())
