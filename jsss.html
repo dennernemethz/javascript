@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <div id="i">e</div>
+    <div id="xi">b</div>
+    <div id="di">d</div>
+    <div id="d">c</div>
 </head>
 <body>
 <script>
+let el = document.getElementsByTagName('div')
 
-    function soma(n1){
-        let res = n1
-        for(let i = 10; i <= n1; i++)
-        return res
-    }
-    document.write(soma('denner'))
-    
+el=[...el]
+
+el.map((e,i)=>{
+    console.log(e)
+}
 </script>
 </body>
 </html>
