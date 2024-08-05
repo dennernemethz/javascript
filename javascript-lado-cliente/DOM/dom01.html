@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dc1">bb</div>
+    <div id="dc2">bbb</div>
+    <div id="dc3">bbbb</div>
+    <div id="dc4">bbbbb</div>
+<script>
+const c1 = document.getElementById('dc1')
+const c2 = document.getElementById('dc2')
+const c3 = document.getElementById('dc3')
+const c4 = document.getElementById('dc4')
+
+const arrayElement = [c1,c2,c3,c4]
+
+arrayElement.map((el) =>{
+    el.innerHTML = 'Mod'
+})
+
+
+</script>
+</body>
+</html>
