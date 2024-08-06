@@ -6,22 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="dd">HTML</div><br>
-    <div class="cc">e</div>
+    <p class="l1">html</p>
+    <p class="l1">css</p>
+    <p class="l3">js</p>
 <script>
-    
-    let num = window.document.getElementById('dd')
-    let num_2 = [...window.document.getElementsByClassName('cc')]
+    const cursos =[...window.document.getElementsByClassName('l1')]
 
-    num_2.map(function(el){
-        el.innerHTML = 'modd'
+    cursos.map((el)=>{
+        alert('interagindo  ;]]]]]]')
     })
-
-    num.map(function(el){
-        el.innerHTML = 'mod1'
-    })
-
-
 </script>
 </body>
 </html>
