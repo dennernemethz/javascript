@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Courier New', Courier, monospace;
+        }
+        div{
+            background-color: black;
+            width: 200px;
+            padding: 10px;
+            border: 7px;
+            border-radius: 3px;
+            color: white;
+            text-align: center;
+            box-shadow: 0px 0px 5px skyblue;
+            font-weight: bold;
+        }
+        div:hover{
+            background-color: lightgreen;
+            transition-duration: 0.5s;
+        }
+        .destaque:hover{
+            background-color: blueviolet !important;
+            color: deeppink !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="c1" class="cursos l1">html</div>
+    <div id="c2" class="cursos l1">j1uery</div>
+    <div id="c3" class="cursos l1">rasbarry</div>
+    <div id="c4" class="cursos l1">c++</div>
+    <div id="c5" class="cursos l2">python</div>
+    <div id="c6" class="cursos l2">js</div>
+    <div id="c7" class="cursos l2">css</div>
+    <div id="c8" class="cursos l2">mysql</div>
+<script>
+    let curso1 = [...window.document.getElementsByClassName('l1')]
+    let curso2 = [...window.document.getElementsByClassName('l2')]
+
+   curso1.map((el)=>{
+    el.addEventListener('click', (evt)=>{
+        const el = evt.target
+        el.classlist.add('destaque')
+        alert(el.id + "foi clicado")
+    })
+   })
+</script>
+</body>
+</html>

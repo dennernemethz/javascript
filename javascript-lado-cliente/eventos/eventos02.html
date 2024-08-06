@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .curso{
+         display: flex;
+         justify-content: center;
+         width: 200px;
+         border: 4px solid #888;
+         border-radius: 10px;
+         padding: 10px;
+         margin: 5px 0px;
+         cursor: pointer;
+      }
+      .curso:hover{
+        background-color: red;
+      }
+      .c1{
+        background-color: #444;
+        color: #ccc;
+      }
+      .c2{
+        background-color: #ccc;
+        color: #444;
+      }
+      .destaque{
+        background-color: aqua !important; 
+        color: coral !important;
+
+
+      }
+      .destaque:hover{
+        background-color: black !important;
+      }
+    </style>
+</head>
+<body>
+
+    <h1>usando evento simples onclick</h1>
+    <p>dentro de javascript com function simples</p>
+<div id="res"></div>
+
+    <div id="c1" class="curso c1 " onclick="clicar()">js</div>
+    <div id="c2" class="curso c1">html</div>
+    <div id="c3" class="curso c1">jquery</div>
+    <div id="c4" class="curso c1">python</div>
+    <div id="c5" class="curso c1">css3</div>
+    <div id="c6" class="curso c1">resberry</div>
+    <div id="c7" class="curso c2">bbbb</div>
+    <div id="c8" class="curso c2">bbbbbb</div>
+    <div id="c9" class="curso c2">bbbbbbb</div>
+    <div id="c10" class="curso c2">bbbbbbbb</div>
+    <div id="c11" class="curso c2">bbbbbbbbb</div>
+    <div id="c12" class="curso c2">bbbbbbbbbb</div>
+<script>
+    let res = window.document.getElementById('res')
+function clicar(){
+  res.innerHTML='clicou '
+}
+
+
+</script>
+</body>
+</html>
