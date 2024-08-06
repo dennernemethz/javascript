@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            background-color: violet;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 7px black;
+        }
+    </style>
 </head>
 <body>
-    <p class="l1">html</p>
-    <p class="l1">css</p>
-    <p class="l3">js</p>
+    <div class="clicar"> <button>clique aqui para saber seu resultado</button></div>
 <script>
-    const cursos =[...window.document.getElementsByClassName('l1')]
 
-    cursos.map((el)=>{
-        alert('interagindo  ;]]]]]]')
-    })
+const somar01 = [...window.document.getElementsByClassName('clicar')]
+
+somar01.map((el)=>{
+   el.addEventListener('click', function(){
+     let n1 = 40
+     let n2 = 20 
+     let soma = n1 + n2 
+     if(soma > 40 ){
+         alert('deu maior que 40 ')
+    }else{
+    alert('menor false ')
+   }
+
+     
+   })
+})
+   
 </script>
 </body>
 </html>

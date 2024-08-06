@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de click 06</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h3{
+            padding-bottom: 17px;
+        }
+        div.clicar{
+            padding: 10px;
+            background-color: darkslategray;
+            color: wheat;
+            width: 200px;
+            border-radius: 10px;
+            
+            
+
+        }
+        button.edit{
+            background-color: blue;
+            padding: 15px;
+            box-shadow: 0px 0px 4px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h3> vamos saber o resultado </h3>
+    <div id="res"></div>
+    <div class="clicar"> <button class="edit">Resultado, clique aqui</button></div>
+<script>
+    let resultadoo = window.document.getElementById('res')
+
+    const clique = [...window.document.getElementsByClassName('clicar')]
+
+clique.map((el)=>{
+    el.addEventListener('click', function(){
+       let n1 = 10 
+       let n2 = 20 
+       let res = n1 + n2 
+
+       if(res > 30){
+        resultadoo.innerHTML = 'deu maior que 30'
+       }else if(res == 30){
+        resultadoo.innerHTML= ' igual a 30 '
+       }else{
+        resultadoo.innerHTML = ' menor que 30'
+       }
+    })
+})
+</script>
+</body>
+</html>
