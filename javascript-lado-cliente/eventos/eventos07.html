@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 7px;
+        }
+        main{
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            background-color: darkslategray;
+            font-weight: bold;
+            
+          
+        }
+        div{
+            width: 200px;
+            padding: 20px;
+            background-color: lightslategrey;
+            border: 2px solid black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>usando stopPropagation</h3>
+    <main class="main1">
+        <div id="c1" class="cursos c1">HTML</div>
+        <div id="c2" class="cursos c1">CSS</div>
+        <div id="c3" class="cursos c1">PYTHON</div>
+        <div id="c4" class="cursos c1">MYSQL</div>
+        <div id="c5" class="cursos c1">JAVA</div>
+        <div id="c6" class="cursos c1">JAVASCRIPT</div>
+        <div id="c7" class="cursos c1">JQUERY</div>
+        <div id="c8" class="cursos c1">NODE</div>
+    </main>
+
+<script>
+const main01 = [...window.document.getElementsByClassName('main1')]
+
+const divss = [...window.document.querySelectorAll(".cursos")]
+
+main01.map((el)=>{
+    el.addEventListener('click', function(){
+        alert('clicou')
+    })
+})
+
+divss.map((el)=>{
+    el.addEventListener('click', function(tenis){
+        tenis.stopPropagation()// o evento deixara de acontecer 
+
+    })
+})
+</script>
+</body>
+</html>
