@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> eventos change</h2>
+    <p>chatGPT</p>
+  <input type="text" name="msg1" class="msg2" placeholder="digite algo">
+<script>
+    let msg = [...window.document.getElementsByClassName('msg2')]
+
+    msg.map((el)=>{
+        el.addEventListener('change', function(){   // ao colocar qlq coisa na caixa vai disparar o evento de alteração 
+            alert('voce mudou')
+        })
+    })
+</script>
+</body>
+</html>
