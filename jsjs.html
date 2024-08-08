@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div class="container">
+    <h1>cores</h1>
+    <input type="text" class="names">
+    <button class="msg"> clique aqui</button>
+</div>
+
+<script>
+   const cores01 = [...window.document.getElementsByClassName('names')]
+    const classes = [...window.document.getElementsByClassName('msg')]
+    classes.map((el)=>{
+        el.addEventListener('click', function(){
+           cores01.map(()=>{
+            if(cores01 === 'vermelho' || cores01 === 'azul' || cores01 === 'amarelo'){
+                window.alert('cores primarias')
+            }
+           })
+        })
+    })
+</script>
+</body>
+</html>
