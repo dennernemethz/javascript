@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#c1{
+            background-color: lightgreen;
+            width: 300px;
+            height: 250px;
+        }
+        div#c2{
+            background-color: blue;
+            width: 200px;
+            height: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>adicionando id por javascript "setAttribute()" </h2>
+    <div id="c1">pai fora de uma div</div>
+
+<script>
+    let c1 = window.document.getElementById('c1')
+    const newElement = document.createElement('div')
+    c1.appendChild(newElement)
+    newElement.innerHTML='dentro de uma div pai'
+    newElement.setAttribute('id','c2')
+    newElement.setAttribute('class','curso c2')
+
+
+    
+</script>
+</body>
+</html>

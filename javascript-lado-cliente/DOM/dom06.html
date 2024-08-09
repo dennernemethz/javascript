@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>adicionando elementos</h3>
+    <p>percorrendo arrays e adicionando elementos por javascript</p>
+    <div id="c1">div pai</div>
+
+
+<script>
+    let c1 = window.document.getElementById('c1')
+    const cursos = ['html','css','java','php']
+
+    cursos.map((el,chave)=>{
+    const novoElemento = window.document.createElement('div')
+    c1.appendChild(novoElemento)
+    novoElemento.innerHTML=el
+    novoElemento.setAttribute('id','c2')
+    novoElemento.setAttribute('class', 'curso1')
+    })
+</script>
+</body>
+</html>

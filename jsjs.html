@@ -6,24 +6,27 @@
     <title>Document</title>
 </head>
 <body>
- <div class="container">
-    <h1>cores</h1>
-    <input type="text" class="names">
-    <button class="msg"> clique aqui</button>
-</div>
-
+    <div id="old">div pai</div>
 <script>
-   const cores01 = [...window.document.getElementsByClassName('names')]
-    const classes = [...window.document.getElementsByClassName('msg')]
-    classes.map((el)=>{
-        el.addEventListener('click', function(){
-           cores01.map(()=>{
-            if(cores01 === 'vermelho' || cores01 === 'azul' || cores01 === 'amarelo'){
-                window.alert('cores primarias')
-            }
-           })
-        })
-    })
+let old = window.document.getElementById('old')
+
+
+
+
+const cores =['azul','verde']
+
+cores.map((el,chave)=>{
+const novoElemnto = window.document.createElement('div')
+old.appendChild(novoElemnto)
+novoElemnto.setAttribute('id','c1')
+novoElemnto.setAttribute('class', 'cursos')
+novoElemnto.innerHTML=el
+})
+
+
+
+
+
 </script>
 </body>
 </html>
