@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>atribuindo elementos com js p#2</h3>
+    <p>atribuindo valores de divs com 'chave'</p>
+    <div id="pai">DivPAI</div>
+
+<script>
+let pai = window.document.getElementById('pai')
+
+const valores = ['pai','mae','filho','vó', 'vô']
+
+valores.map((el,chave)=>{
+    const filho = document.createElement('div')
+    filho.setAttribute('id','c1')
+    filho.setAttribute('id','c' +chave)
+    filho.innerHTML=el
+    pai.appendChild(filho)
+})
+</script>
+</body>
+</html>

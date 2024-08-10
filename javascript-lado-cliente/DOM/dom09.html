@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#pai{
+            width: 360px;
+            height: 200px;
+            border: 2px solid #000000;
+            border-radius: 3px;
+            background-color: #d3d3d3;
+            margin: auto;
+            font-size: 1.6em;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        div#c1{
+            width: 200px;
+            background-color: #b8860b;
+            text-align: center;
+            margin: auto;
+            border: 1px solid rgb(255, 231, 74);
+            cursor: pointer;
+            border-radius: 5px;
+            color: #ffff00;
+        }
+        div#c2{
+            width: 200px;
+            background-color: #8b0000;
+            text-align: center;
+            margin: auto;
+            border: 1px solid rgb(255, 63, 63);
+            cursor: pointer;
+            border-radius: 5px;
+            color: rgb(255, 87, 87);
+        }
+        div#c0{
+            width: 200px;
+            background-color: darkblue;
+            text-align: center;
+            margin: auto;
+            border: 1px solid rgb(61, 61, 255);
+            cursor: pointer;
+            border-radius: 5px;
+            color: lightblue;
+        }
+        div#c0:hover{
+            background-color: #3bd1d1;
+            transition-duration: 1s;
+            color: #000000;
+        }
+        div#c1:hover{
+            background-color: rgb(251, 175, 81);
+            transition-duration: 1s;
+            color: #000000;
+        }
+        div#c2:hover{
+            background-color: #ff5050;
+            transition-duration: 1s;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h3>clique na cor para sumir</h3>
+
+    <div id="pai">CORES</div>
+
+<script>
+    const pai = window.document.getElementById('pai');
+    const cores = ['azul','amarelo','vermelho'];
+
+    cores.map((el,chave)=>{
+        const filho = document.createElement('div');
+        filho.setAttribute('id','c' + chave);
+        filho.innerHTML = el;
+        pai.appendChild(filho);
+        filho.addEventListener('click',function (f) {
+            pai.removeChild(f.target);
+          });
+
+    });
+</script>
+</body>
+</html>

@@ -6,21 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="pai">PAI</div>
+    <div id="pai">pai</div>
+
 <script>
-    let pai = window.document.getElementById('pai')
-  
-    const numeros=[1,2,3,4,56,7,8,9]
+    const pai = window.document.getElementById('pai')
+    
+    const arrayss = [1,2,3,4,5,6,7,8,9,3,4,5,2,3,5,6]
 
-    numeros.map((el,chave)=>{
-
-    const filho = document.createElement('div')
-    pai.appendChild(filho)
-    filho.setAttribute('id', 'c2')
-    filho.setAttribute('class', 'c3')
-    filho.innerHTML=el 
+    arrayss.map((el)=>{
+        const filho = document.createElement('div')
+        filho.setAttribute('div','c')
+        filho.innerHTML=el
+        pai.appendChild(filho)
+        filho.addEventListener('click', function (e) {
+            pai.removeChild(e.target)
+          })
     })
-  
 </script>
 </body>
 </html>
