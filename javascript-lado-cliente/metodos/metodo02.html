@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metodo remove()</title>
+</head>
+<body>
+    <div  id="cursos c1"  class="c1">ola</div>
+    <div  id="cursos c2"  class="c4">oi</div>
+    <div  id="cursos c3"  class="c2">hello</div>
+    <div  id="cursos c4"  class="c3">hi</div>
+    <button class="btn">clicar</button>
+    <script>
+        let c1 = window.document.getElementById('cursos c1')
+        let c2 = window.document.getElementById('cursos c3')
+        let c3 = window.document.getElementById('cursos c3')
+        let c4 = window.document.getElementById('cursos c4')
+
+       let btn = [...window.document.getElementsByClassName('btn')]
+       
+      btn.map((el)=>{
+        el.addEventListener('click', function () {
+           c1.remove();
+          })
+      })
+       
+    </script>
+</body>
+</html>
