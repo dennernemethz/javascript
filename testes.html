@@ -3,104 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projetinho</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document</title>
     <style>
-      body{
-        background-image: linear-gradient(to left, #4b5758, #d3d3d3);
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      #pai{
-        width: 300px;
-        height: 170px;
-        border-radius: 10px;
-        border: 1px solid #000000;
-        margin: auto;
-        background-color: #e1d3d3;
-      }
-      main{
-        padding: 13px;
-      }
-      main>p{
-        text-align: center;
-        font-weight: bold;
-      }
-      .c0{
-        width: 100px;
-        height: 20px;
-        background-color: #070b82;
-        margin: auto;
-        padding: 2px;
-        border-radius: 2px;
-        border: 2px solid #67e1ff;
-        text-align: center;
-        cursor: pointer;
-        color: #0d00ff;
-        font-weight: bold;
-      }
-      .c1{
-        width: 100px;
-        height: 20px;
-        background-color: #025605;
-        margin: auto;
-        padding: 2px;
-        border-radius: 2px;
-        border: 2px solid #30f52d;
-        text-align: center;
-        cursor: pointer;
-        color: #2fff2f;
-        font-weight: bold;
-      }
-      .c2{
-        width: 100px;
-        height: 20px;
-        background-color: rgb(145, 0, 0);
-        margin: auto;
-        padding: 2px;
-        border-radius: 2px;
-        border: 2px solid rgb(250, 79, 79);
-        text-align: center;
-        cursor: pointer;
-        color: #ff0000;
-        font-weight: bold;
-      }
-      .c3{
-        width: 100px;
-        height: 20px;
-        background-color: rgb(97, 111, 0);
-        margin: auto;
-        padding: 2px;
-        border-radius: 2px;
-        border: 2px solid rgb(250, 243, 98);
-        text-align: center;
-        cursor: pointer;
-        color: #ff8c00;
-        font-weight: bold;
-      }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
 
     </style>
 </head>
 <body>
-   <main id="pai"> <p>Cores que somem ao clicar</p>
-       
-   </main>
-  
+    <main class="pai">
+        
+    </main>
+<button class="btnCursoSelecionado">Adicionar cor</button>
 <script>
-const pai = window.document.getElementById('pai')
-
-const elementos = ['AZUL','VERDE','VERMELHO','AMARELO']
-
-elementos.map((el,chave)=>{
-    const filho = document.createElement('div')
-    filho.setAttribute('class','c' + chave)
-    filho.innerHTML=el
-    pai.appendChild(filho)
-    filho.addEventListener('click',function (tirar) {
-        pai.removeChild(tirar.target)
-      })
-})
-
+const pai = window.document.getElementsByClassName('pai')
+const cores = ['cor1','cor2','cor3','cor4']
 
 </script>
 </body>

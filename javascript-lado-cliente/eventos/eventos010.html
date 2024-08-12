@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 44 de Javascript</title>
+     
+    </head>
+    <body>
+        <main>
+            <div id="caixaNovoFuncionalidades" class="caixa">
+                <div id="caixaNovoCurso" class="caixaFuncionalidades">
+                    <label>Nome do curso</label>
+                    <input type="text" name="nomeCurso" id="nomeCurso"/>
+                    <button id="btnAdicionarNovoCurso">Adicionar</button>
+                </div>
+                <div id="caixaRemoverCurso" class="caixaFuncionalidades">
+                    <button id="btnRemoverCurso">Remover Selecionado</button>
+                </div>
+                <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
+                    <button id="btnCursoSelecionado">Curso Selecionado</button>
+                </div>
+            </div>
+            <div id="caixaCursos" class="caixa">
+                <!-- Cursos serão adicionados aqui -->
+            </div>
+        </main>
+<script>
+const caixaCursos=document.querySelector("#caixaCursos")
+const btn_c=[...document.querySelectorAll(".curso")]
+const c1_2=document.querySelector("#c1_2")
+const cursos=["HTML","CSS","Javascript","PHP","React","MySQL","ReactNative"]
+const btnCursoSelecionado=document.getElementById("btnCursoSelecionado")
+const btnRemoverCurso=document.getElementById("btnRemoverCurso")
+
+cursos.map((el,chave)=>{
+    const novoElemento=document.createElement("div")
+    novoElemento.setAttribute("id","c"+chave)
+    novoElemento.setAttribute("class","curso c1")
+    novoElemento.innerHTML=el
+
+    const comandos=document.createElement("div")
+    comandos.setAttribute("class","comandos")
+    
+    const rb=document.createElement("input")
+    rb.setAttribute("type","radio")
+    rb.setAttribute("name","rb_curso")
+
+    comandos.appendChild(rb)
+
+    novoElemento.appendChild(comandos)
+
+    caixaCursos.appendChild(novoElemento)
+    
+})
+
+btnCursoSelecionado.addEventListener('click',(evt)=>{
+ const todosRadios = [...document.querySelectorAll('input[type=radio]')]
+ let radiosSelecionados=todosRadios.filter((ele,ps,arr)=>{
+ return ele.checked
+ })
+
+ radiosSelecionados=radiosSelecionados[0]
+ //let cursoSelecionado=radiosSelecionados.parentNode.parentNode.firstChild.textContent
+ let cursoSelecionado=radiosSelecionados.parentNode.previousSibling.textContent
+
+alert('curso selecionado:' + cursoSelecionado)
+ /*console.log(todosRadios)
+ console.log(radiosSelecionados)
+ console.log(cursoSelecionado)*/
+})
+
+
+//parentNode 
+//childNodes
+//lastChild
+//nextSibling
+//previousSibling
+</script>
+    </body>
+</html>

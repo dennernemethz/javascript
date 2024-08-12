@@ -9,19 +9,33 @@
     <div id="pai">pai</div>
 
 <script>
-    const pai = window.document.getElementById('pai')
-    
-    const arrayss = [1,2,3,4,5,6,7,8,9,3,4,5,2,3,5,6]
-
-    arrayss.map((el)=>{
-        const filho = document.createElement('div')
-        filho.setAttribute('div','c')
-        filho.innerHTML=el
-        pai.appendChild(filho)
-        filho.addEventListener('click', function (e) {
-            pai.removeChild(e.target)
-          })
+    const radioSelecionado=()=>{
+    const todosRadios=[...document.querySelectorAll("input[type=radio]")]
+    const radioSelecionado=todosRadios.filter((ele,ind,arr)=>{
+        return ele.checked
     })
+    return radioSelecionado[0]
+}
+
+btnCursoSelecionado.addEventListener("click",(evt)=>{
+    const rs=radioSelecionado()
+    try{
+        const cursoSelecionado=rs.parentNode.previousSibling.textContent
+        alert("Curso selecionado: " + cursoSelecionado)
+    }catch(ex){
+        alert("Selecione um curso")
+    }
+})
+
+btnRemoverCurso.addEventListener("click",(evt)=>{
+    const rs=radioSelecionado()
+    if(rs!=undefined){
+        const cursoSelecionado=rs.parentNode.parentNode
+        cursoSelecionado.remove()
+    }else{
+        alert("Selecione um curso")
+    }
+})
 </script>
 </body>
 </html>
