@@ -6,36 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="pai">pai</div>
-
+    
+<div id="txt"></div>
+<button id="btn">clicar</button>
 <script>
-    const radioSelecionado=()=>{
-    const todosRadios=[...document.querySelectorAll("input[type=radio]")]
-    const radioSelecionado=todosRadios.filter((ele,ind,arr)=>{
-        return ele.checked
+
+const txt = window.document.getElementById('txt')
+const btn = window.document.getElementById('btn')
+
+const arr_numeros=[2,1,4,1,5,12,13,15,23,25,17]
+
+btn.addEventListener('click',function (evt) {
+ 
+    const res=arr_numeros.find((e,i)=>{
+        if(e==12)
+        return e
+
     })
-    return radioSelecionado[0]
-}
+     txt.innerHTML = res
+  })
 
-btnCursoSelecionado.addEventListener("click",(evt)=>{
-    const rs=radioSelecionado()
-    try{
-        const cursoSelecionado=rs.parentNode.previousSibling.textContent
-        alert("Curso selecionado: " + cursoSelecionado)
-    }catch(ex){
-        alert("Selecione um curso")
-    }
-})
 
-btnRemoverCurso.addEventListener("click",(evt)=>{
-    const rs=radioSelecionado()
-    if(rs!=undefined){
-        const cursoSelecionado=rs.parentNode.parentNode
-        cursoSelecionado.remove()
-    }else{
-        alert("Selecione um curso")
-    }
-})
+
 </script>
 </body>
 </html>

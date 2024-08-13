@@ -4,79 +4,93 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aula 44 de Javascript</title>
-     
+        <title>Aula 49 de Javascript</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                border:0px;
+                box-sizing: border-box;
+                font-size: large;
+            }
+            .caixa{
+                border: 5px  solid black;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                padding: 5px;
+            }
+            .verde{
+                border-color: green !important;
+                background-color: white !important;
+            }
+            .azul{
+                
+                border-color: rgb(15, 0, 128) !important;
+                background-color: white !important;
+        
+            }
+            .vermelho{
+                border-color: rgb(128, 0, 0) !important;
+                background-color: white !important;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                background-color: lightseagreen;
+                color: white;
+                cursor: pointer;
+                border-radius: 10px;
+                margin-top: 5px;
+            }
+            #caixa_pesquisar input{
+                padding: 10px;
+                border-radius: 10px;
+                width: 300px;
+            }
+
+        </style>
     </head>
     <body>
-        <main>
-            <div id="caixaNovoFuncionalidades" class="caixa">
-                <div id="caixaNovoCurso" class="caixaFuncionalidades">
-                    <label>Nome do curso</label>
-                    <input type="text" name="nomeCurso" id="nomeCurso"/>
-                    <button id="btnAdicionarNovoCurso">Adicionar</button>
-                </div>
-                <div id="caixaRemoverCurso" class="caixaFuncionalidades">
-                    <button id="btnRemoverCurso">Remover Selecionado</button>
-                </div>
-                <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
-                    <button id="btnCursoSelecionado">Curso Selecionado</button>
-                </div>
-            </div>
-            <div id="caixaCursos" class="caixa">
-                <!-- Cursos serão adicionados aqui -->
-            </div>
-        </main>
+        <div id="caixa_array" class="caixa verde">
+            <p>Array:</p>
+            <p id="array"></p>
+        </div>
+        <div id="caixa_pesquisar" class="caixa azul">
+            <label>Pesquisar por</label>
+            <input type="text" name="txt_pesquisar" id="txt_pesquisar"/>
+            <button id="btnPesquisar">Pesquisar</button>
+        </div>
+        <div id="caixa_resultado" class="caixa vermelho">
+            <p>Resultado:</p>
+            <p id="resultado"></p>
+        </div>
+
 <script>
-const caixaCursos=document.querySelector("#caixaCursos")
-const btn_c=[...document.querySelectorAll(".curso")]
-const c1_2=document.querySelector("#c1_2")
-const cursos=["HTML","CSS","Javascript","PHP","React","MySQL","ReactNative"]
-const btnCursoSelecionado=document.getElementById("btnCursoSelecionado")
-const btnRemoverCurso=document.getElementById("btnRemoverCurso")
+const p_array= document.querySelector('#array')
+const txt_pesquisar= document.querySelector('#txt_pesquisar')
+const btnPesquisar= document.querySelector('#btnPesquisar')
+const resultado= document.querySelector('#resultado')
 
-cursos.map((el,chave)=>{
-    const novoElemento=document.createElement("div")
-    novoElemento.setAttribute("id","c"+chave)
-    novoElemento.setAttribute("class","curso c1")
-    novoElemento.innerHTML=el
+const elementos_array=[1,2,3,4,5,10,12,41,29,23,28]
+p_array.innerHTML=elementos_array
 
-    const comandos=document.createElement("div")
-    comandos.setAttribute("class","comandos")
-    
-    const rb=document.createElement("input")
-    rb.setAttribute("type","radio")
-    rb.setAttribute("name","rb_curso")
-
-    comandos.appendChild(rb)
-
-    novoElemento.appendChild(comandos)
-
-    caixaCursos.appendChild(novoElemento)
-    
-})
-
-btnCursoSelecionado.addEventListener('click',(evt)=>{
- const todosRadios = [...document.querySelectorAll('input[type=radio]')]
- let radiosSelecionados=todosRadios.filter((ele,ps,arr)=>{
- return ele.checked
- })
-
- radiosSelecionados=radiosSelecionados[0]
- //let cursoSelecionado=radiosSelecionados.parentNode.parentNode.firstChild.textContent
- let cursoSelecionado=radiosSelecionados.parentNode.previousSibling.textContent
-
-alert('curso selecionado:' + cursoSelecionado)
- /*console.log(todosRadios)
- console.log(radiosSelecionados)
- console.log(cursoSelecionado)*/
-})
+btnPesquisar.addEventListener('click', function (evt) {
+  const ret = elementos_array.find((e,i)=>{
+    resultado.innerHTML='valor nao achado'
+   if(e == txt_pesquisar.value){
+    resultado.innerHTML = 'o resultado foi ' + e + 'e esta na seguinte posição' + i
+    return e
+   }
+   })
+   console.log(ret)
+  }) 
 
 
-//parentNode 
-//childNodes
-//lastChild
-//nextSibling
-//previousSibling
+
+
+
 </script>
     </body>
 </html>
