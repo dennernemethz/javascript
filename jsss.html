@@ -7,27 +7,5 @@
 </head>
 <body>
     
-<div id="txt"></div>
-<button id="btn">clicar</button>
-<script>
-
-const txt = window.document.getElementById('txt')
-const btn = window.document.getElementById('btn')
-
-const arr_numeros=[2,1,4,1,5,12,13,15,23,25,17]
-
-btn.addEventListener('click',function (evt) {
- 
-    const res=arr_numeros.find((e,i)=>{
-        if(e==12)
-        return e
-
-    })
-     txt.innerHTML = res
-  })
-
-
-
-</script>
 </body>
 </html>

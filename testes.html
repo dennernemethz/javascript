@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#conteiner {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+    </style>
 </head>
 <body>
     <p id="conteiner">0</p>
     <button class="incremento01">aumentar</button>
     <button class="decremento02">diminuir</button>
 <script>
+const conteiner = window.document.querySelector('#conteiner')
+const btn01 = window.document.querySelector('.incremento01')
+const btn02 = window.document.querySelector('.decremento02')
 
+let contador = 0
 
-    
+function updateCounter() {  
+    conteiner.textContent=contador
+}
+
+btn01.addEventListener('click',()=>{
+    contador++;
+    updateCounter()
+    if(contador > 15){
+        alert('nao pode passar de 15')
+        
+    }
+})
+btn02.addEventListener('click',()=>{
+    contador--;
+    updateCounter()
+})
+
 </script>
 </body>
 </html>
