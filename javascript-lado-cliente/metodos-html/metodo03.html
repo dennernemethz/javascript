@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="array"></p>
+    <button id="btnVerificar">clicar</button>
+    <div>resultado</div>
+    <div id="resultado"></div>
+
+<script>
+const btnVerificar = window.document.querySelector('#btnVerificar')
+const res = window.document.querySelector('#resultado')
+const array01 = window.document.querySelector('#array')
+
+
+let elementosArray01 = [19,44,22,32,18,20,19,38]
+
+btnVerificar.addEventListener('click',function(evt){
+   const ret = elementosArray01.every((e,i)=>{
+    if(e >=18){
+        res.innerHTML = 'array Não Encontrado na posiçao ' 
+       }
+    return e >=18
+      }
+ )
+ console.log(ret)
+})
+
+
+
+
+
+  
+</script>
+</body>
+</html>
