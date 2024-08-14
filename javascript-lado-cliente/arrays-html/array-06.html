@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4> Encontrar um objeto em um array por uma de suas propriedades usando o metodo find()</h4>
+
+
+<script>
+    const objects =
+    
+    [{name: 'banana', quantidade: 3},
+     {name: 'maça', quantidade: 10},
+     {name: 'mamao', quantidade: 9}
+
+    ];
+
+    let r = function (frutas) { 
+        return frutas.name === 'maça'
+     }
+
+     console.log(objects.find(r));
+</script>
+</body>
+</html>

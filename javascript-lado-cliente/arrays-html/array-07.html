@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <label for="txt1">array:</label>
+    <input type="text"  id="txt1">
+   <button class="solta">clique</button>
+<script>
+   const texto = window.document.querySelector('#txt1')
+   let btn1 = window.document.querySelector('.solta')
+   const elementos_array=[3,6,17,20,42,5,65,24,18,1,2,4,56,7,9]
+
+ btn1.addEventListener('click',function () {
+
+ const res = elementos_array.find((el,i)=>{
+    console.log('valor nao achado')
+     if(el == texto.value){
+        console.log('o valor foi : ' + el + ' e esta na posição ' + i)
+        return el
+     }
+    
+ })
+
+ })
+   
+
+
+</script>
+</body>
+</html>
