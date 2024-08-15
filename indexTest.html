@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="txt"></p>
+<button class="btn01">clique</button>
+
+<script>
+const btn = window.document.querySelector('.btn01')
+const txt = window.document.querySelector('#txt')
+
+let numbers = [1,10,35,32,42]
+
+let maior=numbers.filter((el,i)=>{
+    return el > 10
+})
+btn.addEventListener('click',function () {
+    txt.innerHTML = maior
+  })
+
+
+</script>
+</body>
+</html>

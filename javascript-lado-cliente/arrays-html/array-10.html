@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <div class="res">resultado:</div>
+    <button id="btn">clicar</button>
+
+
+<script>
+const res = window.document.querySelector('.res')
+const btn = window.document.querySelector('#btn')
+
+let numeros = [15,18,23,9,12,13,29,32,24,41]
+
+const maiorDeIdade=numeros.filter((el)=>{
+
+    res.innerHTML = `as idades são ${numeros}` 
+
+    return el > 18
+})
+
+btn.addEventListener('click',()=>{
+    res.innerHTML = `Mas somente essas são maiores de 18 anos ${maiorDeIdade}`
+})
+
+
+
+</script>
+</body>
+</html>
