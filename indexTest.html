@@ -6,27 +6,15 @@
   <title>Document</title>
 </head>
 <body>
-tabuada do numero: <input type="number"  id="num">
-<button onclick="tabuada()">clicar</button>
-<div class="resposta">res</div>
-<script>
-function tabuada() {
-let num = parseInt(window.document.querySelector('#num').value)
-let resposta = document.querySelector('.resposta')
-var tabuada = ''
-
-for(let count=1; count <=10; count++)
- tabuada += num+' x '+ count+' = ' + num*count+ ' <br/>';
-
- resposta.innerHTML = tabuada
-
-
-
-
-
-
-  }
-
-</script>
+<p>clock</p>
+<div id="hr"></div>
+  <script>
+let res= window.document.querySelector('#hr')
+    setInterval(function () {
+let data = new Date();
+    res.innerHTML=data.toLocaleTimeString();
+  })
+  
+  </script>
 </body>
 </html>
