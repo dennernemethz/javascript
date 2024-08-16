@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>incrementro e decremento</h2>
+<div id="res"></div>
+
+<button class="incremento">incrementar</button>
+<button class="decremento">decrementar</button>
+<script>
+const res = window.document.querySelector('#res')
+const btn01 = window.document.querySelector('.incremento')
+const btn02 = window.document.querySelector('.decremento')
+
+let contador = 0 
+
+function projectCont() {
+    res.textContent=contador
+  }
+  btn01.addEventListener('click',()=>{
+    contador++;
+    switch(contador){
+        case 10:
+            window.alert('só até 10')
+            break;
+    }
+    projectCont()
+  })
+  btn02.addEventListener('click',()=>{
+    contador--;
+    projectCont()
+  })
+</script>
 </body>
 </html>
