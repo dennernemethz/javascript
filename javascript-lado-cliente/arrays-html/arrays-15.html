@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <div class="res">resultado:</div>
+    <button id="btnRed">clicar</button>
+
+
+<script>
+const res = window.document.querySelector('.res')
+const btnReduzir = window.document.querySelector('#btnRed')
+
+let numeros = [15,18,23,9,12,13,29,32,24,41]
+
+let ant = []
+let atu = []
+let dobro = []
+
+res.innerHTML = numeros
+
+btnReduzir.addEventListener('click',()=>{
+    res.innerHTML= numeros.reduce((anterior,atual,arr)=>{
+        ant.push(anterior)
+        atu.push(atual)
+        dobro.push(atual*2)
+       return  anterior+atual
+    })
+})
+res.innerHTML=+"<br> anterior" + ant + " <br>valor atual" + atu + "<br>valor dobrado " + dobro
+
+
+
+</script>
+</body>
+</html>
