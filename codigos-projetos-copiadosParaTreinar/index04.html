@@ -6,22 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container">
-        <h2>get your hours</h2>
-        <div id="clock"></div>
+
+    <h1>coutndown</h1>
+    <div id="clockdiv">
+    <div>
+      <span class="days"></span>
+      <div class="smalltext"> days</div>
     </div>
-
+     <div>
+        <span class="hours"></span>
+        <div class="smalltext">hours</div>
+     </div>
+     <div>
+        <span class="minutes"></span>
+        <div class="smalltext">seconds</div>
+     </div>
+</div>
 <script>
+function getTimeRemaining(endtime){
+let t = date.parse(endtime) - date.parse(new Date());
 
-let clock = window.document.querySelector('#clock')
+let seconds = Math.floor((t / 1000)% 60);
+let minutes = Math.floor((t / 60) % 60);
+let hours = Math.floor((t / (1000 * 60 * 60))% 24);
+let days = Math.floor(t/ (1000 * 60 * 60 * 24));
+debugger;
+return{
+       'total' : t,
+       'days' : days,
+       'hours' : hours,
+       'minutes' : minutes,
+       'seconds' : seconds
+};
 
+}
+function initializeClock(id,endtime) { 
 
-setInterval(()=>{
-    let time =  new Date();
-    clock.innerHTML=time.toLocaleTimeString();
-
-})
-
+    
+ }
 </script>
 </body>
 </html>
