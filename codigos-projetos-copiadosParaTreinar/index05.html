@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.canvas{
+    width: 600px;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bulb-off{
+    width: 265px;
+    height: 400px;
+    background:url(imagens/lightoff.png) no-repeat;
+    margin: auto;
+}
+.bulb-on{
+    width: 265px;
+    height: 400px;
+    background:url(imagens/lighton.png) no-repeat;
+    margin: auto;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h1>turn the light on and off <br>by clicking the bulb  </h1>
+        <div id="bulb" class="bulb-off"></div>
+    </div>
+<script>
+
+const light =document.querySelector('#bulb')
+light.addEventListener('click', function(e){
+
+    e.target.classList.toggle('bulb-on');
+})
+
+
+</script>
+</body>
+</html>
