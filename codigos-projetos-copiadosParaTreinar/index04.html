@@ -4,46 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    color: #f0f0f0;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+    
 </head>
 <body>
-
-    <h1>coutndown</h1>
-    <div id="clockdiv">
-    <div>
-      <span class="days"></span>
-      <div class="smalltext"> days</div>
-    </div>
-     <div>
-        <span class="hours"></span>
-        <div class="smalltext">hours</div>
-     </div>
-     <div>
-        <span class="minutes"></span>
-        <div class="smalltext">seconds</div>
-     </div>
-</div>
 <script>
-function getTimeRemaining(endtime){
-let t = date.parse(endtime) - date.parse(new Date());
 
-let seconds = Math.floor((t / 1000)% 60);
-let minutes = Math.floor((t / 60) % 60);
-let hours = Math.floor((t / (1000 * 60 * 60))% 24);
-let days = Math.floor(t/ (1000 * 60 * 60 * 24));
-debugger;
-return{
-       'total' : t,
-       'days' : days,
-       'hours' : hours,
-       'minutes' : minutes,
-       'seconds' : seconds
-};
+    let name = prompt('enter your name')
+    let time = new Date();
 
-}
-function initializeClock(id,endtime) { 
+    let hrs = time.getHours();
+    document.writeln('<br>')
+    document.writeln('<br>')
+    if(hrs <=12){
+        document.write('Bom dia ' + name)
+    }else if ( hrs <=18){
+        document.write('Boa tarde' + name)
+    }else {
+        document.write('Boa noite ' + name)
+    }
+    document.write('<br/>')
 
-    
- }
 </script>
 </body>
 </html>
