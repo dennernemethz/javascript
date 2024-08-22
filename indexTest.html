@@ -6,19 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-<div id="n1">7</div>
-<div id="n2">10</div>
-<div>
-    <input type="number" id="numero">
-</div>
-<button class="btn">clique</button>
+<div id="ma"></div>
 <script>
-let numero1 = parseInt(Math.random()*10)
-let numero2 = parseInt(math.random()*10)
+
+let mapa = new Map();
+
+mapa.set('curso','java')
+mapa.set('numero',100)
+mapa.set(100,'python')
+mapa.set(10,2000)
+
+mapa.forEach((el)=>{
+    console.log(el)
+})
 
 
-let total = numero1  + numero2
+
+
+
 </script>
-
 </body>
 </html>
