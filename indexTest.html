@@ -8,7 +8,7 @@
 <body>
 <div id="ma"></div>
 <script>
-
+let mapps = window.document.getElementById('ma')
 let mapa = new Map();
 
 mapa.set('curso','java')
@@ -16,10 +16,11 @@ mapa.set('numero',100)
 mapa.set(100,'python')
 mapa.set(10,2000)
 
-mapa.forEach((el)=>{
-    console.log(el)
-})
-
+if(mapa.has(10)){
+    mapps.innerHTML='existe'
+}else{
+    mapps.innerHTML='nao existe'
+}
 
 
 

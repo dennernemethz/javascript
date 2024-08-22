@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando uma coleção Map()</h1>
+    <div id="map"></div>
+
+
+<script>
+let num = window.document.getElementById(' map')
+
+
+let mapa = new Map()
+
+mapa.set('cursos','javascript')
+mapa.set('nome','Denner')
+mapa.set('num',100)
+
+
+mapa.clear((el)=>{
+    console.log(el)
+})
+
+</script>
+</body>
+</html>
