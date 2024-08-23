@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="re"></div>
+    <h2>metodo NEW MAP()</h2>
+    <p>Esse metodo existe para poder percorrer array</p>
+
+<script>
+let re = window.document.getElementById('re')
+
+let mapa=new Map()
+
+mapa.set('corRed','vermelho')
+mapa.set('corYellow','amarelo')
+mapa.set('corBlue','azul')
+mapa.set('corGreen','verde')
+
+console.log(mapa)
+
+if(mapa.has('corYellow')){
+      re.innerHTML = ' true '
+}else{
+    re.innerHTML = ' false '
+}
+
+
+
+
+</script>
+</body>
+</html>

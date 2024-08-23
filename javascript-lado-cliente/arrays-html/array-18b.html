@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Usando metodo new Set()</h3>
+    <p> Unica diferença entre o set e o map e que o set nao aceita elemento do mesmo valor </p>
+    <div class="res"></div>
+
+<script>
+
+let re = window.document.querySelector('.res')
+
+
+let msc= new Set(['red','yellow','blue'])
+
+msc.add('controle')
+msc.add('cor')
+msc.add('azul')
+msc.add('red')// mostrando a diferença entre map e set, mesmo elemento nao vai mostra no console.
+msc.add('yellow')// mostrando a diferença entre map e set, mesmo elemento nao vai mostrar no console.
+
+console.log(msc.add('cyan'))
+
+</script>
+</body>
+</html>
