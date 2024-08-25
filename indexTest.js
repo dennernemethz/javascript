@@ -1,8 +1,5 @@
-class obj{
-    constructor(){
-        this.nome='denner'
-    }
-}
-let p1 = new obj()
+function getRandoInt(max) { 
+    return Math.floor(Math.random() * max)
+ }
 
-console.log(p1.nome)
+ console.log(getRandoInt(10))

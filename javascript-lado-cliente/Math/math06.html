@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>metodo math.random()</h2>
+    <p>Math.random() não forneça números aleatórios criptograficamente seguros. Não os use para nada relacionado à segurança. Use a API Web Crypto e, mais precisamente, a Crypto.getRandomValues() método.</p><br>
+    <br>
+        <h3>Valor de retorno</h3>
+    <p>número pseudo-aleatório entre 0 (inclusive) e 1 (exclusivo).</p><br>
+
+    <script>
+function getInt(max) {
+    return Math.floor(Math.random() * max)
+  }
+  console.log(getInt(5))
+    </script>
+</body>
+</html>
