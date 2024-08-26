@@ -6,14 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="clas"></div>
+    <div id="clock"></div>
 
-<script>
-let m = window.document.querySelector('#clas')
+    <script>
+let clock = window.document.querySelector('#clock')
 
-let nuns = [10,43.09,12.11,-65.54,11,7]
 
-console.log(Math.ceil(nuns[2]))
-</script>
+setInterval(function () {
+    let data = new Date()
+    clock.innerHTML= data.toLocaleTimeString()
+  })
+
+
+    </script>
 </body>
 </html>
