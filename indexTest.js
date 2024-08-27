@@ -1,5 +1,16 @@
-function getRandoInt(max) { 
-    return Math.floor(Math.random() * max)
- }
+class int {
+    constructor(nn){
+    this.n=nn
+    }
+}
 
- console.log(getRandoInt(10))
+let n1 = new int(30)
+let n2 = new int(20)
+
+let res = n1.n + n2.n
+
+if(res <= 40){
+    console.log('menor')
+}else{
+    console.log('maior')
+}
