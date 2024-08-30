@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+ <p>Maior de idade ou menor de idade</p>
+ <p>clique em baixo para saber</p>
+
+
+<button class="btn">clique</button>
+
+<div class="res"></div>
+
+<body>
+    <script>
+    let nome = window.document.querySelector('.btn')
+    let res = window.document.querySelector('.res')
+
+nome.addEventListener('click',function () { 
+
+    let a = parseInt(prompt('Digite sua idade atual')) 
+
+    if (a >= 18){
+        alert('voce e de maior ')
+    }
+    else {
+        alert('voce ainda é de menor')
+    }
+ })
+
+    </script>
+</body>
+</html>

@@ -1,31 +1,8 @@
-class cor{
-  constructor(pcor, ptipo){
-    
-    this.cor=pcor
-    if(ptipo == 1){
-      this.tipo='escuro'
-    }else if (ptipo == 2){
-      this.tipo = 'claro'
-    }
-  }
-getCcor(){
- return this.cor
-}
-getTipo(){
-  return this.tipo
-}
-getCcor(){
-  return this.cor
- }
- getTipo(){
-   return this.tipo
- }
-
-}
-
-let c1 = new cor('verde',2)
-let c2 = new cor('amarelo',1)
+let cole = ['a','b','c','d','e']
 
 
-console.log(c1.getCcor())
-console.log(c2.getTipo())
+
+let rando= cole[Math.floor(Math.random() * cole.length)]
+
+console.log(rando)
+

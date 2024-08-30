@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+   main{
+    background-color: transparent;
+    margin: auto;
+    width:  400px;
+    min-height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .res{
+    font-size: 2.1em;
+   }
+   button{
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            margin: 50px auto 50px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: darkblue;
+            border-radius: 5px;
+            border-style: none;
+            display: block;
+   }
+    </style>
+</head>
+<body>
+    <h3>Cores Aleatorias Js beginner</h3>
+    <main>
+        <div class="res"></div>
+        <button class="click">Clique</button>
+    </main>
+   
+<script>
+
+let res = window.document.querySelector('.res')
+let btn = window.document.querySelector('.click')
+
+btn.addEventListener ('click',function () {
+
+let coleçãoDeCores = ['red','green','yellow','blue','gray','purple','orange']
+
+let rand = coleçãoDeCores [Math.floor(Math.random() * coleçãoDeCores.length)]
+
+if(rand == 'red'){
+    res.innerHTML = 'red'
+
+}else if (rand == 'yellow'){
+    res.innerHTML= ' yellow'
+
+}else if (rand == 'green'){
+    res.innerHTML= ' green'
+
+}else if (rand == 'blue'){
+    res.innerHTML= 'blue'
+
+}else if (rand == 'gray'){
+    res.innerHTML= ' gray'
+
+}else if (rand == 'purple'){
+    res.innerHTML= ' purple'
+
+}else if (rand == 'orange'){
+    res.innerHTML= 'orange'
+}
+  })
+
+</script>
+</body>
+</html>
