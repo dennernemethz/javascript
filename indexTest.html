@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Frutas Aleatorias</h3>
+
+
+    <main>
+        <div class="res"></div>
+        
+        <button class="btn">Clicar</button>
+    </main>
+
+<script>
+let res = window.document.querySelector('.res')
+let btn = window.document.querySelector('.btn')
+
+
+
+btn.addEventListener('click', function () {
+
+    let coleção = ['Banana', 'maça','mamao','limao','laranja', ]
+    let col = coleção [Math.floor(Math.random() * coleção.length)]
+  
+    res.innerHTML= col
+  })
+
+</script>
+</body>
+</html>
