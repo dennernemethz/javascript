@@ -1,5 +1,7 @@
-function rnd(n) {
-return Math.floor(Math.random()*n)
-}
+class n{
+    constructor(){
+        this.num=1
 
-console.log(rnd(50))
+      
+    }
+}
