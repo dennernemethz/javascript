@@ -6,28 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Frutas Aleatorias</h3>
-
-
     <main>
         <div class="res"></div>
-        
-        <button class="btn">Clicar</button>
+        <button id="in">incremento</button>
+        <button id="de">decremento</button>
     </main>
 
 <script>
 let res = window.document.querySelector('.res')
-let btn = window.document.querySelector('.btn')
+let inc = window.document.querySelector('#in')
+let de = window.document.querySelector('#de')
 
 
+let contador = 0 
 
-btn.addEventListener('click', function () {
+function bot() { 
 
-    let coleção = ['Banana', 'maça','mamao','limao','laranja', ]
-    let col = coleção [Math.floor(Math.random() * coleção.length)]
-  
-    res.innerHTML= col
-  })
+res.textContent=contador
+
+ }
+inc.addEventListener('click', function () { 
+    contador++
+    bot()
+ })
+ de.addEventListener('click', function () { 
+    contador--
+    bot()
+ })
 
 </script>
 </body>
