@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+class carro {
+    constructor(nome,portas){
+        this.nome=nome
+        this.portas=portas
+        this.ligado=false
+        this.vel=0
+        this.cor=undefined
+    }
+} ligar=function(){
+    this.ligado=true
+}
+desligar=function(){
+    this.ligado=false
+}
+setCor=function(){
+    this.cor=cor
+}
+
+
+class militar  extends carro{
+    constructor(nome,portas,blindagem,munição){
+        super(nome,portas)
+        this.blindagem=blindagem
+        this.munição=munição
+       
+    }
+}
+
+
+let c2 = new militar('lutaor',6,100,50)
+
+let c1 = new carro('normal',6)
+console.log(`nomr: ${c1.nome}`)
+
+console.log(`nome: ${c2.nome}`)
+
+
+</script>
+</body>
+</html>
