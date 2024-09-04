@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class n{
+    constructor(nome,sobren){
+        this.nome=nome
+        this.sobren=sobren
+        this.ligado=''
+        this.vel=0
+        this.cor=undefined
+    }
+}
+
+ligar=function(){
+   return this.ligado='g'
+}
+desligar=function(){
+   return this.ligado='f'
+}
+setCor=function(cor){
+    this.cor=cor
+}
+
+let c1 = new n('nmor','cores')
+
+c1.setCor('preto')
+
+console.log(c1.nome)
+console.log(c1.sobren)
+console.log(c1.cor)
+
+
+
+    </script>
+</body>
+</html>
