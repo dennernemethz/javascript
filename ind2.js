@@ -1,15 +1,12 @@
-const nome={
-    nome:'denner',
-    curso:'js',
-    aulas:{
-      aula01:'js',
-      aula02:'jq'
-    }
-}   
+const nom ={
+  nome:'denner',
+  sobre:'nemeth'
+}
 
-const s_json=JSON.stringify(nome)
-
-const o_json=JSON.parse(s_json)
+let s_json=JSON.stringify(nom)
 
 console.log(s_json)
-console.log(o_json)
+
+let o_json=JSON.parse(s_json)
+
+ console.log(o_json)
