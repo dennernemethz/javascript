@@ -1,35 +1,15 @@
-class n {
-    constructor(nome,portas){
-      this.nome=nome
-      this.portas=portas
-      this.vel=0
-      this.cor=undefined
+const nome={
+    nome:'denner',
+    curso:'js',
+    aulas:{
+      aula01:'js',
+      aula02:'jq'
     }
-}velocidade=function () {
-  this.ligado=true
-  }
-  velocidade=function () {
-    this.ligado=false
-  }
+}   
 
-setCor=function () {
-  this.cor=cor
-  }
+const s_json=JSON.stringify(nome)
 
+const o_json=JSON.parse(s_json)
 
-  class militar extends n{
-    constructor(nome,portas,blindagem,munição){
-      super(nome,portas)
-      this.blindagem=blindagem
-      this.munição=munição
-    }
-  }
-
-  let c1 = new n('normal',5)
-  let c2 = new militar('abatedor',5,100,50)
-
-console.log(c2.nome)
-console.log(c2.portas)
-console.log(c2.blindagem)
-console.log(c2.munição)
-
+console.log(s_json)
+console.log(o_json)
