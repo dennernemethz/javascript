@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class num{
+    constructor(num1,num2){
+        this.num1=num1
+        this.num2=num2
+    }
+}
+class somas extends num{
+    constructor(num1,num2,num3,num4){
+        super(num1,num2)
+        this.num3=num3
+        this.num4=num4
+    }
+}
+
+let c1 = new somas (10,110,32,40)
+
+console.log(c1.num1 + c1.num2)
+console.log(c1.num3 + c1.num1)
+
+
+    </script>
+</body>
+</html>

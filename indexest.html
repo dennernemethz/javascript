@@ -6,33 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    
+
 <script>
-
-class carro{
-    constructor(nome,porta){
-        this.nome=nome
-        this.porta=porta
-        this.cor=undefined
-        this.velocidade=0
-        this.ligado=false
+class nom{
+    constructor(num01,num02){
+        this.num01=num01
+        this.num02=num02
     }
-}ligar=function(){
-    this.ligado=true
-}
-desligar = function(){
-    this.ligado=false
-}
-setCor=function(){
-    this.cor=cor
 }
 
-let c1 = new carro('qlq', 5)
+class somas extends nom{
+    constructor(num01,num02,num03,num04){
+        super(num01,num02)
+        this.num03=num03
+        this.num04=num04
+    }
+}
 
-console.log(`nome:${c1.nome}`)
-
-
-
-
+let c1 =  new somas(100,20,30,40)
+console.log(c1.num01 + c1.num02)
 
 
 </script>
