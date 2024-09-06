@@ -1,25 +1,23 @@
-class npc{
-  static alerta=false
-  constructor(energia){
-    this.energia=energia
+class nome{
+  static alert=false
+  constructor(primario){
+    this.primario=primario
   }
-  info=function () {
-    console.log(`energia:${this.energia}`)
-    console.log(`alerta:${npc.alerta?'sim':'não'}`)
-    }
+  info=function(){
+    console.log(`nomeP:${this.primario}`)
+    console.log(`ligado ${nome.alert?'sim':'não'}`)
+  
+  }
+
 }
 
-
-let c1 = new npc(100)
-let c2 = new npc(80)
-let c3 = new npc(30)
-
-npc.alerta=false
-
+let c1 = new nome(100)
+let c2 = new nome(40)
+let c3 = new nome(5)
 
 c1.info()
 c2.info()
 c3.info()
 
 
-
+nome.alert=true
