@@ -6,21 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="res"></div>
     <script>
 
-class nav {
-    constructor(energy){
-        this.energy=energy
-    }
-}
+let res = window.document.querySelector('#res')
 
-let n1 = new nav(100)
+let arr =['azul','vermelho','verde']
 
-nav.prototype.agua=9
-
-console.log(n1)
-console.log(nav)
-console.log(n1.energy)
+window.addEventListener('onload' , function () {
+   res.style.backgroundColor = ' red'
+  })
 
     </script>
 </body>

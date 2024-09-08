@@ -1,11 +1,5 @@
-class nav {
-    constructor(energy){
-        this.energy=energy
-    }
+function num(n){
+    return Math.floor(Math.random() * n)
 }
 
-let c1 = new nav(100)
-
-console.log(nav)
-console.log(c1.energy)
-console.log(c1)
+console.log(num(10))
