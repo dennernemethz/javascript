@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+
+    <style>
+        body.azul{
+            background-color:blue !important; 
+        }
+    </style>
+
 </head>
 <body>
     <div id="container">
-        <div id="res"></div>
-        <button class="btn">clicki</button>
+    <div id="res"></div>   
+
     </div>
-<script>
+    <script>
 let res = window.document.querySelector('#res')
 let btn = window.document.querySelector('.btn')
-
-
 
 
 btn.addEventListener('click', function () {
@@ -26,7 +30,8 @@ btn.addEventListener('click', function () {
    
    if (coleçao == 'azul'){
      res.innerHTML = 'azul'
-     res.body.style.backgroundColor = "blue";
+     var a = window.document.querySelector('.azul')
+     a.style.backgroundColor ='blue'
    }else if(coleçao =='verde'){
     res.innerHTML =' verde'
    }else if (coleçao == 'vermelho'){
@@ -38,7 +43,6 @@ btn.addEventListener('click', function () {
    }
 
   })
-
-</script>
+    </script>
 </body>
 </html>

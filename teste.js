@@ -1,5 +1,5 @@
-function num(n){
-    return Math.floor(Math.random() * n)
-}
+function n(arr) {
+    return Math.floor(Math.random()* arr)
+  }
 
-console.log(num(10))
+  console.log(n(10))
