@@ -6,14 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="res"></div>
+   
 <script>
- let res = window.document.querySelector('#res')
+class carro{
+    constructor(tipo){
+        if(tipo==1){
+            this.nome='especial'
+            this.vel=50
+        }else if (tipo ==2 ){
+            this.nome='corrida'
+            this.vel=100
+        }
+    }
+    info(){
+        console.log(this.nome)
+        console.log(this.vel)
+    }
+}
 
-function parOuImpar(num) { 
-    let res = num
-    if(res === )
- }
+class carroEspecial extends carro{
+    constructor(estagio){
+        super(1,estagio)
+        this.estagio=estagio
+    }
+    info(){
+        if(this.tipo==1){ 
+            super.info()
+        }else if(this.tipo==2) {
+            super.info()
+        }else{
+            console.log('carro especial')
+        }
+        
+    }
+}
+
+
+let c1 = new carro(1)
+let c2 = new carro(2)
+let c3 = new carroEspecial(1)
+
+c1.info()
+c2.info()
+c3.info()
 </script>
 </body>
 </html>
