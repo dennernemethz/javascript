@@ -4,45 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body.azul{
-            background-color:blue !important; 
-        }
-    </style>
-
 </head>
 <body>
-    <div id="container">
-    <div id="res"></div>   
-
-    </div>
     <script>
-let res = window.document.querySelector('#res')
-let btn = window.document.querySelector('.btn')
+
+class nome {
+    constructor(nome){
+     this.nome=nome
+     this.numero=11
+     this.força=4
+    }
+    inf(){
+        return this.numero
+        this.força
+    }
+}
+
+let c1 = new nome('denner')
+
+c1.inf()
+
+console.log(c1.nome)
+console.log(c1.numero)
+console.log(c1.força)
 
 
-btn.addEventListener('click', function () {
-
-    let arr = ['azul','verde','vermelho','amaralo','branco']
-
-    let coleçao = arr [Math.floor(Math.random() * arr.length)]
-   
-   if (coleçao == 'azul'){
-     res.innerHTML = 'azul'
-     var a = window.document.querySelector('.azul')
-     a.style.backgroundColor ='blue'
-   }else if(coleçao =='verde'){
-    res.innerHTML =' verde'
-   }else if (coleçao == 'vermelho'){
-    res.innerHTML='vermelho'
-   }else if (coleçao == 'amarelo'){
-    res.innerHTML='amarelo'
-   }else if (coleçao == 'branco'){
-   res.innerHTML='branco'
-   }
-
-  })
     </script>
 </body>
 </html>
