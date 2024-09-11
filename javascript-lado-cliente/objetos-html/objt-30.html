@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>abstract POO</h3>
+    <script>
+class abstrNome{
+    constructor(){
+        if(this.nome===undefined){
+            throw new TypeError('erro!!!!')
+        }
+        if(this.num=undefined){
+            throw new TypeError('erro!!!')
+        }
+    }
+}
+
+class nome extends abstrNome{
+    constructor(cores){
+        super()
+        this.cores=cores
+        this.escuros=undefined
+    }
+    info(){
+        this.escuros='nenhum'
+    }
+    nome(){}
+    num(){}
+}
+
+let c1 = new nome ('azul')
+
+c1.info()
+
+
+console.log(c1.cores)
+console.log(c1.escuros)
+
+
+    </script>
+</body>
+</html>
