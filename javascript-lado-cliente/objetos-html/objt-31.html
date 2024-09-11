@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>absctract em POO PT2</h3>
+    <script>
+class fatherOfClasses {
+    constructor(){
+      if(this.x===undefined){
+        throw new TypeError('ERRO!!!')
+      }
+      if(this.y===undefined){
+        throw new TypeError('ERRO!!! 2')
+      }
+    }
+}
+class n extends fatherOfClasses{
+    constructor(nomes){
+        super()
+        this.nomes = nomes
+        this.numero=undefined
+        this.cores=undefined
+    }
+    info(){
+        this.nomes ='denner'
+        this.numero = 1995
+        this.cores = 'branco'
+    }
+    x(){}
+    y(){}
+}
+
+class outroNome extends n {
+    constructor(nomes,sobre){
+        super()
+        this.sobre=sobre
+    }
+    info01(){
+        this.sobre='oi'
+    }
+}
+
+
+let c1 = new n ()
+let c2 = new outroNome()
+
+c1.info()
+c2.info01()
+
+console.log(c1.nomes)
+console.log(c1.numero)
+console.log(c1.cores)
+console.log(c2.sobre)
+
+
+
+
+
+    </script>
+</body>
+</html>
