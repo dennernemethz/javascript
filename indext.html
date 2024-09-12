@@ -6,38 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="btn">click</button>
     <script>
-class padraoName{
-    constructor(){
-    if(this.cor===undefined){
-        throw new TypeError('instanciar')
-    }
-    if(this.b===undefined){
-        throw new TypeError('instanciar2')
-    }
-    
-    }
-}
-class nome extends padraoName {
-    constructor(res){
-        super()
-        this.res=res
-        this.num01=undefined
-        this.num02=undefined
-    }
-    info(){
-        this.num01=10
-        this.num02=20
-    }
-    cor(){}
-    b(){}
-}
+let btn = window.document.querySelector('#btn')
 
-let c1 = new nome('denner')
 
-c1.info()
+btn.addEventListener('click', function () {
 
-console.log(c1.num01 + c1.num02)
+    navigator.clipboard.writeText('oi oi oi oi oi oi')
+  })
+
+
 
     </script>
 </body>
