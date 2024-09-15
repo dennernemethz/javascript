@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+const sol = {
+  name01:' Greetings ',
+  name02:' Many ',
+  name03:' get ',
+  name04:' got ',
+
+  nms(){
+    console.log('the coding are  amazing  in reproduzing' + this.name01 + this.name02 + this.name03 + this.name04)
+  }
+}
+
+sol.nms()
+
+console.log(typeof(sol))
+
+
+
+const s_jason=JSON.stringify(sol)
+console.log(s_jason)
+const o_jason=JSON.parse(s_jason)
+console.log(o_jason)
+    </script>
+</body>
+</html>
