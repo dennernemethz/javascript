@@ -6,17 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <script>
-/* let firstName = Symbol(' meu primeiro nome ')
-let myLastName = Symbol(' meu sobrenome ')
-console.log(firstName)
-console.log(myLastName) */
 
- 
+ let animal = {
 
+eat:true,
+walk(){} 
 
+ };
 
+ let rabbit = {
+jump:true,
+__proto__:animal
 
+ };
+
+ rabbit.walk =function (){
+    alert("Rabbit! Bounce-bounce!")
+ }
+
+ rabbit.walk()
     </script>
 </body>
 </html>

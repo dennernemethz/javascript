@@ -7,14 +7,20 @@
 </head>
 <body>
     <script>
-/* let firstName = Symbol(' meu primeiro nome ')
-let myLastName = Symbol(' meu sobrenome ')
-console.log(firstName)
-console.log(myLastName) */
-
- 
 
 
+const animal ={
+    eat:true,
+    wal(){
+        alert('animal walk')
+    }
+};
+const coelho ={
+   jump:true,
+   __proto__:animal
+};
+
+coelho.wal();
 
 
     </script>

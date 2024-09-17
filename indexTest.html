@@ -6,32 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div id="res"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illum consequatur quas possimus ex sequi quia. Qui iste ipsa nemo veritatis, quas doloribus dolorum, velit veniam autem, quidem cum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error esse, voluptas quos animi officia debitis veniam placeat tenetur natus rem id repellat, quis, laborum doloribus tempora quas culpa vitae.</p></div>
-    <button class="btn">click</button>
     <script>
 
-let res = window.document.querySelector('div p')
-let btn = window.document.querySelector('.btn')
+
+let animal = {
+    eat:true
+}
+
+let dog={
+    run:true
+}
+
+let rabbit ={
+    jump:true
+}
 
 
-res = res.textContent
+rabbit.__proto__= animal
+rabbit.__proto__= dog
 
-
-btn.addEventListener('click', function () {
-
-
-
-navigator.clipboard.writeText(res)
-
-
-  })
-
-
-
-
-
-
+console.log(rabbit.eat)
+console.log(rabbit.run)
+console.log(rabbit.jump)
 
 
     </script>

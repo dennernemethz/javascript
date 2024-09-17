@@ -7,15 +7,27 @@
 </head>
 <body>
     <script>
-/* let firstName = Symbol(' meu primeiro nome ')
-let myLastName = Symbol(' meu sobrenome ')
-console.log(firstName)
-console.log(myLastName) */
 
- 
+let animal = {
+    eat:true,
+    walk(){
+        alert('The animal walking')
+    }
+}
 
+let rabbit = {
+jump:true,
+__proto__:animal
 
+}
 
+let longEar={
+    earLenght:10,
+    __proto__:rabbit
+}
+
+longEar.walk()
+alert(longEar.jump)
 
     </script>
 </body>
