@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const nome = {
+nome:'denner',
+age:29,
+country:true,
+  class:{
+    school01:'first',
+    school02:'second'
+  }
+}
+
+console.log(nome)
+let str_json = {"nome":"denner","age":29,"country":true,"class":{"school01":"first","school02":"second"}}
+
+let s_jason=JSON.stringify(nome)
+console.log(s_jason)
+
+let o_jason=JSON.parse(s_jason)
+
+console.log(o_jason)
+
+    </script>
+</body>
+</html>
