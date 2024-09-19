@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const mapas1 = new WeakMap()
+const mapas2 = new WeakMap()
+const mapas3 = new WeakMap()
+
+const n1 = {}
+const n2 = function (){}
+const n3 = window
+
+
+
+console.log(mapas3.set(n3,n2))
+console.log(mapas2.set(n1,n2))
+console.log(mapas1.set(n1,'hj'))
+
+
+
+    </script>
+</body>
+</html>
