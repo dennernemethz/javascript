@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="res"></div>
+    <button id="btn">click</button>
+    <script>
+        let res = window.document.querySelector('#res')
+        let btn = window.document.querySelector('#btn')
+        
+
+        btn.addEventListener('click', function () {
+            let num01 = 10 
+            res.textContent = Math.floor(Math.random()*num01)
+          })
+      
+    
+    </script>
+</body>
+</html>
