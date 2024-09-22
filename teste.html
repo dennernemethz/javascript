@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+const animal = {
+    jump:true,
+    name:'umbrella',
+    years:4,
+    color:'dark',
+    con(){
+    alert('walking at night in my work')
+}
+
+}
+const dog ={
+    name01:'nose',
+    __proto__: animal
+}
+const umbrella = {
+name:'rabbit',
+__proto__:dog,
+
+}
+
+
+umbrella.con()
+console.log(umbrella.name01)
+
+    </script>
 </body>
 </html>
