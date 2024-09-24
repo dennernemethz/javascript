@@ -6,30 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="btn">click</button>
+    <div id="arra"></div>
     <script>
-const animal = {
-    jump:true,
-    name:'umbrella',
-    years:4,
-    color:'dark',
-    con(){
-    alert('walking at night in my work')
-}
+let btn = window.document.querySelector('#btn')
+let arra = window.document.querySelector('#arra')
 
-}
-const dog ={
-    name01:'nose',
-    __proto__: animal
-}
-const umbrella = {
-name:'rabbit',
-__proto__:dog,
+let arr = [0,1,2,3,4,5,6,7,8,9]
 
-}
+btn.addEventListener('click', function () {
 
+let res = arr [Math.floor(Math.random()* 9)]
 
-umbrella.con()
-console.log(umbrella.name01)
+arra.innerHTML = res
+  })
+
 
     </script>
 </body>
