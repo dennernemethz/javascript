@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="confirm">confirm</button>
+    <button class="alert">alert</button>
+    <button class="prompt">prompt</button>
+    <script>
+const btn_confirm = window.document.querySelector('.confirm')
+const btn_alert = window.document.querySelector('.alert')
+const btn_prompt = window.document.querySelector('.prompt')
+
+
+
+
+btn_confirm.addEventListener('click',function(){
+let res = window.confirm('botao de interagir')
+if(res == true){
+    console.log('Botao de OK')
+}else{
+    console.log('botao de cancel')
+}
+
+})
+
+btn_alert.addEventListener('click',function(){
+window.alert('uma janela de alerta')
+    
+})
+btn_prompt.addEventListener('click',function(){
+
+    window.prompt('uma janela de interação com o prompt')
+})
+
+    </script>
+</body>
+</html>
