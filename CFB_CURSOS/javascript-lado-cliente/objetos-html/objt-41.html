@@ -20,6 +20,8 @@ let objetos = window.document.querySelector('#obj')
             
         }
 computador['mouse']='rgb'
+computador.monitor='22pol' // adc propriedade ao objt 
+
         const computadores = [
             {
                 nome01:'dennernemeth',
@@ -40,18 +42,19 @@ computador['mouse']='rgb'
 
 
 
-objetos.innerHTML = JSON.stringify(computador)
+objetos.innerHTML = JSON.stringify(computador)// transformando obj em string para mostrar na pagina
 
 
 computadores.forEach((c)=>{
-const div = document.createElement('div')
-div.innerHTML = c.nome01
-div.setAttribute('class','computer')
+const div = document.createElement('div') // criando um elemento para mostrar na pagina no caso div
+div.innerHTML = c.nome01 // com o parametro "c" buscando as propriedades com o array 'computadores'
+div.setAttribute('class','computer') // class para modificar na css com a propriedade computer 
 
 })
 
 
-console.log(computador['mouse'])
+console.log(computador['mouse']) // usando dentro de console.log o obj declarado 'computador' mais a propriedade ['mouse'] resultado = 'rgb'
+console.log(computador['monitor']) // mesma coisa so muda a forma em que voce declara a propriedade ao obj
 
         //console.log(typeof(computador))
         //console.log(typeof(computadores))
