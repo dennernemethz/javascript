@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="obj"></div>
+    <script>
+let objetos = window.document.querySelector('#obj')
+
+        const computador = {
+            name:'denner',
+            sobre:'nemeth',
+            info:function (){
+                console.log(`nome: ${name}`)
+                console.log(`sobre: ${sobre}`)
+            }
+            
+        }
+computador['mouse']='rgb'
+        const computadores = [
+            {
+                nome01:'dennernemeth',
+                nome01:'dequeiroz',
+
+            },
+            {
+                nome02:'dennernemeth',
+                nome02:'dequeiroz',
+
+            },
+            {
+                nome03:'dennernemeth',
+                nome03:'dequeiroz',
+
+            }
+        ]
+
+
+
+objetos.innerHTML = JSON.stringify(computador)
+
+
+computadores.forEach((c)=>{
+const div = document.createElement('div')
+div.innerHTML = c.nome01
+div.setAttribute('class','computer')
+
+})
+
+
+console.log(computador['mouse'])
+
+        //console.log(typeof(computador))
+        //console.log(typeof(computadores))
+    </script>
+</body>
+</html>
