@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Buscando os objts dentro do array com o forEach</h3>
+    <div id="res"></div>
+    <script>
+let res = window.document.querySelector('#res')
+
+const computadores = [
+{    cpu01:'31',
+    monitor01:'12pol',
+    memoria02:'1T'
+},
+
+
+{    
+    cpu02:'32',
+    monitor02:'22pol',
+    memoria02:'2T'
+},
+{   
+    cpu03:'33',
+    monitor03:'23pol',
+    memoria03:'3T'
+},]
+
+
+computadores.forEach((c)=>{
+const div = document.createElement('div')
+div.innerHTML= c.cpu01 + '<br/>' + c.memoria02 + '<br/>' + c.monitor03
+res.appendChild(div)
+
+})
+
+</script>
+</body>
+</html>

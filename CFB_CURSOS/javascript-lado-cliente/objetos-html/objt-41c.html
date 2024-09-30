@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Parte 2 criando mais objetos e transformando em string com Json</h3>
+
+    <div id="res"></div>
+    <script>
+
+let res = window.document.querySelector('#res')
+
+
+const computador = {
+    cpu:'33',
+    monitor:'22pol',
+    memoria:'1T',
+ }
+
+const computadores = [
+{    cpu:'33',
+    monitor:'22pol',
+    memoria:'1T'
+},
+
+
+{    
+    cpu:'33',
+    monitor:'22pol',
+    memoria:'1T'
+},
+{   
+    cpu:'33',
+    monitor:'22pol',
+    memoria:'1T'
+},]
+
+res.innerHTML=JSON.stringify(computadores)
+
+console.log(computs)
+console.log(info())
+
+
+    </script>
+</body>
+</html>
