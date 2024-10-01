@@ -6,15 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="res"></div>
     <script>
-        const pessoas ={
-            pessoa1:'branca',
-            pessoa2:'branca'
-        }
-        pessoas['pessoa3']='preta'
+let res = window.document.querySelector('#res')
 
-        
-        consoe.log(pessoas['pessoa3'])
+const num = {
+   num01:'ten',
+    num02:'twelve'
+
+}
+
+
+res.innerHTML = typeof(num)
+
+let I_json=JSON.stringify(num)
+
+let O_json=JSON.parse(I_json)
+
+res.innerHTML=O_json
+
+
+
+
     </script>
 </body>
 </html>
