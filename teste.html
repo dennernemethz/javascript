@@ -6,28 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="res"></div>
     <script>
-let res = window.document.querySelector('#res')
-
-const num = {
-   num01:'ten',
-    num02:'twelve'
-
-}
-
-
-res.innerHTML = typeof(num)
-
-let I_json=JSON.stringify(num)
-
-let O_json=JSON.parse(I_json)
-
-res.innerHTML=O_json
-
-
-
-
+        let nun = 4
+        if(nun < 20){
+            throw new Error ('SINTO MUITO, POUCA QUANTIDADE');   
+        }else {
+            throw new  Error ('Numero Grande')
+        }
     </script>
 </body>
 </html>
