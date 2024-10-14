@@ -8,10 +8,10 @@ class jogador {
 
 let jogadores = [new jogador('j1'),new jogador('j2'),new jogador('j1'),new jogador('j3'),new jogador('j2'),]
 
-let s1 = jogadores [0]
+let s1 = jogadores [0].id
 
 
-jogadores=jogadores.map((j)=>{
+jogadores=jogadores.filter((j)=>{
 return j.id!='j1'
 })
 
