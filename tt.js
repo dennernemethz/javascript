@@ -1,22 +1,18 @@
-class nomes {
-    constructor(n){
-        this.n=n
+class nom {
+    constructor(g){
+        this.g=g
         this.id=Symbol()
     }
 }
 
 
-
-let ns = [new nomes('js0'),new nomes('js0'),new nomes('js1'),new nomes('js1'),new nomes('js2'),]
-
+let jogs = [new nom ('jj1'), new nom ('jj2'), new nom ('jj3'), new nom ('jj4')]
 
 
-let s1 = [1].id
+let s1  = jogs[1].id
 
-
-let n=ns.filter((j)=>{
-    j.id!='js1'
+jogs=jogs.filter((j)=>{
+    return j.id!= s1
 })
 
-console.log(ns)
-console.log(n)
+console.log(jogs)
