@@ -1,24 +1,8 @@
-const nom = Symbol('nome')
-
-const number = Symbol('nome')
-
-const corUniforme = Symbol('nome')
+const num = Symbol('nome')
+const num1 = Symbol.for('nome')
 
 
-const player1 = {
-    nom:'j1',
-    Number:10,
-    corUniforme:'blue'
-}
-
-const player2 = {
-      nm:'j2',
-      Number:20,
-      color:'red'
-}
+console.log(num.description)
+console.log(Symbol.keyFor(num1)) 
 
 
-
-for(p in player1){
-    console.log(p)
-}
