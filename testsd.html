@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="tt.js"></script>
+    <button class="bt"> click </button>
+    <script>
+let btn = window.document.querySelector('.bt')
+
+
+
+
+btn.addEventListener('click', function(){
+    
+    let colection = [1,2,3,4,5,6,7,8,9,10]
+
+    const doubleColections = colection.map( num => num * 3)
+    console.log(doubleColections)
+})
+
+
+
+
+    </script>
 </body>
 </html>
