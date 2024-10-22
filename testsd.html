@@ -6,21 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="bt"> click </button>
+<div id="res"></div>
+
     <script>
-let btn = window.document.querySelector('.bt')
 
 
 
 
-btn.addEventListener('click', function(){
-    
-    let colection = [1,2,3,4,5,6,7,8,9,10]
+let res = window.document.querySelector('#res')
 
-    const doubleColections = colection.map( num => num * 3)
-    console.log(doubleColections)
+setInterval(function(){
+    let r = new Date();
+    res.innerHTML= r.toLocaleDateString();
 })
-
 
 
 
