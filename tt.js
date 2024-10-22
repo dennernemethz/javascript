@@ -1,8 +1,3 @@
-const num = Symbol('nome')
-const num1 = Symbol.for('nome')
-
+const num = Symbol('num')
 
 console.log(num.description)
-console.log(Symbol.keyFor(num1)) 
-
-
