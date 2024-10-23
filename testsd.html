@@ -4,48 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-body{
-    background-color: lightblue;
-    margin: 200px auto;
-    text-align: center;
-    
-}
-
-#banner{
-    font-size: 100px;
-    text-transform: uppercase;
-    background-color: rgb(224, 106, 106);
-    color: white;
-    height: 200px;
-    width: 80%;
-    margin: 0 auto;
-}
-#clock{
-    background-color: black;
-    font-size: 250px;
-    color:white;
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-    </style>
 </head>
 <body>
-
-<div id="banner"><span>Your local time</span></div>
-<div id="clock"></div>
-
-    <script>
-
-let clock = window.document.querySelector('#clock')
-
-setInterval(function(){
-    let r = new Date();
-    clock.innerHTML = r.toLocaleTimeString();
-})
-    </script>
+    <script src="tt2.js"></script>
 </body>
 </html>
