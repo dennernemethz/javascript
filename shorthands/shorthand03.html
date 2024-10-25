@@ -9,20 +9,16 @@
 
     <div class="res"></div>
     <script>
-        
+
 let res = window.document.querySelector('.res')
 
         let arr1 = [1,2]
         let arr2 = [3,4]
 
-        let combined = arr1.concat(arr2)
+ 
+        let concate = [...arr1, ...arr2]
 
-    res.innerHTML = combined
-
-    let combine = [...arr1, ...arr2]
-
-    res.innerHTML = combine
-
+        console.log(concate)
     </script>
 </body>
 </html>
