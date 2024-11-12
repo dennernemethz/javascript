@@ -6,18 +6,31 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
 
-function par (metros,centimetros,milimetros){
-    this.metros=metros
-    this.centimetros=centimetros
-    this.milimetros=milimetros
 
+let name01 = new String ('nome')
+let name02 = new String ('nome')
+let name03 = new String ('NOME')
+
+console.log(name01.localeCompare(name02))
+
+console.log(name01.toLocaleUpperCase())
+
+console.log(name03.toLocaleLowerCase())
+
+
+
+
+if (name01 === false ){
+    console.log('comparação feita e são iguais')
+}else {
+    console.log('comparação feita e strings são diferetes ')
 }
-let pares = new par(100,200,300)
 
-console.log(pares)//  reultado metros100, centimetros 200, milimetros 300
 
     </script>
+
 </body>
 </html>
