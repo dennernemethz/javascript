@@ -6,22 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <script>
 
-let x =  1 
-
-x = ( x++,x)
-console.log(x)
-
-let z = 10 
+let sum = 0 
 
 
+let swith = [1,2,3,4].map((x) => ((sum += x), x*x))
 
-
-
-
-
-
+console.log(swith)
+console.log(sum)
     </script>
 </body>
 </html>
