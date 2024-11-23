@@ -7,16 +7,13 @@
 </head>
 <body>
 
-
+<h1 id="c">clicou</h1>
     <script>
+let ha = window.document.querySelector('#c')
 
-let sum = 0 
-
-
-let swith = [1,2,3,4].map((x) => ((sum += x), x*x))
-
-console.log(swith)
-console.log(sum)
+ha.addEventListener('click', function()  {
+    alert('ouch, you clicked on me, stop with this lol ')
+})
     </script>
 </body>
 </html>
