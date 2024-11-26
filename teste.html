@@ -6,12 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-
-<h1 id="c">clicou</h1>
     <script>
-let randomNumber = Math.floor(Math.random() ) + 1  // 1
+let n = new String('Denner Nemeth de Queiroz')
 
-console.log(randomNumber)
+console.log(n)
+
+console.log(n.search('Denner'))
+console.log(n.search(/denner/i))
+
+console.log(n.match('e'))
+console.log(n.match(/e/g))
+
+console.log(n.replace('Nemeth','Teste'))
+console.log(n.replace(/e/ig,'teste'))
     </script>
 </body>
 </html>
