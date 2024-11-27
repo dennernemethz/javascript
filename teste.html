@@ -6,14 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-
-<h1 id="c">clicou</h1>
     <script>
-let ha = window.document.querySelector('#c')
 
-ha.addEventListener('click', function()  {
-    alert('ouch, you clicked on me, stop with this lol ')
-})
+let nome = new String('Denner Nemeth de Queiroz')
+
+console.log(nome.search('Nemeth'))
+console.log(nome.match('e'))
+console.log(nome.replace('Nemeth', 'Teste'))
+
+
+console.log(nome.match(/e/g))
+console.log(nome.replace(/e/ig,'Teste'))
     </script>
 </body>
 </html>
