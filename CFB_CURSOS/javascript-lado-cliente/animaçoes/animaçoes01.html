@@ -46,29 +46,31 @@ button{
 
     <script>
 
-let carro = window.document.querySelector('.carro')
-let btn_esquerda = window.document.querySelector('.btn_esquerda')
-let btn_direita = window.document.querySelector('btn_direita')
+let carro = window.document.querySelector('#carro')
+let btn_esquerda = window.document.querySelector('#btn_esquerda')
+let btn_direita = window.document.querySelector('#btn_direita')
 
 
 
 const init= ()=>{
 
-    carro.style.position='position:relative;left:0px'
+    carro.style='position:relative;left:0px'
 }
 
 
-btn_esquerda.addEventListener('click',()=>{
+btn_esquerda.addEventListener('click', function(){
+
 
 carro.style.left=parseInt(carro.style.left) - 10 + 'px'
 
 })
 
+
 btn_direita.addEventListener('click',()=>{
     let pos =parseInt(carro.style.left)
     console.log(pos)
-    pos+-10
-    carro.style.position=`position:relative;left:$(pos)px`
+    pos+=10
+    carro.style=`position:relative;left:${pos}px`
 })
 
 
