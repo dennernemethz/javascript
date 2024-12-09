@@ -8,15 +8,23 @@
 <body>
     <script>
 
-class num {
-    constructor(num1,num2){
-    this.n1 = num1
-    this.n2 = num2
-    }
+function cont(nome,middle) {
+    this.nome=nome
+    this.sobre=middle
+this.getNome=function(){
+    return this.nome
+}
+this.getSobre=function(){
+    return this.sobre
+}
 }
 
 
+let c1 = new cont ('denner nemeth',10)
+let c2 = new cont ('sobre','nemeth')
 
+console.log(c1.nome)
+console.log(c2.sobre)
     </script>
 </body>
 </html>
