@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        main{
+            background-color: darkgray;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h3>manipulação de DOM </h3>
+
+    <main>
+        <div id="caixa" class="caixa">
+            <div id="c1" class="cursos">10</div>
+            <div id="c2" class="cursos">100</div>
+            <div id="c3" class="cursos">1000</div>
+            <div id="c4" class="cursos">10000</div>
+        </div>
+    </main>
+
+
     <script>
+let caixa = window.document.querySelector('#caixa')
 
-class num {
-    constructor(num1,num2){
-    this.n1 = num1
-    this.n2 = num2
-    }
-}
+const newCont = document.createElement('div')
 
+caixa.appendChild(newCont)
+
+newCont.innerHTML = 1000000
 
 
     </script>
