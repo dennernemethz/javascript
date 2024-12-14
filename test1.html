@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        main{
-            background-color: darkblue;
-            height: 300px;
-            width: 300px;
-            color: wheat;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <main>
-        <h3 id="mani">Hi this is title of my front page</h3>
-    </main>
-    
+    <h3>btn and arrays testing </h3>
+<button id="msg">clicar</button>
+<div id="j"></div>
+    <script>
+
+let num = [1,2,3,4,5,6,7,8,9,10]
+
+const newNum = num.filter((a)=>{
+    if(a >= 3){
+        return a
+    }
+})
+
+let btn = window.document.querySelector('#msg')
+let j = window.document.querySelector('#j')
+
+btn.addEventListener('click', function(){
+j.innerHTML = newNum
+})
 
 
-<script>
-let mani = window.document.querySelector('#mani')
 
-
-const newCont = document.createElement('h4')
-mani.appendChild(newCont)
-
-newCont.innerHTML = 'hi my second text inside of h3 '
-
-
-
-
-
-</script>
-
-
+    </script>
 </body>
 </html>
