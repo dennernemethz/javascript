@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+    background-color: lightblue;
+    margin: 200px auto;
+    text-align: center;
+    
+}
+
+#banner{
+    font-size: 100px;
+    text-transform: uppercase;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+#clock{
+    background-color: #ff0000;
+    font-size: 250px;
+    color:#ffffff;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+    </style>
 </head>
 <body>
+    <div id="banner" ><span>your local time </span></div>
+    <div id="clock"></div>
     <script>
-
-let nuns = [0,1,2,3,4,5,6,7,8,9,10]
-
-let arr= nuns[Math.floor(nuns * Math.random()) ]
-
-console.log(arr)
+let clock =  window.document.querySelector('#clock')
 
 
-
-
-let x  = 10
-{
-    let x = 15
-}
-
-
-if(x == 10){
-    console.log(x)
-}else{
-    console.log(x)
-}
-
+setInterval(function () {
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString()
+  }, 1000)
     </script>
 </body>
 </html>
