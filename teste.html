@@ -4,44 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-    background-color: lightblue;
-    margin: 200px auto;
-    text-align: center;
-    
-}
-
-#banner{
-    font-size: 100px;
-    text-transform: uppercase;
-    background-color: rgb(253, 253, 253);
-    color: rgb(0, 0, 0);
-    height: 200px;
-    width: 80%;
-    margin: 0 auto;
-}
-#clock{
-    background-color: #ff0000;
-    font-size: 250px;
-    color:#ffffff;
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
-}
-    </style>
 </head>
 <body>
-    <div id="banner" ><span>your local time </span></div>
-    <div id="clock"></div>
     <script>
-let clock =  window.document.querySelector('#clock')
+
+let num = [1,2,3,4,5,6,7,8,9]
 
 
-setInterval(function () {
-    let date = new Date();
-    clock.innerHTML = date.toLocaleTimeString()
-  }, 1000)
+let num1 = num.filter((a)=>{
+if(a >=2){
+    return a
+}
+})
+
+
+console.log(num1)
+
     </script>
 </body>
 </html>
