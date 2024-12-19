@@ -6,21 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>iterator with number</h3>
     <script>
 
-
-let x  = 10
-{
-    let x = 15
-}
+let num1 = [10,20,4]
 
 
-if(x == 10){
-    console.log(x)
-}else{
-    console.log(x)
-}
+let num=num1[Symbol.iterator]()
 
-   </script> 
+
+console.log(num1)
+console.log(num.next())
+console.log(num.next())
+
+    </script>
 </body>
 </html>
