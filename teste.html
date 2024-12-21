@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <button class="btn">clicar</button>
+    <div id="msg"></div>
     <script>
+let btn = window.document.querySelector('.btn')
+let msg = window.document.querySelector('#msg')
 
-let num = [1,2,3,4,5,6,7,8,9]
 
-
+<<<<<<< HEAD
 let num1 = num.filter((a)=>{
 if(a >=7){
     return a
 }
+=======
+
+
+
+btn.addEventListener('click', function(){
+let nuns = [1,2,3,4,5,6,7,8,9,10]
+
+let arr = nuns  [Math.floor(Math.random) *10 ]
+
+msg.innerHTML = arr
+>>>>>>> 700df62dbb1bd250e68f6a8ab9c259bdb399bdbf
 })
 
 
-console.log(num1)
+
+
+
 
     </script>
 </body>
