@@ -7,7 +7,17 @@
 </head>
 <body>
     <script>
+let sog ={
+    type:'real',
+    displayType(){
+        console.log(this.type)
+    }
+}
+let res = {}
 
+sog.__proto__ = sog
+
+console.log(sog.type)
 
     </script>
 </body>
