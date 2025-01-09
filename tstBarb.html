@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-#msg{
-    width: 500px;
-    background-color: black;
-    color: aqua;
-    height: 100px;
-    margin: auto;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-
-    </style>
 </head>
 <body>
-    <div id="msg"></div>
-    <Script>
-
-let nomeRes = window.document.querySelector('#msg')
-
-let n1 = prompt('Seu nome ')
-
-nomeRes.innerHTML = 'prazer em conhecer voce !! ' + n1
+    <script>
 
 
 
 
+let n1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
-    </Script>
+let arr = [Math.floor(Math.random()* 24)]
+
+console.log(arr)
+
+
+if (arr < 12){
+    console.log('bom dia')
+}else{
+    console.log('boa tarde')
+}
+
+    </script>
 </body>
 </html>
