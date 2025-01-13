@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="res"></div>
+    <button id="msg">gerar</button>
+    <script>
+let btn = window.document.querySelector('#msg')
+let res = window.document.querySelector('.res')
+
+
+btn.addEventListener('click', function(){
+    function geradorDeTabuada(num){
+        for(let i = 1; i <=10; i++){
+           console.log(`${num} x ${i} = ${num * i}`)
+        }
+    }
     
+    let numero = 3
+    geradorDeTabuada(numero)
+})
+
+
+
+
+
+
+    </script>
 </body>
 </html>
