@@ -9,17 +9,16 @@
   <script>
 
 
-function num (){
 try {
-  codigo
-} catch (error) {
-  console.log(`o codigo que esta aparecendo é : \n \n ${error}`)
+  let num = 10 
+  let res = num / 0
+  console.log(res)
+} catch (ir) {
+  console.log('ocorreu um erro :' + ir.message)
+}finally{
+  console.log('esse bloco sempre será executado')
 }
-
-}
-num( )
-
-
+console.log('fim do processo')
 
 
 
