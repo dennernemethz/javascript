@@ -7,19 +7,16 @@
 </head>
 <body>
     <script>
+let age = prompt('your age', 18)
 
-        
-let age = prompt ('age',17)
 
-if (age < 14) {
-    message = 'hi'
-} else if ( age  > 18 ) {
-    message ='adult'
-}else if ( age >30){
-    message = 'oow'
-}
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
 
-console.log(message)
+alert( message );
+
 
     </script>
 </body>
