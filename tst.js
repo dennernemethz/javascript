@@ -1,5 +1,8 @@
-let n1 = 1
+let n1 = 1 
+let n2 =  4
 
-n1 = ''
+let res  = n1 + n2 
 
-console.log(typeof(n1))
+let r = res > 18 ? true : false;
+
+console.log(r)
