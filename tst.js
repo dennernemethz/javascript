@@ -1,8 +1,8 @@
-let n1 = 1 
-let n2 =  4
+let a = true 
+let b = false 
+let c = true
 
-let res  = n1 + n2 
 
-let r = res > 18 ? true : false;
+let r = a == c
 
 console.log(r)
