@@ -7,8 +7,15 @@
 </head>
 <body>
     <script>
+let age = prompt('your age', 18)
 
-let res = condition ? value1 : value2
+
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+alert( message );
 
 
     </script>
