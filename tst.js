@@ -1,8 +1,6 @@
-let a = true 
-let b = false 
-let c = true
+let firstLop = 0
 
-
-let r = a == c
-
-console.log(r)
+while(firstLop <= 10){
+    console.log(firstLop)
+    firstLop++
+}
