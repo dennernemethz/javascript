@@ -1,6 +1,5 @@
-let firstLop = 0
-
-while(firstLop <= 10){
-    console.log(firstLop)
-    firstLop++
+let num = 1 
+while(num <= 100){
+    console.log(`multiplicacão de ${num} * ${num} `)
+    num ++
 }
