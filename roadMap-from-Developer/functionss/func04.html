@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+let myFriday= 'good'
+
+
+function showMyFryday(){
+    let myFriday = 'baad' // declarado um local da variavel 
+
+    let message ='hello' + myFriday
+}
+
+// a função vai criar e usar isso proprio myFriday
+showMyFryday()
+
+console.log(myFriday) // good, inalterado, a função não acessou a outra variavel => 'good' not 'baad'
+
+
+
+
+
+
+ </script>   
+</body>
+</html>
