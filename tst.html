@@ -8,17 +8,22 @@
 <body>
     <script>
 
-function qlq(a){
 
-    if( a === undefined){
-        a = 'esta correto'
-    }else{
-        a ='não esta correto '
+function ret(age){
+    if(age == 10){
+        return true
+    }else {
+        return confirm ('do you have permission from your parents ?')
     }
-    console.log(a)
 }
 
-qlq(123)
+let age = prompt(' how old are you ?' + 18)
+
+if (ret(age)){
+    alert('acess granted')
+}else{
+    alert('acess denied')
+}
     </script>
 </body>
 </html>
