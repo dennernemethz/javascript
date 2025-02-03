@@ -6,27 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+  <h3>funçoes com parametrros indefindos condiçoes parte 1</h3>
     <script>
 
+function showMe(a,b) {  
 
-
-
-
-function soma(a,b){
-
-alert( a + b)
-
-if(soma > 40 ){
-  
-  console.log('essa soma deu mais ou igual a quarenta ')
-}else
-{
-  console.log('essa soma deu menos que quarenta ')
+if(a === undefined){
+  a = 'mensagem vazia'
 }
 
+console.log(a)
 }
 
-soma(20,30)
+showMe() // vai sair mensagem vazia pois não definimos o parametro em 'showMe()'
 
 
 
