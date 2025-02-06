@@ -1,5 +1,13 @@
-let num = 1
+let somando = 1 
 
-while (num >= 10){
-    console.log(`o numero é ${num}`)
+let subtraindo = 10 
+
+while(somando <=  10 ){
+    console.log(`somando ${somando}`)
+    somando++
+}
+
+while( subtraindo >= 1){
+    console.log(`subtraindo ${subtraindo}`)
+    subtraindo--
 }
