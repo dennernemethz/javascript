@@ -1,8 +1,9 @@
-function soma(n1,n2){
-    let res 
-    res = n1 + n2
-    return res
-}
+function s() {
+    console.log('hi')
+  }
 
-let result = soma(1,6)
-console.log(result)
+  let func = s
+
+
+  func()
+  s()
