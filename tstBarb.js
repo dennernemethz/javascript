@@ -1,8 +1,8 @@
-function gerationTa(num){
-    for ( let i = 1; i <=10; i ++){
-        console.log(`${num} x ${i} = ${num * i} `)
-    }
-    
+function ar(){
+    console.log('hi')
 }
-let numero = 3
-    gerationTa(numero)
+let ar2 = ar
+
+ar()
+ar2()
+
