@@ -6,14 +6,25 @@
   <title>Document</title>
 </head>
 <body>
+  <h3>chamados funções de retorno de chamada ou apenas retornos de chamada.</h3>
   <script>
 
 
 function askMe(question,yes,no){
-  
+  if (question()) yes()
+  else no()
+}
+
+function showOk(){
+  alert('you agreed')
+}
+
+function showCancel(){
+  alert('you canceled')
 }
 
 
+askMe()('do you agree?', showOk, showCancel)
 
 
   </script>
