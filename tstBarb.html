@@ -4,29 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+
+  </style>
 </head>
 <body>
-  <h3>chamados funções de retorno de chamada ou apenas retornos de chamada.</h3>
+  <div id="msg"></div>
   <script>
 
+let msg = window.document.getElementById('msg')
 
-function askMe(question,yes,no){
-  if (question()) yes()
-  else no()
-}
 
-function showOk(){
-  alert('you agreed')
-}
 
-function showCancel(){
-  alert('you canceled')
+function hi(...valores){
+  return valores.length
 }
 
 
-askMe()('do you agree?', showOk, showCancel)
-
-
+msg.innerHTML = hi(1,2,3,5,6,7,8,9,0)
   </script>
 </body>
 </html>
