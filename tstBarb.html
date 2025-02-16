@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+
+  </style>
 </head>
 <body>
+  <div id="msg"></div>
   <script>
 
+let msg = window.document.getElementById('msg')
 
-function b (k){
-  if (k === Number)
-    return 'isso e um numero'
-  else
-    return 'não é um numero '
-  
+
+let f = function (n1,n2){ // função anonima com variavel
+  return n1 + n2
 }
 
-console.log(b(4))
 
 
+msg.innerHTML = f(2,3) // 5
 
 
 
