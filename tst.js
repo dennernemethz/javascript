@@ -1,7 +1,9 @@
-let nme = (n)=>{
-  return n
-}
+function s() {
+    console.log('hi')
+  }
+
+  let func = s
 
 
-
-console.log(nme('denner'))
+  func()
+  s()
