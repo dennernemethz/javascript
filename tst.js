@@ -1,9 +1,5 @@
-function s() {
-    console.log('hi')
+function s(a1,a2) {
+    return a1 + a2
   }
 
-  let func = s
-
-
-  func()
-  s()
+  console.log(s(1,5))
