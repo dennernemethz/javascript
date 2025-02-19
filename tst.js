@@ -1,9 +1,3 @@
-function s() {
-    console.log('hi')
-  }
-
-  let func = s
-
-
-  func()
-  s()
+let colors = (red,blue)=>{
+  return 
+}
