@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>funçoes guardas em javascript </h3>
+    
+    <script>
+
+function* cores (){
+    yield'red'
+    yield'blue'
+
+}
+
+const itc = cores()
+
+console.log(itc.next().value)// red
+console.log(itc.next().value)//blue
+console.log(itx.next().value)//undefined
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
