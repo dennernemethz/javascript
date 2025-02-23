@@ -8,21 +8,23 @@
 <body>
     <script>
 
-let idades = [12,34,56,2,88,9,12,18]
+let idades = [12,34,11,7,18,32,22]
 
 
-let maior=idades.filter((v)=>{
 
-    if(v > 18)
-    return v
-})
-let menor=idades.filter((v)=>{
+let maior=idades.filter((v,i,a)=>{
 
-if(v < 18)
-return v
+if( v > 18)
+
+ return v
+
+
 })
 
 console.log(maior)
+
+
+
 
 
     </script>
