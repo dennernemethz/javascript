@@ -7,21 +7,26 @@
 </head>
 <body>
     <script>
+let idade = [ 12,23,15,76,18,11,62,32]
 
+let maior=idade.filter((v,i,a)=>{   // trabalhammos com v de valor, i de indice e a de array
 
-function soma1(a1,a2) {
-    return a1+a2
-  }
+    if (v >= 18)
+    return v
 
-let somas = soma1
+})
 
-console.log(somas(11,3))//14
+let menor =idade.filter((v,i,a)=>{
 
-console.log(soma1(23,3))// 26
+if(v<= 18){
+    return v
+}
 
+})
 
-
-
+console.log(maior)
+console.log(idade)
+console.log(menor)
     </script>
 </body>
 </html>
