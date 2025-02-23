@@ -6,18 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h3>funçoes guardas em javascript </h3>
+    
     <script>
 
+function* cores (){
+    yield'red'
+    yield'blue'
 
-function soma1(a1,a2) {
-    return a1+a2
-  }
+}
 
-let somas = soma1
+const itc = cores()
 
-console.log(somas(11,3))//14
+console.log(itc.next().value)// red
+console.log(itc.next().value)//blue
+console.log(itx.next().value)//undefined
 
-console.log(soma1(23,3))// 26
+
+
 
 
 

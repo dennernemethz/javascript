@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-
-  </style>
 </head>
 <body>
-  <div id="msg"></div>
   <script>
 
-let msg = window.document.getElementById('msg')
 
+function aluno(nome,nota){
+  this.nome=nome
+  this.nota=nota
 
-let f = function (n1,n2){ // função anonima com variavel
-  return n1 + n2
+  this.dados_anonimous=function(){
+     setTimeout(() => {  //usando a correção com arrowFunction para usar os parametros nome e nota 
+                         // se caso nao usar arrowFunction vai sair como undefined  
+      this.nome=nome
+      this.nota=nota
+      console.log(this.nome)
+      console.log(this.nota)
+     }, 2000);
+  }
+  
 }
 
 
+let aluno01 = new aluno('Denner', 9)
 
-msg.innerHTML = f(2,3) // 5
+
+aluno.dados_anonimous()
+
 
 
 

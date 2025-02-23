@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+function* asks(){
+    const nome = yield 'whats your favorite color'
+    const colors = yield 'witch do you more like, black or white ?' 
+
+    return 'my favorite color is ' + nome + ' i like ' + colors
+}
+
+const itp = asks ()// primeira chamada
+
+console.log(itp.next().value)
+
+console.log(itp.next('red').value) // segunda chamada 
+console.log(itp.next('black').value)// terceira chamada
+
+
+
+
+    </script>
+</body>
+</html>
