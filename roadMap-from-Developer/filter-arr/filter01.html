@@ -8,22 +8,21 @@
 <body>
     <script>
 
-let aleatorios = [12,13,144,2156,6,8,0,12,18,22,34,54,30]
+let idades = [12,34,56,2,88,9,12,18]
 
 
+let maior=idades.filter((v)=>{
 
+    if(v > 18)
+    return v
+})
+let menor=idades.filter((v)=>{
 
-let maior=aleatorios.filter((a)=>{
-
-
-if(a > 20)
-return a
-
-
+if(v < 18)
+return v
 })
 
 console.log(maior)
-
 
 
     </script>
