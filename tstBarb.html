@@ -7,33 +7,17 @@
 </head>
 <body>
   <script>
+let nome  = {
+  name:'denner',
+  age:2,
 
-
-function aluno(nome,nota){
-  this.nome=nome
-  this.nota=nota
-
-  this.dados_anonimous=function(){
-     setTimeout(() => {  //usando a correção com arrowFunction para usar os parametros nome e nota 
-                         // se caso nao usar arrowFunction vai sair como undefined  
-      this.nome=nome
-      this.nota=nota
-      console.log(this.nome)
-      console.log(this.nota)
-     }, 2000);
+  hiYou(){
+    alert(this.age)
   }
-  
 }
 
 
-let aluno01 = new aluno('Denner', 9)
-
-
-aluno.dados_anonimous()
-
-
-
-
+nome.hiYou()
 
 
   </script>
