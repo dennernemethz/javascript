@@ -7,22 +7,15 @@
 </head>
 <body>
     <script>
- 
 
- let num = ' global'
+let obj = {
+    a:1,
+    b:2
+}
 
+let objcopy = Object.assign({}, obj)
 
- function globoN() {
-
-    num = 'lua'
-
-
-   }
-
-globoN()
-
-console.log(num) // lua 
-
+console.log(objcopy)// clonamos o objeto  resul : a:1, b:2
 
     </script>
 </body>

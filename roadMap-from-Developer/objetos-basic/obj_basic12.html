@@ -7,22 +7,25 @@
 </head>
 <body>
     <script>
- 
 
- let num = ' global'
+// Object.assign()
 
+const target = {
+    a:1,
+    b:2
+}
 
- function globoN() {
+const source = {
+ a:3,
+ b:4
 
-    num = 'lua'
+}
 
+const retornedTarget = Object.assign(target, source)
 
-   }
+console.log(target)
 
-globoN()
-
-console.log(num) // lua 
-
+console.log(source)
 
     </script>
 </body>
