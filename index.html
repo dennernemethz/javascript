@@ -8,14 +8,25 @@
 <body>
     <script>
 
-let newo = {
-    name:'denner',
-    age:29
+
+let n = {
+    name:'denner'
 }
 
-let chave = prompt('do you want ?', 'name') 
 
-console.log((newo[chave]))// denner 
+let permission1 = { canView:true }
+let permission2 = { canEdit:true } 
+
+Object.assign(n, permission1, permission2)
+
+
+console.log(n.name)
+
+console.log(n.canView)
+
+console.log(n.canEdit)
+
+
 
     </script>
 </body>
