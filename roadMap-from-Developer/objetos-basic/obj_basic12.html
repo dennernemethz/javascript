@@ -8,15 +8,24 @@
 <body>
     <script>
 
-let num = {
-user:'res',
-user1:'res1'
+// Object.assign()
+
+const target = {
+    a:1,
+    b:2
+}
+
+const source = {
+ a:3,
+ b:4
 
 }
 
-let key = 'res'
+const retornedTarget = Object.assign(target, source)
 
-console.log( key in num )
+console.log(target)
+
+console.log(source)
 
     </script>
 </body>

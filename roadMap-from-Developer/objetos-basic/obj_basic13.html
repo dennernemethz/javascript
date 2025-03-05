@@ -8,15 +8,14 @@
 <body>
     <script>
 
-let num = {
-user:'res',
-user1:'res1'
-
+let obj = {
+    a:1,
+    b:2
 }
 
-let key = 'res'
+let objcopy = Object.assign({}, obj)
 
-console.log( key in num )
+console.log(objcopy)// clonamos o objeto  resul : a:1, b:2
 
     </script>
 </body>

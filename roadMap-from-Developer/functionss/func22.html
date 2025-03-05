@@ -7,16 +7,22 @@
 </head>
 <body>
     <script>
+ 
 
-let num = {
-user:'res',
-user1:'res1'
+ let num = ' global'
 
-}
 
-let key = 'res'
+ function globoN() {
 
-console.log( key in num )
+    num = 'lua'
+
+
+   }
+
+globoN()
+
+console.log(num) // lua 
+
 
     </script>
 </body>
