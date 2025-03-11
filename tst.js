@@ -1,13 +1,9 @@
-let num = 'globo'
+let nomes = {
+    nome1:'denner',
+    nome2:'nemeth'
+}
 
-function numNum() {
 
-  num = 'local'
-
-
-  console.log(num)
-  }
-
-  numNum()
-
-  console.log(num)
+for (let int in nomes){
+    console.log(nomes[int])
+}
