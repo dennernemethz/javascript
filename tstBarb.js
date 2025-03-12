@@ -1,17 +1,15 @@
 let mercado = {
-
-    nomeProduto:'Manteiga',
-    quantidade:500,
-    compra: function (n){
+    produto:'celular',
+    quantidade:15,
+    cliente_compra:function(c){
         console.log(this)
-        if(n >= this.quantidade){
-            return 'bem maior'
+        if(c > this.quantidade){
+            return 'cliente comprou'
         }
-        this.quantidade = +n
+        this.quantidade =-c
     }
-
 }
 
 
-mercado.compra(502)
+mercado.cliente_compra(3)
 console.log(mercado)
