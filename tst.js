@@ -1,27 +1,22 @@
-let novo = [{
+let num = [{
     nome:'denner',
-    year:11,
-    occupation:'t.i'
+    idade:10
 },{
-    nome:'ana',
-    year:12,
-    occupation:'police'
-},
-{   nome:'junior',
-    year:13,
-    occupation:'fireman'
-},
-
-{
     nome:'joao',
-    year:14,
-    occupation:'gardner'
-}]
+    idade:11
+},{
+    nome:'maria',
+    idade:12
+},]
 
 
 
 
-for(let i = 0; i < novo.length; i ++){
-console.log(`o nome do funcionario ${novo[i].nome}, sua idade ${novo[i].year} e sua ocupação ${novo[i].occupation}`)
+
+for ( let ind = 0; ind < num.length; ind ++ ){
+
+console.log(`o nome é ${num[ind].nome}, sua idade é ${num[ind].idade}`)
+
+
 
 }
