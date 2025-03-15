@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function sum(n1,n2){
+    if (typeof n1 !== 'number' || typeof n2 !=='number'){
+        throw Error ('sum somente numeros')
+    }
+}
+
+
+let soma = ''
+
+try{
+    soma = sum(3,'a')
+} catch(e){
+    alert('erro')
+    console.log(e)   // o paramentro 'e', esta recebendo a condição do if se caso for verdadeira, se o try for verdadeiro
+    //  ele vai executar, caso contrario o cath vai puxar o if da function. 
+}
+
+    </script>
+</body>
+</html>
