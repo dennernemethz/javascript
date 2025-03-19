@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// escopo de variaveis 
+
+
+// usando o var vai dar certo dentro do escopo da funçao 
+function meuTeste(){
+    if(true){
+        var x =10
+    }
+    console.log(x) // 10   dentro do escopo
+}
+
+console.log(x)// erro pois ja esta fora do escopo 
+
+
+function meuTeste(){
+    if(true){
+        let x =10
+    }
+    console.log(x) // 1 erro // pois o let so fuciona dentro de um escopo por si, se colocar fora nocaso vai dar erro.
+}
+
+console.log(x)// erro 
+
+//
+
+    </script>
+</body>
+</html>
