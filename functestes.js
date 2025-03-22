@@ -7,7 +7,7 @@ function unit (){
 
 // funçao auto-invocavel é uma função anonima
 
-(function(){
+/*(function(){
     let initTest = true
     console.log('modal', initTest)
 
@@ -15,5 +15,16 @@ function unit (){
         console.log('js')
     }
     unit()
-}())()
+}())()*/
+
+
+
+//var units = true 
+
+(function(){
+    let init = true
+    console.log('verdade')
+}())
+
+
 
