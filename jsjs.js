@@ -1,10 +1,12 @@
-function multiplicar (){
+function somar (){
     console.log(arguments)
-    let total = 0 
-    for(let i = 0; i < arguments.length; i ++){
-        total += arguments[i]
+    let totalDoResultado = 0
+    for(let i = 0 ; i < arguments.length; i++){
+        totalDoResultado += arguments[i]
     }
-    return total
+    return totalDoResultado
 }
 
-console.log(multiplicar(1,4,5,2,5,6,78,3,))
+console.log(somar(123,4,1,3,4,65,7,7,3))
+console.log(somar(123,4,1,3,4,65,7))
+console.log(somar(31,7))
