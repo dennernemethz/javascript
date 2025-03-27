@@ -1,12 +1,9 @@
-function somar (){
+const somar = ()=>{
     console.log(arguments)
-    let totalDoResultado = 0
-    for(let i = 0 ; i < arguments.length; i++){
-        totalDoResultado += arguments[i]
+    let total = 0 
+    for(let i = 0; i < arguments.lenght; i ++){
+        total += arguments[i]
     }
-    return totalDoResultado
+    return total
 }
-
-console.log(somar(123,4,1,3,4,65,7,7,3))
-console.log(somar(123,4,1,3,4,65,7))
-console.log(somar(31,7))
+console.log(somar(1,2,3,4,5,6,7,8,98,4,3,3))
