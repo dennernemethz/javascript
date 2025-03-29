@@ -1,4 +1,6 @@
-(function(){
-    let num = 10
-    console.log(num)
-})()
+let somas  = function(){
+    let numb = 10 
+    return numb
+}
+
+console.log(somas.name) 
