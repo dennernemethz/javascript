@@ -1,6 +1,5 @@
-let somas  = function(){
-    let numb = 10 
-    return numb
-}
-
-console.log(somas.name) 
+function soma() { 
+    let num = 1 
+    return num 
+ }
+console.log(soma.name)
