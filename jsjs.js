@@ -1,6 +1,9 @@
-let fun = function () {
-  let n1 =20 
-  return n1
-  }
+function fn (cb){
+  console.log('qualquer coisa ')
+  console.log(typeof cb)
+  cb()
+}
 
-  console.log(fun.name)
+fn(function () {
+  console.log('função de callback')
+  })
