@@ -1,6 +1,8 @@
-let somas  = function(){
-    let numb = 10 
-    return numb
-}
-
-console.log(somas.name) 
+function fn(cb) {
+    console.log('all my life')
+    console.log(typeof cb)
+   
+  }
+fn(function(){
+console.log('callback function de cb ')
+})
