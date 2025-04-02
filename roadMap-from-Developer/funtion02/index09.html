@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fn(cb){
+            console.log('função passada pracallback')
+            console.log(typeof cb)
+            cb()
+        }
+  function callback(){
+
+    console.log('callback linha 2 ')
+  }
+
+  fn(callback)
+
+
+  const obj ={
+    callback
+  }
+
+  obj.callback() // vai ver o mesmo resultado ' callback linha 2 '
+    </script>
+</body>
+</html>
