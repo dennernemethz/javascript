@@ -1,18 +1,10 @@
-function fn(cb){
-  console.log('função passada pracallback')
-  console.log(typeof cb)
-  cb()
-}
-function callback(){
-
-console.log('callback linha 2 ')
+function col(n1){
+  return function (n2){
+    return n1 + n2
+  }
 }
 
-fn(callback)
+let function12 = col(5)
+let soma = function12(2)
 
-
-const obj ={
-    callback
-}
-
-obj.callback()
+console.log(soma )
