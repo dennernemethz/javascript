@@ -1,18 +1,18 @@
-function fn(cb){
-  console.log('função passada pracallback')
-  console.log(typeof cb)
-  cb()
-}
-function callback(){
-
-console.log('callback linha 2 ')
+function ch(parametro){
+  console.log('call back 1')
+  console.log( typeof parametro)
+  parametro()
 }
 
-fn(callback)
+function cx() {
+  console.log('call back 2')
+  }
+
+  ch(cx)
 
 
-const obj ={
-    callback
-}
+  const obj = {
+    cx
+  }
 
-obj.callback()
+  obj.cx
