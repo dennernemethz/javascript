@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
+// função retornada de uma variavel 
 
-function somar(){
-    console.log(arguments)
-    let total = 0
-    for(let i = 0 ; i < arguments.length; i ++){
-        total += arguments[i]
+
+function f1 (){
+    return function _f1(){
+        console.log('retornando funçãode uma variavel')
     }
-    return total
 }
-console.log(somar(1,2,3,4,5,6,7,3,6,7,2,4,5,3,2,4,6))// 
+
+let função1 = f1()
+função1()
+
 
     </script>
 </body>
