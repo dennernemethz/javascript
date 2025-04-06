@@ -1,18 +1,14 @@
-function ch(parametro){
-  console.log('call back 1')
-  console.log( typeof parametro)
-  parametro()
+const f1 = function (par1) {
+   console.log('função normal')
+   console.log(par1)
+   par1('a função daqui esta de callback')
 }
 
-function cx() {
-  console.log('call back 2')
-  }
 
-  ch(cx)
+const f2 = function(par2) {
+  console.log('função de call back')
+  console.log(par2)
+}
 
+f1(f2)
 
-  const obj = {
-    cx
-  }
-
-  obj.cx
