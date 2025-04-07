@@ -1,11 +1,12 @@
-function b(n1){
-    return function(n2){
-        return n1 + n2
-    }
+const f1  = function (pa1){
+    console.log('aqui e o primeiro call back ')
+    console.log(pa1)
+    pa1()
 }
 
-let num1 = b(20)
-let num2 = num1(15)
-let soma = num2
+const f2 = function (pa2) {
+   console.log('callback 2')
 
-console.log(soma)
+  }
+
+f1(f2)
