@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const f1 = function (parametro1){
+  console.log('isso aqui e a primeira função ')
+  console.log(parametro1)
+  parametro1('oi') // aqui dentro esta o retrorno da funçao2 dentro do parametro, isso se chama função de call back
+}
+
+const f2 = function (parametro2) { 
+  console.log('callback ')
+  console.log(parametro2)
+ }
+
+
+ f1(f2)
+
+
+
+
+    </script>
+</body>
+</html>

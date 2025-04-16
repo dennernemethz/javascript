@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<form action="#">
+<input type="text" name="text01" id="texto1" placeholder="name"><br>
+<input type="text" name="text02" id="texto2" placeholder="nome"> <!--  se colocarmos o 'readonly' dps do placeholder, vai desabilitar o campo de preenchimento -->
+
+</form>
+    <script>
+      let text01 = window.document.querySelector('#texto1')
+      let text02 = window.document.querySelector('#texto2')
+      text01.ariaValueText = 'denner'
+      console.log(text01.value)
+      text01.ariaDisabled = true
+    </script>
+</body>
+</html>
