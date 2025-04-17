@@ -1,12 +1,9 @@
-const f1  = function (pa1){
-    console.log('aqui e o primeiro call back ')
-    console.log(pa1)
-    pa1()
-}
+let nu = [1,2,3,4,5,6,'ola', false]
 
-const f2 = function (pa2) {
-   console.log('callback 2')
 
-  }
+let arr =  nu.filter( function(i){
+  console.log(i)
+  let h = i === 'num'
+})
 
-f1(f2)
+console.log(h)
