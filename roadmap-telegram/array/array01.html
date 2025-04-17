@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const arr = [1,2,3,45,'ola',true]
+
+let soNumero = arr.every( function (el) {
+    console.log(el)
+
+    return typeof el ===' number '
+  })
+
+
+  console.log(soNumero) // false, a propriedade every() verifica cada elemento dentro de um array se e verdadeiro, se caso ele encontrar pelo menos um que nao condiz com a condição ele vai retornar falso 
+
+
+    </script>
+</body>
+</html>
