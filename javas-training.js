@@ -1,11 +1,10 @@
-let nu = [1,2,3,4,5,6,'ola', false]
+let num = [1,2,3,45,6,7,8,9,10,7,3,9,0,7,4]
 
 
-let arr =  nu.some( function(i){
+let arr = num.every( function(el){
 
-  console.log(i)
-  return typeof i === 'number'
-  
+  console.log(el)
+  typeof el === 'number'
 })
 
 console.log(arr)
