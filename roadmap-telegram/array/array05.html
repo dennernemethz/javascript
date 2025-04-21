@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = [ 1,2,3,4,5,6,7,'ola', true]
+
+        const arr1 = num.filter(function (el, i, _arr) { // metodo filter() vai filtrar entre os elementos 
+        return typeof el === 'number' // return apenas os elementos de numeros 
+      })
+
+      alert(arr1)
+      alert(num)
+
+    </script>
+</body>
+</html>
