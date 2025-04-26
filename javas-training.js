@@ -1,7 +1,6 @@
-let n = [1,2]
+let n =[1]
+console.log(n)
 
-n.push(3,4,5)
-n.unshift(-1,0)
-
+n.length = 0
 
 console.log(n)
