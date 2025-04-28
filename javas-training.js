@@ -1,4 +1,5 @@
-let n = [1,2,3]
+let num = [ 1,2,3,4,5,6,7,54,12]
 
-n.
+console.log(typeof num.toString())
 
+console.log(n)
