@@ -1,5 +1,4 @@
-let num = [ 1,2,3,4,5,6,7,54,12]
-
-console.log(typeof num.toString())
+let n = [1,2,3,4]
 
 console.log(n)
+console.log( String(n) === '1,2,3,4,5') 
