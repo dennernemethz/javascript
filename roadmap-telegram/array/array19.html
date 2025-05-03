@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quasi magni? Odit quod, magnam quasi minima quisquam suscipit laborum magni temporibus! Vel officia temporibus consectetur soluta rem ratione similique deserunt?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed numquam quaerat ab. Labore assumenda, iste temporibus alias minus, illo sunt reiciendis repudiandae beatae eius vel reprehenderit quam nihil perspiciatis voluptatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos cumque nostrum odit ad atque, optio nemo sed harum nisi asperiores magnam sit blanditiis quod omnis, vitae ipsa repellat aperiam.</p>
+
+
+    <script>
+
+let paragrafos = window.document.querySelectorAll('p')
+
+paragrafos = Array.from(paragrafos)
+
+paragrafos.map(function (p, i) {
+    p.textContent = ` ${++i} - ${p.textContent}`
+
+  })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

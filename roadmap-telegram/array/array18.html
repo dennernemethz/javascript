@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corrupti fuga rerum perferendis esse impedit ab accusantium accusamus obcaecati. Similique velit culpa explicabo neque, facilis eaque doloremque optio commodi officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus tempora dignissimos ducimus, repellat excepturi eligendi sunt quo culpa odit ipsam eius officia hic temporibus saepe veritatis nam facilis doloremque!</p>
+
+    <script>
+let paragrafos = window.document.querySelectorAll('p')
+
+paragrafos.forEach(function(p,i){
+   p.textContent = `${++i} - ${p.textContent}`
+
+})
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
