@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spreed operator, serve para 'quebrar' uma array, passando de um argumento, para elementos individuais 
+
+
+
+let arr1 = [1,2,3]
+ 
+ let num = [3,4,5]
+ 
+ function ars() {
+     console.log(arguments)
+     console.log(arguments.length)
+   }
+ 
+ 
+   //podemos fazer tambem com o metodo push()
+   let ar2 = arr1.push(...num)
+ 
+   ars(1,2,3)//3
+   ars(arr1)//1
+   ars(...[1,2,3])//3
+   ars(num)//1
+   ars(ar2)//3
+ 
+ 
+   
+  
+ 
+  
+    </script>
+</body>
+</html>
