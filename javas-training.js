@@ -1,7 +1,15 @@
-let n1 = [1,2,3]
+let ar1 = [1,2,3]
 
-const [num1,num2,num3] = n1
 
-console.log(num1)
-console.log(num2)
-console.log(num3)
+let ar2 = [3,5]
+
+function a() {
+    console.log(arguments)
+    console.log(arguments.length)
+  }
+
+
+let ar3 = ar1.push(...ar2)
+
+a(1,3,3)
+a(ar2)
