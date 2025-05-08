@@ -1,4 +1,8 @@
-let ar = [1,2,3]
+let num  =  [1,2,3]
 
-for(let k in ar){
-    console.log(ar[k])
+
+
+const [n,m,c] = num 
+
+
+console.log(num.push(n,m,c))
