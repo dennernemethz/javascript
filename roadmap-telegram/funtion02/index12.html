@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+function sum() {
+    let nuns = []
+    for ( let k = 0; k < arguments.length; k ++){
+        nuns.push(arguments[k])
+    }
+    console.log(nuns)
+  }
+
+  //chamando uma função normal 
+
+   sum() // 1,2,3,4 
+
+     //formas de chamar a função 
+
+  sum.call(null,1,2,3,4) // 1,2,3,4, null é um  'argumento nulo'
+  sum.apply(null,[1,2,3,4]) // 1,2,3,4 o apply chama a função mais podendo chmar um unico array []
+
+ 
+    </script>
+</body>
+</html>
