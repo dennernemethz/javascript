@@ -1,5 +1,5 @@
-let num = new Array(1,2,3)
+let ar = [1,2,3]
 
-let num2 = Array.from(num)
-
-console.log(num2)
+for  ( let i in ar){
+    console.log()
+}
