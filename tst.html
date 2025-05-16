@@ -8,7 +8,7 @@
 <body>
 
     <h1>teste DOM</h1>
-    <h2 id="test-list">
+    <h2 id="testt">
         <ul> <a href="#"> link falso xD</a>
             <li>TESTES </li>
             <li>TESTES </li>
@@ -19,12 +19,19 @@
     <script>
 
 
-let links = window.document.querySelector('test-list')
+console.log(document.body)
+console.log(document.body.parentElement)
+console.log(document.body.parentNode)
 
 
+console.log(document.body.parentElement === document.body.parentNode) 
 
 
+let h2  = window.document.querySelector('#testt')
 
+
+console.log(h2.nextElementSibling)
+console.log(h2.nextSibling)
     </script>
 </body>
 </html>
