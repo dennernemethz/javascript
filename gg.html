@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste DOM</h1>
+
+<div id="countainer">
+  <p>tst1</p>
+  <p> <a href="#"></a>tst2</p>
+  <p>tst3</p>
+
+  <h2>lista1</h2>
+   <ul>
+    <li>item1</li>
+    <li>item2<ul>
+        <li>item3
+            <ul>
+               <li>item1.a</li>
+                <li>item2.b</li>
+            </ul>
+        </li>
+        
+    </ul></li>
+   </ul>
+
+</div>
+
+    <script>
+   console.log(document.body)
+   console.log(document.body.nextSibling)
+   console.log(document.body.nextElementSibling)
+
+   console.log(document.body.nextSibling === document.body.nextElementSibling) //tru
+    </script>
+</body>
+</html>
