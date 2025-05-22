@@ -6,32 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-
     <h1>teste DOM</h1>
-    <h2 id="testt">
-        <ul> <a href="#"> link falso xD</a>
+    <h2>
+        <ul id="testt" >
+            <a href="#"> link falso xD</a>
             <li>TESTES </li>
             <li>TESTES </li>
             <li>TESTES </li>
         </ul>
     </h2>
 
-    <script>
+
+
+
+ <script>
 
 
 console.log(document.body)
-console.log(document.body.parentElement)
-console.log(document.body.parentNode)
+console.log(document.body.nextElementSibling)
+console.log(document.body.nextSibling)
+
+console.log(document.body.nextElementSibling === document.body.nextSibling )
 
 
-console.log(document.body.parentElement === document.body.parentNode) 
+let ul_lista = window.document.querySelector('h2')
 
 
-let h2  = window.document.querySelector('#testt')
-
-
-console.log(h2.nextElementSibling)
-console.log(h2.nextSibling)
-    </script>
+console.log(ul_lista.nextSibling)
+ </script>
 </body>
 </html>
