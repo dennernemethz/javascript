@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+</ul>
+
+
+    <script>
+
+
+console.log(document.body)
+
+
+
+let uls = window.document.querySelector('ul')
+
+
+console.log(uls.parentElement.lastChild) // vai mostrar o ultimo conteudo do elemento no caso o "list3"
+console.log(uls.parentElement.lastElementChild) // vai mostrar qual elemento <li>
+console.log(uls.parentElement.hasChildNodes()) // vai verificar se tem alguma coisa dentro do elemento buscado e vai mostrar true ou false  
+
+
+console.log(uls.lastElementChild.childNodes)// da para navegar entres os elementos usando [] como array
+
+
+
+    </script>
+</body>
+</html>
