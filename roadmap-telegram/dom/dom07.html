@@ -17,7 +17,19 @@
     <script>
 
 
+console.log(document.body)
 
+
+
+let uls = window.document.querySelector('ul')
+
+
+console.log(uls.parentElement.lastChild) // vai mostrar o ultimo conteudo do elemento no caso o "list3"
+console.log(uls.parentElement.lastElementChild) // vai mostrar qual elemento <li>
+console.log(uls.parentElement.hasChildNodes()) // vai verificar se tem alguma coisa dentro do elemento buscado e vai mostrar true ou false  
+
+
+console.log(uls.lastElementChild.childNodes[1])// da para navegar entres os elementos usando [] como array
 
 
 
