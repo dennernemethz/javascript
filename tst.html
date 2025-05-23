@@ -26,13 +26,17 @@ console.log(document.body)
 console.log(document.body.nextElementSibling)
 console.log(document.body.nextSibling)
 
-console.log(document.body.nextElementSibling === document.body.nextSibling )
+console.log(document.body.nextElementSibling === document.body.nextSibling)
 
+console.log(document.body.nextElementSibling.childNodes)
+console.log(document.body.nextSibling.childNodes)
 
-let ul_lista = window.document.querySelector('h2')
+let ids = window.document.getElementById('testt')
 
+console.log(ids.nextElementSibling.children)
+console.log(ids.nextSibling)
+console.log(ids.children)
 
-console.log(ul_lista.nextSibling)
  </script>
 </body>
 </html>
