@@ -28,14 +28,17 @@ console.log(document.body.nextSibling)
 
 console.log(document.body.nextElementSibling === document.body.nextSibling)
 
-console.log(document.body.nextElementSibling.childNodes)
-console.log(document.body.nextSibling.childNodes)
+
 
 let ids = window.document.getElementById('testt')
 
-console.log(ids.nextElementSibling.children)
-console.log(ids.nextSibling)
-console.log(ids.children)
+
+console.log(ids.nextSibling)// #text
+console.log(ids.childNodes) // vai msotrar uma nodelist 
+console.log(ids.children) // vai mostrar a coleção HTML, a partir do elemento buscado no caso o elemento ul pra frente 
+console.log(ids.hasChildNodes())
+
+
 
  </script>
 </body>
