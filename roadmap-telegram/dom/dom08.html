@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const title = document.createElement("h1") // elemento ja criado
+const atributo = document.createAttribute("id")
+
+atributo.value = "titulo1" // aqui damos um valor para o atributo criado
+
+
+title.setAttribute(atributo)
+
+
+console.log(title)// <h1> id="titulo1"</h1>  
+
+    </script>
+</body>
+</html>
