@@ -10,18 +10,18 @@
 
 
 
-let h1 = window.document.createElement("h1")
+let h1  =  window.document.createElement("h1")
 
+let atributo = window.document.createAttribute("div")
 
-let tributo_ = window.document.createAttribute("div")
-
-tributo_.value ='msg'
-h1.innerHTML ='olá mundo'
+atributo.value = 'msg'
 
 
 console.log(h1)
-console.log(tributo_)
+console.log(atributo)
 
+let p = window.document.createTextNode('olá mundo')
+h1.appendChild(p)
 
 
 
