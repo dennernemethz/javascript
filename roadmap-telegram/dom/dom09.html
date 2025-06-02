@@ -7,16 +7,15 @@
 </head>
 <body>
     <script>
-
-
 let h1 = window.document.createElement("h1")
-let at =  window.document.createAttribute("div")
 
-h1.setAttributeNode(at)
-at.value = 'msg'
+const txt = window.document.createTextNode("text")
+h1.appendChild(txt)
 
+h1.setAttribute("titulo", "titulo inside")
+h1.setAttribute("style", "color:red;")
 
-console.log(at)
+h1.textContent = ' olá mundo '
 console.log(h1)
     </script>
 </body>

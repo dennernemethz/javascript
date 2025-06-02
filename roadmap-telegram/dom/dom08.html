@@ -12,12 +12,9 @@ const title = document.createElement("h1") // elemento ja criado
 const atributo = document.createAttribute("id")
 
 atributo.value = "titulo1" // aqui damos um valor para o atributo criado
+title.setAttributeNode(atributo) // <h1 id="titulo1"> </h1>  colocamos o atributo div dentro de um h1 
 
-
-title.setAttribute(atributo)
-
-
-console.log(title)// <h1> id="titulo1"</h1>  
+console.log(title) 
 
     </script>
 </body>
