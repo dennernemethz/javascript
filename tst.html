@@ -9,22 +9,16 @@
  <script>
 
 
+let h1 = window.document.createElement("h1")
+let at = window.document.createAttribute("div")
 
-let h1  =  window.document.createElement("h1")
+at.value = 'msg'
 
-let atributo = window.document.createAttribute("div")
 
-atributo.value = 'msg'
-
+h1.setAttributeNode(at)
 
 console.log(h1)
-console.log(atributo)
-
-let p = window.document.createTextNode('olá mundo')
-h1.appendChild(p)
-
-
-
+console.log(at)
  </script>
 </body>
 </html>
