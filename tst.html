@@ -6,37 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>testes dom</h1>
-    <div id="container">
-        <ul>
-            <li>t1</li>
-            <li>t2</li>
-            <li>t3</li>
-            <li>t4</li>
+    <h1>teste DOM</h1>
+    <h2>
+        <ul id="testt" >
+            <a href="#"> link falso xD</a>
+            <li>TESTES </li>
+            <li>TESTES </li>
+            <li>TESTES </li>
         </ul>
-    </div>
+    </h2>
+
+
+
+
  <script>
-let  title = window.document.createElement("h1")
-title.textContent = 'olá mundo'
-console.log(title)
 
-document.querySelector("#container").append(title)// esse metodo vai fazer selecionar o "pai"
 
-document.querySelector("#container").prepend(title) //esse metodo vai fazer selecionar antes do primeir "filho" 
+console.log(document.body)
+console.log(document.body.nextElementSibling)
+console.log(document.body.nextSibling)
 
-document.querySelector("#container").prepend(title,"olá world") // aqui usamos o metodo prepend e mais um parametro do tipo texto que vai mostrar na tela na pagina
-
-// aqui usamos o metodo insert before tem que ter uma referencia nós e um filho como parametro 
+console.log(document.body.nextElementSibling === document.body.nextSibling)
 
 
 
-let h2 = document.createElement("h1")
-h2.textContent = 'texto 2'
+let ids = window.document.getElementById('testt')
 
-let list = window.document.querySelector("ul")
 
-document.querySelector("#container").insertBefore(h2,list)  // tem que ter uma referencia nós e um filho como parametro 
+console.log(ids.nextSibling)// #text
+console.log(ids.childNodes) // vai msotrar uma nodelist 
+console.log(ids.children) // vai mostrar a coleção HTML, a partir do elemento buscado no caso o elemento ul pra frente 
+console.log(ids.hasChildNodes())
+
+
+
  </script>
 </body>
 </html>
