@@ -6,19 +6,37 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>testes dom</h1>
+    <div id="container">
+        <ul>
+            <li>t1</li>
+            <li>t2</li>
+            <li>t3</li>
+            <li>t4</li>
+        </ul>
+    </div>
  <script>
+let  title = window.document.createElement("h1")
+title.textContent = 'olá mundo'
+console.log(title)
+
+document.querySelector("#container").append(title)// esse metodo vai fazer selecionar o "pai"
+
+document.querySelector("#container").prepend(title) //esse metodo vai fazer selecionar antes do primeir "filho" 
+
+document.querySelector("#container").prepend(title,"olá world") // aqui usamos o metodo prepend e mais um parametro do tipo texto que vai mostrar na tela na pagina
+
+// aqui usamos o metodo insert before tem que ter uma referencia nós e um filho como parametro 
 
 
-let h1 = window.document.createElement("h1")
-let at = window.document.createAttribute("div")
 
-at.value = 'msg'
+let h2 = document.createElement("h1")
+h2.textContent = 'texto 2'
 
+let list = window.document.querySelector("ul")
 
-h1.setAttributeNode(at)
-
-console.log(h1)
-console.log(at)
+document.querySelector("#container").insertBefore(h2,list)  // tem que ter uma referencia nós e um filho como parametro 
  </script>
 </body>
 </html>
