@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="msg">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptas sed ad nobis excepturi ullam exercitationem illum laborum sequi? Voluptatem quibusdam quasi maxime in. Eum distinctio ipsum ad impedit tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magnam? Est perferendis, pariatur iure vel hic quas incidunt placeat porro mollitia fugiat totam quam corporis quo. Sed minima illo modi. 222</p>
+    </div>
+    <script>
+
+let p = window.document.querySelector(".msg")
+
+p.after("olá mundo") // vai mostrar esse texto após o elemento selecionado no caso o msg
+
+p.before("hello", "world") // vai mostrar esse texto antes do elemento selecionado no caso o msg
+
+const paragrafo = window.document.createElement("h4")
+paragrafo.textContent = 'h4 selecionado'
+
+p.before("selecionei o h4", paragrafo) // o before esta selecionando o hello world, ao chama-lo noavamente vai vir o hello world + oque for selecionado, pode ser um string e um "nos"
+
+    </script>
+</body>
+</html>

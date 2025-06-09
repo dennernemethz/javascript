@@ -10,13 +10,13 @@
 
 <div id="msg">
     <ul>
-        <li></li>
-        <li></li>
+        <li>listas 01</li>
+        <li>listas 02</li>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>listas 01 b</li>
+            <li>listas 02 b</li>
+            <li>listas 03 b</li>
+            <li>listas 04 b</li>
         </ul>
     </ul>
 </div>
@@ -29,11 +29,13 @@ let h1 = window.document.createElement("h1")
 
 h1.textContent = 'olá mundo'
 
-let list =  window.document.querySelector("ul")
+let level = window.document.querySelector("ul ul")
 
-let msg = window.document.querySelector("#msg")
+level = level.cloneNode(true)
 
-msg.insertBefore(h1,list.nextSibling)
+
+
+
 
     </script>
 </body>
