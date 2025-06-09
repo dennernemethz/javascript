@@ -6,18 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+
+
+<div id="msg">
+    <ul>
+        <li></li>
+        <li></li>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </ul>
+</div>
+
+
+
     <script>
 
-
 let h1 = window.document.createElement("h1")
-let at =  window.document.createAttribute("div")
 
-h1.setAttributeNode(at)
-at.value = 'msg'
+h1.textContent = 'olá mundo'
 
+let list =  window.document.querySelector("ul")
 
-console.log(at)
-console.log(h1)
+let msg = window.document.querySelector("#msg")
+
+msg.insertBefore(h1,list.nextSibling)
+
     </script>
 </body>
 </html>
