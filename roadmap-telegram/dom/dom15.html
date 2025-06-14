@@ -5,6 +5,41 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
 </head>
-<body
+<body>
+<div class="msg">
+    <h1>olá mundo </h1>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+</div>
+<script>
+
+ let msg  = window.document.querySelector(".msg")
+
+
+ let createElementt = window.document.createElement("h1")
+ createElementt.textContent = 'olá mundo'
+
+
+
+msg.remove() // pegamos a variavel atribuida pelo dom e usamos o metodo remove(), para pode remover, metodo mais facil de remover algum elemento do DOM 
+
+
+
+msg.parentNode.removeChild(msg) // aqui acessamos o elemento atribuido pelo dom a partir do pai
+
+msg.parentElement.removeChild(msg) // aqui teremos o mesm resultado
+
+
+let parent = window.document.body  // selecionamos o corpo da pagina
+
+
+let myChild = msg.querySelector("h1").cloneNode(true) // cloneNode serve para clona alguma elemento apartir do DOM com o parametro TRUE 
+
+
+const oldChild = document.querySelector("h1")
+ 
+myChild.replaceChild(oldChild,parent) //esse serve simplesmente para poder trocar os "parentes"
+</script>
 </body>
 </html>
