@@ -6,16 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">clique aqui!</button>
+    <button id="c">clicar!</button>
     <script>
-let btn = window.document.getElementById("btn")
+let btn = window.document.querySelector("#c")
 
-
-function clicou() {
-    console.log('clicou no botão')
+function clicar() {
+    alert('clicando')
   }
 
-btn.addEventListener("click", clicou)
+  btn.addEventListener("click", clicar)
+
+  
     </script>
 </body>
 </html>
