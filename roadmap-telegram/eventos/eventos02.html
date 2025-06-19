@@ -21,13 +21,11 @@ let btn3 = window.document.querySelector(".btn3")
 
 let container = window.document.querySelector(".container")
 
-document.addEventListener("click", function () {
-    console.log("clicou no documento")
-  },false) //  por padrao os eventos em si sao execultados no false, "default"
+
 
 btn1.addEventListener("click", function () {
     console.log("cliquei no botao1")
-  }, false)
+  }, false)//  por padrao os eventos em si sao execultados no false, "default
 
 btn2.addEventListener("click", function () {
     console.log("cliquei no botao2")
@@ -36,7 +34,7 @@ btn2.addEventListener("click", function () {
 
 btn3.addEventListener("click", function () {
     console.log("cliquei no botao3")
-  }, true)
+  })
 
 
     </script>
