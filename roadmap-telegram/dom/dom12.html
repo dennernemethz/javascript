@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="msg">
+    <ul>
+        <li>li1 a</li>
+        <li>li1 b/li>
+        <li>li1 c</li>
+        <ul>
+            <li>li2 a</li>
+        </ul>
+    </ul>
+</div>
+    <script>
+
+let list = window.document.querySelector("ul ul")
+
+list = list.cloneNode(true) //ao usar o dom podemos clonar elementos atraves de cloneNode(), para usar o cloneNode e querer clonar os "filhos do elemento usar o parametro TRUE."
+    </script>
+</body>
+</html>

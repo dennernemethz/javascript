@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li>li1</li>
+            <li>li2</li>
+            <ul>
+                <li>li1</li>
+                <li>li2</li>
+                <li>li3</li>
+            </ul>
+        </ul>
+    </div>
+    <script>
+
+let h1 = window.document.createElement("h1") // criei um documento do DOM e elemento H1 para poder fazer as modificações com os elementos do dom append e prepend 
+
+
+h1.textContent = 'olá mundo' // usando textContent para colocar algum conteudo no titulo h1 
+
+document.querySelector("#container").appendChild(h1) // seleciona o "pai por uma div o metodo faz selecionar o pai "
+
+document.querySelector("#conatainer").prepend(h1) // seleciona antes do primeiro filho
+
+//  document.querySelector("#conatainer").prepend(h1,"modifiquei pelo prepend") // com o metodo prepend podemos utilizar um texto após o nós selecionado que no caso e nossa const h1
+
+document.querySelector("#container").insertBefore() // esse metodo espera receber dois parametros, um filho novoe nos de referencia. 
+
+let h2  = window.document.createElement("h2")
+
+let list = window.document.querySelector("ul")
+
+document.querySelector("#container").insertBefore(h2,list)
+
+let container = document.querySelector("#container")
+
+container.insertBefore(h2,list)// um metodo mais facil de se ultilizar o metodo insertBefore 
+container.insertBefore(h2, container.firstChild) // modificamos o h2 nosso titulo para ele aparecer a cima do primeiro filho que no caso é ul 
+

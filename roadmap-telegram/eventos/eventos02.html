@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button class="btn1">btn1</button>
+        <button class="btn2">btn2</button>
+        <button class="btn3">btn3</button>
+    </div>
+
+    <h3> propagação de eventos</h3>
+    <script>
+
+let btn1 = window.document.querySelector(".btn1")
+let btn2 = window.document.querySelector(".btn2")
+let btn3 = window.document.querySelector(".btn3")
+
+let container = window.document.querySelector(".container")
+
+
+
+btn1.addEventListener("click", function () {
+    console.log("cliquei no botao1")
+  }, false)//  por padrao os eventos em si sao execultados no false, "default
+
+btn2.addEventListener("click", function () {
+    console.log("cliquei no botao2")
+  }, true)// quando colocamos o valor bolean true, vai ser execultado a partir desse e depois interadir com o html documento da pagina 
+
+
+btn3.addEventListener("click", function () {
+    console.log("cliquei no botao3")
+  })
+
+
+    </script>
+</body>
+</html>

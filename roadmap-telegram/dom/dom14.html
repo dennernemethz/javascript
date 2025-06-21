@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--beforebegin -->
+    <div class="msg">
+        <!--afterbegin-->
+      <p>p1</p>
+      <p>p2</p>
+      <p>p3</p>
+      <!--beforeend-->
+    </div>
+       <!--afterend-->
+       
+       <!-- essas tags estão colocadas de acordo com o dom buscado e manipiulado que no caso é a div msg -->
+    
+   
+    <script>
+let container = window.document.querySelector(".msg")
+
+container.insertAdjacentHTML("afterbegin","<b> olá mundo</b>")// como estamos usando a tag insertHTML o segundo aparametro é uma tag igual na pagina html
+
+container.insertAdjacentText("beforeend", "<b> olá mundo</b>")// insterText ele ultila como texto comum entao na pagina vai mostrar as tags inseridas
+
+let em = window.document.createElement("em")
+
+container.insertAdjacentElement("beforebegin", em)// aqui temos que ter um elemento criado, e nosso segundo parametro tem que ser o elemento criado ou um elemento buscado pelo DOM. 
+    </script>
+</body>
+</html>
