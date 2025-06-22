@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .btn01{
+        background-color: black;
+        font: bold;
+        color: brown;
+    }
+    .btn02{
+        background-color: brown;
+        font: bold;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <button class="btn01">click 01</button>
+    <button class="btn02">click 02</button>
+
+    <script>
+let btn1 = window.document.querySelector(".btn01")
+let btn2 = window.document.querySelector(".btn02")
+
+
+btn1.addEventListener("click", function(){
+    let n1 = 10
+    let n2 = 5
+    let s = n1 * n2 
+
+    console.log(s)
+}, true)
+btn2.addEventListener("click", function(){
+    let n1 = 10
+    let n2 = 5
+    let s = n1 - n2 
+
+    console.log(s)
+}, true)
+
+
+
+
+
+    </script>
+</body>
+</html>
