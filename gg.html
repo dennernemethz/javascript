@@ -6,17 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="c">clicar!</button>
+    <div class="msg">
+        <button class="msg1">click1</button>
+        <button class="msg2">click2</button>
+    </div>
+
     <script>
-let btn = window.document.querySelector("#c")
 
-function clicar() {
-    alert('clicando')
-  }
 
-  btn.addEventListener("click", clicar
 
-  
+let msg = window.document.querySelector(".msg")
+
+msg.addEventListener("click", function (e) {
+    e.stopPropagation()
+    if(e.target.nodeName === "button"){
+        console.log(e.target)
+    }
+  })
+
+
+
+
+
     </script>
 </body>
 </html>
