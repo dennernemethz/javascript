@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button class="btn">click</button>
+
+    <script>  
+let btn = window.document.querySelector(".btn")
+
+
+btn.addEventListener("click", function (e) {
+    console.log(e.target) // o target esta chamando o btn o evento de clique do botao 
+    console.log(e.currentTarget) // o current está chamando exatamente o "btn"
+    console.log(this) // quando o this está em function expression, ela tem o mesmo trabalho que o currentTarget
+  })
+
+  console.log(this) // esse this e o mesmo que o this dentro de uma arrow function  
+
+btn.addEventListener("click",  (e) =>{
+    console.log(e.target)
+    console.log(e.currentTarget) 
+    console.log(this) // quando o this está dentro de uma errow function ela é uma estatica, (objeto window)
+  })
+
+
+
+
+
+
+    </script>
+</body>
+</html>

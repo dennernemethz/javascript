@@ -25,18 +25,17 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="btn01">click 1</button>
-        <button class="btn02">click 2</button>
-    </div>
-
+    <button id="c">clicar!</button>
     <script>
-        let container = window.document.querySelector(".container")
+let btn = window.document.querySelector("#c")
 
-        container.addEventListener("click", function(e){
-            e.stopPropagation()
-            console.log(e.target)
-        })
+function clicar() {
+    alert('clicando')
+  }
+
+  btn.addEventListener("click", clicar
+
+  
     </script>
 </body>
 </html>
