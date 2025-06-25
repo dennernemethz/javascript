@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            background-color: lightslategray;
+            height: 200px;
+            
+        }
+        .btn01{
+            background-color: black;
+            font: bold;
+            color: navy;
+            padding: 10px;
+        }
+         .btn02{
+            background-color: navy;
+            font: bold;
+            color: black;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <button id="c">clicar!</button>
+    <div class="container">
+        <button class="btn01">click 1</button>
+        <button class="btn02">click 2</button>
+    </div>
+
     <script>
-let btn = window.document.querySelector("#c")
+        let container = window.document.querySelector(".container")
 
-function clicar() {
-    alert('clicando')
-  }
-
-  btn.addEventListener("click", clicar
-
-  
+        container.addEventListener("click", function(e){
+            e.stopPropagation()
+            console.log(e.target)
+        })
     </script>
 </body>
 </html>
