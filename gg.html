@@ -1,41 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            background-color: lightslategray;
-            height: 200px;
-            
-        }
-        .btn01{
-            background-color: black;
-            font: bold;
-            color: navy;
-            padding: 10px;
-        }
-         .btn02{
-            background-color: navy;
-            font: bold;
-            color: black;
-            padding: 10px;
+        body{
+        background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
         }
     </style>
 </head>
 <body>
-    <button id="c">clicar!</button>
-    <script>
-let btn = window.document.querySelector("#c")
+    <h3>argumentos de objetos </h3>
+<script>
 
-function clicar() {
-    alert('clicando')
-  }
+// the basic arguments with function
 
-  btn.addEventListener("click", clicar
+function f(a,b,c){
+    
+ console.log(arguments[0])
+ console.log(arguments[1])
+ console.log(arguments[2])
+}
 
-  
-    </script>
+f(10,20,30)
+</script>
 </body>
 </html>
