@@ -1,27 +1,8 @@
-let objetos1 = {
-    nome:'denner'
-}
+let numero1 = new Number(5)
+let numero2 = new Number(9)
 
-let objetos2 =  new Object("denner")
+let soma = numero1 + numero2 
 
-let numeros = new Number(10)
+console.log(soma)
 
-let string = new String("denner")
-
-
-
-
-
-console.log(objetos1)
-console.log(typeof(objetos1))
-
-console.log(objetos2)
-console.log(typeof(objetos2))
-console.log(objetos2.length)
-console.log(objetos2.valueOf())
-
-console.log(numeros)
-console.log(typeof(numeros))
-
-console.log(string)
-console.log(typeof(string))
+console.log(typeof(soma))
