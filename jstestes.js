@@ -1,8 +1,8 @@
-let numero1 = new Number(5)
-let numero2 = new Number(9)
+let y = {n: 10}
 
-let soma = numero1 + numero2 
+function mudaC(obj) { 
+    obj.n++
+ }
 
-console.log(soma)
-
-console.log(typeof(soma)
+mudaC(y)
+console.log(y) 

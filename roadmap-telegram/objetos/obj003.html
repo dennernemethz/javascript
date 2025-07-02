@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let x = 10 
+
+let y = [10]
+
+let c = {n: 10}
+
+function mudaX(x) {
+x++
+console.log("x interno", x)
+
+  }
+
+mudaX(x)
+console.log("x externo", x) // nao passamos a variavel x no parametro da função e sim o valor que está dentro dela 
+
+
+function mudaY(y) {
+y.push(11)
+console.log("Y interno obj", y)
+
+  }
+
+mudaY(y)
+console.log("x externo", y) // quando passamos um obj, estamos apenas passando a referencia, por isso oque é mudado no interno e mudado no externo 
+
+
+let objs = {n: 10}
+
+function mudaC(obj) { 
+    obj.n++
+ }
+
+mudaC(objs)
+console.log(objs)   // quando passamos um obj, estamos apenas passando a referencia, por isso oque é mudado no interno e mudado no externo 
+
+    </script>
+</body>
+</html>
