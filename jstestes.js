@@ -1,11 +1,12 @@
-let c = 10
+let y = 10 
 
 
-function cMais(c){
-    c++
-    console.log("cInterno ", c)
-}
 
-cMais(c)
+function mudaVar1(x) { 
+    x++
+    console.log('valor interno', x)
+ }
 
-console.log("cExterno", c)
+ 
+ mudaVar1(y)
+ console.log("cvalor externo", y)
