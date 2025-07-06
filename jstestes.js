@@ -9,4 +9,4 @@ function mudaVar1(x) {
 
  
  mudaVar1(y)
- console.log("cvalor externo", y
+ console.log("cvalor externo", yç
