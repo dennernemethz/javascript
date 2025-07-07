@@ -1,12 +1,18 @@
-let y = 10 
 
-
-
-function mudaVar1(x) { 
-    x++
-    console.log('valor interno', x)
+function carro(make, model1, year, owner) { 
+    this.make = make
+    this.model = model1
+    this.year = year
+    this.owner = owner
  }
 
- 
- mudaVar1(y)
- console.log("cvalor externo", y)
+
+
+ const car1 = new carro('eagle', "talon tsi", 1993);
+
+  
+
+
+car1.make ='denner'
+
+console.log(car1) 
