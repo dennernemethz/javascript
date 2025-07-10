@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Contrutora(name) { 
+            this.name=name   //  caso a função construtora nao tenha nenhum parametro, ela devera receber qualquer coisa seja string, numero etc 
+            this.time = new Date() 
+            this.novoName = function (newName) { // criamos aqui uma função que vai receber a propriedade this.name 
+                this.name = newName // a propriedade name recebendo o parametro dessa função newName 
+             }
+         }
+
+         let construtora1 = new Contrutora ('parametro') // aqui está recebendo o parametro da função con trutora  que o obj this esta recebendo no caso o "name"
+        
+
+         construtora1.novoName = 'novo nome com o parametro newName' 
+
+
+         console.log(construtora1 )
+
+         
+
+
+    </script>
+</body>
+</html>
