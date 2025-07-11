@@ -10,4 +10,4 @@ function  Task (name){
 let task1 = new Task('aqui é o parametro')
 task1.changeName = 'modifiqueio change name '
 
-console.log(task1)
+console.log(task1
