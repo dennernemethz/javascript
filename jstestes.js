@@ -1,8 +1,11 @@
 let obj = {
     nome:'denner',
-    sobrenome:'nemeth'
+    numero:10,
+
+    sioh(){
+        console.log(obj.nome)
+    }
 }
 
-let person = Object.keys(obj)
 
-console.log(person[1]
+obj.sioh()
