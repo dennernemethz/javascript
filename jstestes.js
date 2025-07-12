@@ -5,4 +5,4 @@ let obj = {
 
 let person = Object.keys(obj)
 
-console.log(person[1])
+console.log(person[1]
