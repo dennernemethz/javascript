@@ -1,13 +1,17 @@
-function FunçãoConstrutora (name){
-      this.name = name
-      this.outraFunction= function (outroNome) {
-        this.name = outroNome
-        }
+function Stal(name) { 
+
+let _name = name
+this.stalk = null
+this.original = function (name2) { 
+        _name = name2
+
+  }
+  this.getName = function () { 
+    return _name
+  }
 }
 
-let obj = new FunçãoConstrutora('denner')
 
-obj.outraFunction = 'new'
+let stal1 = new Stal('MEU NOME ')
 
-
-console.log(obj)
+console.log(stal1.getName())
