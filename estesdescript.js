@@ -1,17 +1,8 @@
-function Stal(name) { 
-  
-let _name = name
-this.stalk = null
-this.original = function (name2) { 
-        _name = name2
+let p1 = 'olá mundo'
 
-  }
-  this.getName = function () { 
-    return _name
-  }
-}
+//console.log(p1.replace('oi,oi','olá'))
 
 
-let stal1 = new Stal('MEU NOME ')
+let p2 = 'whta'
 
-console.log(stal1)
+console.log(p2.replace(p1))
