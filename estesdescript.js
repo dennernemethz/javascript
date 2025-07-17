@@ -1,5 +1,5 @@
 function Stal(name) { 
-
+  
 let _name = name
 this.stalk = null
 this.original = function (name2) { 
@@ -14,4 +14,4 @@ this.original = function (name2) {
 
 let stal1 = new Stal('MEU NOME ')
 
-console.log(stal1.getName())
+console.log(stal1)
