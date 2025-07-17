@@ -1,13 +1,11 @@
-function FunçãoConstrutora (name){
-      this.name = name
-      this.outraFunction= function (outroNome) {
-        this.name = outroNome
-        }
+function Ola (){
+  this.name = 'denner'
+  this.solo = function ola2 (){
+    this.aniversario = 1995
+  }
 }
 
-let obj = new FunçãoConstrutora('denner')
 
-obj.outraFunction = 'new'
+let solos =  new Ola()
 
-
-console.log(obj)
+console.log(solos.solo)
