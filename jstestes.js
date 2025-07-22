@@ -1,11 +1,3 @@
-function Rt (numero){
-    this.name = 'denner'
-    this.num = numero
-}
+let ar = [12]
 
-let n = new Rt()
-
-
-let n2 = new Rt(10)
-console.log(n2)
-console.log(n)
+console.log()
