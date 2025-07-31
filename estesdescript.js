@@ -1,9 +1,12 @@
-let iterandoObj = {
-    nome1:'denner1',
-    nome2:'denner2',
-    nome3:'denner3'
+const numero = {
+    numeros:120
 }
 
+getNome:function up() {
+    return this.num
+  }
 
-let objs = Object.keys(iterandoObj) // isso vai mostras as propriedades 
+  const p1 = numero
+
+  console.log(numero.numeros)
  
