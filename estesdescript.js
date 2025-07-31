@@ -1,8 +1,9 @@
+let iterandoObj = {
+    nome1:'denner1',
+    nome2:'denner2',
+    nome3:'denner3'
+}
 
-let k = {}
 
-
-k['f']='denner'
-
-
-console.log(k)
+let objs = Object.keys(iterandoObj) // isso vai mostras as propriedades 
+ 
