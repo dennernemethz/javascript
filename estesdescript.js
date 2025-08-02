@@ -1,8 +1,12 @@
-let p1 = 'olá mundo'
+const numero = {
+    numeros:120
+}
 
-//console.log(p1.replace('oi,oi','olá'))
+getNome:function up() {
+    return this.num
+  }
 
+  const p1 = numero
 
-let p2 = 'whta'
-
-console.log(p2.replace(p1))
+  console.log(numero.numeros)
+ 
