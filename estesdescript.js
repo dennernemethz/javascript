@@ -1,12 +1,8 @@
-const numero = {
-    numeros:120
-}
+let nome = {
+    nomes:'denner'
+};
 
-getNome:function up() {
-    return this.num
-  }
+let json = JSON.stringify(nome)
 
-  const p1 = numero
-
-  console.log(numero.numeros)
- 
+console.log(json)
+console.log(typeof(json)) 
