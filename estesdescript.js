@@ -1,8 +1,4 @@
-let nome = {
-    nomes:'denner'
-};
+let umsString = 'minha first string'
 
-let json = JSON.stringify(nome)
-
-console.log(json)
-console.log(typeof(json)) 
+console.log(umsString.indexOf('i')) // vai retornar apenas a posição
+console.log(umsString.replace('i','o'))
