@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// erro em JSON para fazer conversoes circulares
+
+
+let room = {
+    numero:10 
+};
+
+let meetup = {
+    titulo:'conferencia',
+    participantes: ['john', "ann"]
+};
+
+meetup.place = room // meetup vai ser referencia com o var ROOM 
+room.ocupação = meetup  // room referencia a meetup 
+
+// isso aqui é conversao circular (room e meetup)
+
+
+JSON.stringify(meetup); // ERRO, conversão circular em JSON da erro 
+// room sendo meetup e meetup sendo room, e uma conversao circular. 
+
+
+    </script>
+</body>
+</html>
