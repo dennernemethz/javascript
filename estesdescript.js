@@ -1,8 +1,6 @@
-let nome = {
-    nomes:'denner'
-};
+let st1 =  "em maiusculo"
+let st2 = "em minusculo"
 
-let json = JSON.stringify(nome)
 
-console.log(json)
-console.log(typeof(json)) 
+console.log(st1.toUpperCase())
+console.log(st2.toLowerCase())
