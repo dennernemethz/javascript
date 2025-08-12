@@ -1,26 +1,15 @@
-let ob = {
-    nome:'denner',
-    numero:10
-}
+let n = ' minha string '
+
+let n2 = new String('minha segunda string')
 
 
-let j = JSON.stringify(ob)
+console.log(n.valueOf())
+console.log(n.toString())
 
-console.log(j)
-console.log(typeof(j))
+console.log(n2.valueOf())
+console.log(n2.toString())
 
-
-let oob = {
-    nome:'denner',
-    numero:10,
-     obj:{
-
-        numero1:1,
-        nm:['ola','ok']
-     }
-}
-
-
-let js = JSON.stringify(oob)
-
-console.log(js)
+console.log(typeof(n))
+console.log(typeof(n2))
+console.log(n)
+console.log(n2)

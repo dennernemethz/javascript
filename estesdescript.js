@@ -1,8 +1,20 @@
-let nome = {
-    nomes:'denner'
-};
+let num = {
+    numero:10,
+    loJSON(){
+        return this.numero
+    }
+}
 
-let json = JSON.stringify(nome)
 
-console.log(json)
-console.log(typeof(json)) 
+console.log(JSON.stringify(num))
+
+
+
+let num2 = {
+    titulo:'conferindo',
+    num
+}
+
+//console.log(num2)
+
+console.log(JSON.stringify(num2))
