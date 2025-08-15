@@ -1,8 +1,5 @@
-let nome = {
-    nomes:'denner'
-};
+ let str1 = 'analisando minha primeira string' 
 
-let json = JSON.stringify(nome)
-
-console.log(json)
-console.log(typeof(json)) 
+ console.log(str1)
+ console.log(str1.padStart(3).length)
+ console.log(str1.length)
