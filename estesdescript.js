@@ -1,10 +1,6 @@
-function dividir(x, y){
-    if(x / y < Number.MIN_VALUE){
-        return 'progresso'
-    }
-    return x/y
-}
+let n1 = 10
+let n2 = "10"
 
-console.log(dividir(4,1))
+console.log(Number.parseInt(n1) === Number.parseInt(n2)) 
 
-console.log(dividir(7, 1))
+console.log(Number.parseInt(n1))
