@@ -1,6 +1,3 @@
-let n1 = 10
-let n2 = "10"
+let obj1 = [{num1:1,num2:2,num3:3}]
 
-console.log(Number.parseInt(n1) === Number.parseInt(n2)) 
-
-console.log(Number.parseInt(n1))
+console.log(Math.min(...obj1))
