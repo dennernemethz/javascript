@@ -1,3 +1,4 @@
-let obj1 = [{num1:1,num2:2,num3:3}]
+let num = [1,2,3,4,5,6,7,8,9,10] 
 
-console.log(Math.min(...obj1))
+
+console.log(Math.random(...num)* 10)
