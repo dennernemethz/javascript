@@ -1,3 +1,7 @@
-let rdn  = 10 
+function letra (str){
+    let l = str.split('')
 
-console.log(Math.random() * rdn)
+    return l
+}
+
+console.log(letra('denner'))
