@@ -1,4 +1,4 @@
-
+/*
 // desafio criar um função e receber um string e na saida do console ela sair invertida
 
 function inverter (str){ // recebendo um parametro qualquer string para poder retornar ela no console
@@ -33,3 +33,5 @@ function inverter(str) {
   // Retorna a string invertida
   return stringInvertida;
 }
+*/
+
