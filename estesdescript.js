@@ -1,7 +1,8 @@
-function letra (str){
-    let l = str.split('')
+let date = new Date() 
 
-    return l
-}
 
-console.log(letra('denner'))
+console.log(date.getDay())
+console.log(date.getHours())
+console.log(date.getMinutes())
+
+
