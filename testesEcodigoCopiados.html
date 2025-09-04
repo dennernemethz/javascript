@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #111;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #clock{
+            font-size: 5em;
+        }
+
+        
+    </style>
+
+    <div id="clock">00:00:00</div>
 </head>
 <body>
-    
+    <script>
+
+function atualizarRelogio(){
+    const agora = new Date();
+    const horas = String(agora.getHours()).padStart(2, '0')
+    const minutos = String(agora.getMinutes()).padStart(2, '0')
+    const segundos = String(agora.getSeconds()).padStart(2, '0')
+
+    document.getElementById('clock').textContent= `${horas}:${minutos}:${segundos}`;
+
+
+}
+
+
+setInterval(atualizarRelogio, 1000)
+atualizarRelogio();
+
+
+
+
+    </script>
 </body>
 </html>
