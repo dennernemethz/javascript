@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      #msg{
-         background-color: darkgray;
-         border-radius: 10px;
-         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.42);
-         width: 300px;
-         height: 100px;
-         font-size: larger;
-         font-size: 2em;
-         font-family: Arial, Helvetica, sans-serif;
-         font-display: auto;
-         margin: auto;
-         text-align: center;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body{
+    background-color: black;
+   }
+   #msg{
+     background-color: rgb(92, 52, 133);
+     width: 200px;
+     height: 100px;
+     display: flex;
+     margin: auto;
+     justify-content: center;
+     font-display: auto;
+     text-align: center;
+     box-shadow: 3px 3px 5px 5px #ffffff8d;
+     border-radius: 2px 2px 2px 2px ;
+     color: aliceblue;
+     font-size: larger;
+     font-size: 2em;
+   }
+  </style>
 </head>
 <body>
-    <div id="msg"></div>
+  <div id="msg"></div>
 
 
-<script>
-
-
-
+ <script>
 let msg = window.document.getElementById('msg')
 
 
+let nome = new String('Denner Nemeth')
+
+msg.innerHTML = nome.search(/e/ig)
 
 
-
-
-
-
-
-
-
-
-
-</script>
-
+ </script> 
 </body>
 </html>

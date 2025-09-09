@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      #msg{
+         background-color: darkgray;
+         border-radius: 10px;
+         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.42);
+         width: 300px;
+         height: 100px;
+         font-size: larger;
+         font-size: 2em;
+         font-family: Arial, Helvetica, sans-serif;
+         font-display: auto;
+         margin: auto;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+    </style>
 </head>
 <body>
-     <script>
-let nome = new String('Denner Nemeth de Queiroz')
+    <div id="msg"></div>
 
 
-console.log(nome)
-
-console.log(nome.search('Nemeth'))
-console.log(nome.search(/nemeth/i))
+<script>
 
 
 
-     </script>
+let msg = window.document.getElementById('msg')
+
+
+
+let nome = new String('Denner Nemeth')
+
+
+msg.innerHTML = nome.search('d') // sem expressão regular vai sair -1 
+msg.innerHTML = nome.search(/d/i) // vai sai a posição 0 
+
+
+</script>
+
 </body>
 </html>
