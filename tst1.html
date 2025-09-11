@@ -10,7 +10,7 @@
    }
    #msg{
      background-color: rgb(92, 52, 133);
-     width: 200px;
+     width: 300px;
      height: 100px;
      display: flex;
      margin: auto;
@@ -33,10 +33,11 @@
 let msg = window.document.getElementById('msg')
 
 
-let nome = new String('Denner Nemeth')
+let nome = new String('Denner Nemeth, 1234567')
+let numeros = "1,10,100,1000"
 
-msg.innerHTML = nome.search(/e/ig)
 
+msg.innerHTML = nome.match(/[a-r|0-3]/ig)
 
  </script> 
 </body>

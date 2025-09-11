@@ -38,11 +38,14 @@ let msg = window.document.getElementById('msg')
 let nome = new String('Denner Nemeth')
 
 
-msg.innerHTML = nome.match(/[a-r]/ig)// vai mostrar na tela ou console as letras de a até r
+msg.innerHTML = nome.match(/o+/ig) // vai mostrar os 'o' das string 
 
 
-msg.innerHTML = nome.match(/[a-r|0-3]/ig) //  esse vai mostrarde 0 ate 3 se caso minha string tiver numeros 
+msg.innerHTML = nome.match(/o+/) // com o + voce vai quantificar os "o" separadao das palavras
 
+
+
+msg.innerHTML = nome.match(/o?/ig) //vaiu mostrar tanto a palavrea completa quanto a palavra separada encontrada coma letra 'o'
 </script>
 
 </body>

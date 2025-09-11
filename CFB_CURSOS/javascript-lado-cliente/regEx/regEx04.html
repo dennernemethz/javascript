@@ -37,12 +37,14 @@ let msg = window.document.getElementById('msg')
 
 let nome = new String('Denner Nemeth')
 
+//metacaracteres
+msg.innerHTML = nome.match(/\d/ig)// vai mostrar os numeros dentro da minha string
 
-msg.innerHTML = nome.match(/[a-r]/ig)// vai mostrar na tela ou console as letras de a até r
+
+msg.innerHTML = nome.match(/\s/ig)// vai mostrar os espaços entre as strings 
 
 
-msg.innerHTML = nome.match(/[a-r|0-3]/ig) //  esse vai mostrarde 0 ate 3 se caso minha string tiver numeros 
-
+msg.innerHTML = nome.match(/\b/ig)//metacaracterglobal 
 </script>
 
 </body>
