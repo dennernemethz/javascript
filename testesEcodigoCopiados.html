@@ -1,60 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .numero{
-            font-size: larger;
-        }
-        .ok{
-            color: blue;
-        }
-        .erro{
-            color: red;
-        }
+   #numero{
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+   }
+   #numero2{ 
+    background-color: red;
+    width: 25px;
+    height: 25px;
+ }
+ #painel{
+     position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center ;
+  background-color: blanchedalmond;
+ }
     </style>
 </head>
 <body>
+    <div id="painel">
     <div id="numero" class="numero"  ></div>
-
-
+    <div id="numero2"></div>
+    </div>
     <script>
 
-let numero = document.getElementById("numero")
+let numero = window.document.getElementById("numero")
+let numero2 = window.document.getElementById('numero2')
 
 
-let promessa = new Promise((res, rej)=>{ // PODE POR QUALQUER PARAMETRO
 
-let resultado = false // tudo em pro de modificar esse resultado
-let tempo = 3000
 
-setTimeout(()=>{
-    if(resultado){
-        res("deu tudo certo")
-    }else{
-        rej('deu tudo errado')
-    }
-}, tempo)
+numero2.addEventListener("click",()=>{
+    alert('clicou no vermelho')
 })
 
 
-promise.then((retorno)=>{
-    numero.innerHTML = retorno
-    numero.classList.remove("erro") // classlist envolve o CSS classe .ERRO E ADCIONAR A CLASSE .OK
-    numero.classList.add("ok") 
-}) // res se caso a condição for verdadeira
-promise.catch((retorno)=>{
-    numero.innerHTML= retorno
-    numero.classList.add("erro")
-    numero.classList.remove("ok")
-
-}) // rej se caso a condição for falsa 
-
-
-
-numero.innerHTML = 'processando...'
 
     </script>
 </body>

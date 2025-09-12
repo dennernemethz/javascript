@@ -5,40 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-   body{
-    background-color: black;
-   }
-   #msg{
-     background-color: rgb(92, 52, 133);
-     width: 300px;
-     height: 100px;
-     display: flex;
-     margin: auto;
-     justify-content: center;
-     font-display: auto;
-     text-align: center;
-     box-shadow: 3px 3px 5px 5px #ffffff8d;
-     border-radius: 2px 2px 2px 2px ;
-     color: aliceblue;
-     font-size: larger;
-     font-size: 2em;
-   }
+#painel{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center ;
+  background-color: blanchedalmond;
+}
+
+    #carro{
+       background-color: blue;
+       width: 100px;
+       height: 50px;
+    }
+    #btn_esquerda{
+      width: 100px;
+      color: blue;
+      font-weight: bolder;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    #btn_direita{
+      width: 100px;
+      color: red;
+      font-weight: bolder;
+      background-color: lightsalmon;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <div id="msg"></div>
-
-
+  <div id="painel">
+  <button id="btn_esquerda">esquerda</button>
+  <button id="btn_direita">direita</button>
+  </div>
+ <div id="carro"></div> 
  <script>
-let msg = window.document.getElementById('msg')
+
+let carro = window.document.getElementById("carro")
+
+let btn_esquerda = window.document.getElementById("btn_esquerda")
+
+let btn_direita = window.document.getElementById('btn_direita')
 
 
-let nome = new String('Denner Nemeth, 1234567')
-let numeros = "1,10,100,1000"
+let unit = ()=>{
+  carro.style="position:relative;left:0px"
+}
+
+btn_esquerda.addEventListener('click',()=>{
+carro.style.left=parseInt(carro.style.left) -5 + "px"
 
 
-msg.innerHTML = nome.match(/[a-r|0-3]/ig)
+})
 
- </script> 
+btn_direita.addEventListener('click', ()=>{
+
+carro.style.left=parseInt(carro.style.left) +5 + "px"
+
+
+})
+
+window.onload=unit
+
+
+ </script>
 </body>
 </html>
