@@ -54,15 +54,27 @@ let unit = ()=>{
   carro.style="position:relative;left:0px"
 }
 
-btn_esquerda.addEventListener('click',()=>{
-carro.style.left=parseInt(carro.style.left) -5 + "px"
 
+
+let anima=null
+
+
+const move = (dir) =>{
+
+carro.style.left=parseInt(carro.style.left) +(5*dir )+ "px"
+
+
+}
+
+btn_esquerda.addEventListener('click',()=>{
+
+anima=setInterval(move,20,-1)
 
 })
 
 btn_direita.addEventListener('click', ()=>{
 
-carro.style.left=parseInt(carro.style.left) +5 + "px"
+anima=setInterval(move,20,1)
 
 
 })
