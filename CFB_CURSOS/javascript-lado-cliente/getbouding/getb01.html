@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">caixa</div>
+<script>
+let box = window.document.getElementById("box")
+let box2 = box.getBoundingClientRect()
+
+
+
+console.log("left:", box2.left) 
+console.log("top:", box2.top) // e assim por diante 
+console.log("width:", box2.width)
+console.log("bottom:", box2.bottom)
+
+</script>
+</body>
+</html>

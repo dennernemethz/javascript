@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box{
+      width: 120px;
+      height: 200px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+
+let box = window.document.getElementById('box')
+let box2 = box.getBoundingClientRect()
+
+console.log("left:", box2.height)
+console.log("righ", box2.height)
+console.log("bottom", box2.width)
+
+  </script>
+</body>
+</html>
