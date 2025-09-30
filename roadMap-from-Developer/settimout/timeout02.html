@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #btn{
+        width: 100px;
+        height: 35px;
+        background-color: blueviolet;
+        color: aliceblue;
+        border-radius: 6px 6px 6px 6px;
+    }
+   </style>
+
+</head>
+<body>
+<button id="btn">click</button>
+<script>
+
+let btn =  window.document.getElementById('btn')
+
+
+btn.addEventListener("click", ()=>{
+    
+    setTimeout(() => {
+        console.log(Math.random() * 10)
+    }, 2000);
+})
+
+
+</script>
+</body>
+</html>

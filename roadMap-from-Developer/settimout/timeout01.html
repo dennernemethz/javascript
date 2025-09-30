@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <button id="btn">clique</button>
+    <script>
+let btn = window.document.getElementById('btn')
+
+
+btn.addEventListener('click',()=>{
+    setTimeout(() => {
+        alert('2 segundos')
+    }, 2000);
+})
+
+btn.addEventListener('click',()=>{
+    setTimeout(() => {
+        alert('5 segundos')
+    }, 5000);
+})
+
+btn.addEventListener('click',()=>{
+    setTimeout(() => {
+        alert('8 segundos')
+    }, 8000);
+})
+
+
+
+    </script>
+</body>
+</html>

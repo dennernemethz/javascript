@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box{
+      width: 100px;
+      height: 200px;
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <script>
+    let box = window.document.getElementById('box')
+    let box2 = box.getBoundingClientRect()
+
+    box.addEventListener("mouseenter",()=>{
+      console.log("right:", box2.left)
+      console.log('left', box2.top)
+    })
+  </script>
+</body>
+</html>

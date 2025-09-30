@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 20px;
+            height: 40px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" ></div>
+
+<Script>
+
+    let q1 = window.document.getElementById('box')
+    let q2 = q1.getBoundingClientRect()
+
+
+    q1.addEventListener('click', ()=>{
+        console.log('left:', q2.height)
+    })
+
+
+
+q1.accessKey = 'n'
+
+
+</Script>
+</body>
+</html>

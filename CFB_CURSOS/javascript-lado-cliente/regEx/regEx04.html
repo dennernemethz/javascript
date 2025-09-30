@@ -37,11 +37,14 @@ let msg = window.document.getElementById('msg')
 
 let nome = new String('Denner Nemeth')
 
+//metacaracteres
+msg.innerHTML = nome.match(/\d/ig)// vai mostrar os numeros dentro da minha string
 
-msg.innerHTML = nome.search('d') // sem expressão regular vai sair -1 
-msg.innerHTML = nome.search(/d/i) // vai sai a posição 0 
+
+msg.innerHTML = nome.match(/\s/ig)// vai mostrar os espaços entre as strings 
 
 
+msg.innerHTML = nome.match(/\b/ig)//metacaracterglobal 
 </script>
 
 </body>
