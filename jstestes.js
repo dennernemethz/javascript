@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+function first(n){
+    console.log('ola eu sou o ' + n)
+}
+
+first('denner')
+=======
 /*
 // desafio criar um função e receber um string e na saida do console ela sair invertida
 
@@ -35,3 +42,4 @@ function inverter(str) {
 }
 */
 
+>>>>>>> 441909e473913ef3a71cabe8df73b3c37d0e5773
