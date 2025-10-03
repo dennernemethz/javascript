@@ -1,7 +1,5 @@
-let num = [1,2,3,4,5]
+function first(n){
+    console.log('ola eu sou o ' + n)
+}
 
-let [a,b,...c] = num
-
-console.log(a)
-console.log(b)
-console.log(c)
+first('denner')
