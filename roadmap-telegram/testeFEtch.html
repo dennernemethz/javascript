@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+let prom = 'https://www.youtube.com/watch?v=U-z4Al6gSH4&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T&index=125' // um site ja criado para fazer a aplicação em API 
+fetch(prom)
+.then(res=>JSON())// Ao invés de colocar uma variavel para receber o FETCH(), colocamos o .then() para receber a resposta do fetch(prom)
+// vai converter os dados em JSON e exite diversos paramentros para poder trabalhar 
+.then(resposta=>{
+  console.log(resposta) //ele vai converter os dados da aplicaçao em jSON usando o parametro reposta
+})
+
+
+        
+    </script>
+</body>
+</html>
