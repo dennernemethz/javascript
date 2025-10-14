@@ -6,7 +6,7 @@ let kObject = {}
 
 let kFunc = () => {}
 
-myMap.set(kString, "valores com  'a String' ")
+myMap.set(kString, "valores com  'uma String' ")
 
 myMap.set(kObject, "valores com object")
 
