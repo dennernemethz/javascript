@@ -1,6 +1,3 @@
-function f(ols){
-    let nome = 'olá eu sou ' + ols
-    console.log(nome)
-}
+let endpoint = 'file:///C:/Users/denne/OneDrive/Documentos/estudos/javascript/tt.html'
 
-f('denner')
+fetch(endpoint) // so com isso ja consumi minha API 
