@@ -22,7 +22,14 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda voluptate ea a commodi impedit recusandae voluptas perferendis quae, amet, rerum fugit officia autem cupiditate. Voluptatum exercitationem deserunt blanditiis totam.</p>
 
     <script>
+window.addEventListener('resize',()=>{
+console.log('resize', innerWidth, innerHeight)//largura e altura
 
+})
+
+window.addEventListener('scroll', ()=>{
+    console.log('scroll', pageYOffset)// rolamento de pagina 
+})
 
     </script>
 </body>
