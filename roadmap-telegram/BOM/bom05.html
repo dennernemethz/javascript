@@ -21,17 +21,15 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit ab tempore nisi, deserunt obcaecati sit assumenda magni fugiat unde nemo eum pariatur labore voluptatem exercitationem corporis dolores recusandae amet?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda voluptate ea a commodi impedit recusandae voluptas perferendis quae, amet, rerum fugit officia autem cupiditate. Voluptatum exercitationem deserunt blanditiis totam.</p>
 
-
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, distinctio rem ea sint quis sapiente aliquam reprehenderit voluptate. Dolor facere, tempora provident magnam aut reiciendis exercitationem vitae repudiandae iure explicabo.</div>
-
     <script>
-let div = document.querySelector('div')
-div.style.backgroundColor ='red'
+window.addEventListener('resize',()=>{
+console.log('resize', innerWidth, innerHeight)//largura e altura
 
+})
 
-div.classList.add('teste')
-div.classList.add('teste2')
-div.offsetHeight
+window.addEventListener('scroll', ()=>{
+    console.log('scroll', pageYOffset)// rolamento de pagina 
+})
 
     </script>
 </body>
