@@ -6,19 +6,48 @@
     <title>Document</title>
 </head>
 <body>
+<img src="https://imgs.search.brave.com/skOnqCAi1SxFe5qxLoaVwx_j5tSXBzWYy21jWDxeVPA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ka3Ju/NHNrMHJuMzF2LmNs/b3VkZnJvbnQubmV0/L3VwbG9hZHMvMjAy/MS8wNC9ET00tSkFW/QVNDUklQVC00MDB4/MjgwLnBuZw" alt="">
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex adipisci facilis laborum libero illo doloremque. Harum cum ratione, sequi facere dicta quam illo rerum, iste ullam eos optio, libero consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis libero quia at, voluptate blanditiis sed incidunt deserunt vel magni ducimus dicta. Ullam ab fugit atque magnam, alias voluptates? Mollitia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias repudiandae odit commodi voluptas unde perspiciatis nam autem libero eveniet! Qui nihil maiores labore ex sunt dolorum in earum esse?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus alias nam dolorum, velit ex earum sunt perferendis accusantium sed asperiores eos unde animi temporibus quae dignissimos provident quidem ipsum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex adipisci facilis laborum libero illo doloremque. Harum cum ratione, sequi facere dicta quam illo rerum, iste ullam eos optio, libero consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis libero quia at, voluptate blanditiis sed incidunt deserunt vel magni ducimus dicta. Ullam ab fugit atque magnam, alias voluptates? Mollitia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias repudiandae odit commodi voluptas unde perspiciatis nam autem libero eveniet! Qui nihil maiores labore ex sunt dolorum in earum esse?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus alias nam dolorum, velit ex earum sunt perferendis accusantium sed asperiores eos unde animi temporibus quae dignissimos provident quidem ipsum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex adipisci facilis laborum libero illo doloremque. Harum cum ratione, sequi facere dicta quam illo rerum, iste ullam eos optio, libero consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis libero quia at, voluptate blanditiis sed incidunt deserunt vel magni ducimus dicta. Ullam ab fugit atque magnam, alias voluptates? Mollitia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias repudiandae odit commodi voluptas unde perspiciatis nam autem libero eveniet! Qui nihil maiores labore ex sunt dolorum in earum esse?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus alias nam dolorum, velit ex earum sunt perferendis accusantium sed asperiores eos unde animi temporibus quae dignissimos provident quidem ipsum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex adipisci facilis laborum libero illo doloremque. Harum cum ratione, sequi facere dicta quam illo rerum, iste ullam eos optio, libero consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis libero quia at, voluptate blanditiis sed incidunt deserunt vel magni ducimus dicta. Ullam ab fugit atque magnam, alias voluptates? Mollitia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias repudiandae odit commodi voluptas unde perspiciatis nam autem libero eveniet! Qui nihil maiores labore ex sunt dolorum in earum esse?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus alias nam dolorum, velit ex earum sunt perferendis accusantium sed asperiores eos unde animi temporibus quae dignissimos provident quidem ipsum.</p>
+
+
+
     <script>
+window.addEventListener('load', ()=>{ // evento load e disparado quando tudo estiver carregado, incluindo imagens etc
+console.log('load')
+
+})
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    console.log('DomContent')
+})
 
 
-let num = prompt('digite um numero')
+window.addEventListener('resize', ()=>{
+    console.log('resize', innerWidth, innerHeight)
+})
 
-let total = num/2
+window.addEventListener('scroll', ()=>{
+    console.log('scrol', pageYOffset)
+})
 
-if(num & 1){
-    console.log('impar')
-}else{
-    console.log('par')
-}
-console.log(total)
+
+
     </script>
 </body>
 </html>
