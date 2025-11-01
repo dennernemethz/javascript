@@ -1,11 +1,22 @@
-// function arguments objects 
-
-
-function arg (a){
-
-    console.log(arguments)
-    console.log(arguments[0])
-    console.log(arguments.length)
+function tst(){
+    let numero = 0
+    return function olá(){
+        console.log('numero é' + numero)
+    }
 }
 
-arg(1,2,3)
+let oNumero = tst()
+oNumero()
+
+function criandoSaudação(){
+    let nome = 'jose'
+     
+    function ola(){
+        console.log('olá' + nome)
+    }
+    return ola
+}
+
+
+let saudando = criandoSaudação()
+saudando()

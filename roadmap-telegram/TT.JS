@@ -41,7 +41,7 @@ console.log(ehpar(3))
         console.log(this) // o proprio this recbe o obj porque o ovj esta execultando a função teste, entao o this é o proprio objeto 
         console.log('teste escopo')
         console.log('---------')
-        setTimeout(()=>{ // se usar functio normal o this acaba ssofrendo alteração e vir aum obj global window nao mais o obj teste
+        setTimeout(()=>{ // se usar functio normal o this acaba ssofrendo alteração e vir um obj global window nao mais o obj teste
           console.log(this)   // se voce nao quer o this 'sofra alteraçao, usar uma arrow  function 
           console.log('setTimeout com o this sem sofrer alteraçao')
         }, 2000)

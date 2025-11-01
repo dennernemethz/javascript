@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Function dentro de objetos 
+
+// function com metodo obj function
+
+let obj ={
+  nome: 'rex',
+  fala: function(){
+    console.log('au au')
+  } 
+}
+
+obj.fala()
+
+// se quiser colocar o nome do cachorro junto com o metodo au au voce tera que usar o metodo this 
+
+let obj1 = {
+ nome: 'rex',
+ fala: function(){
+    console.log(this.nome, 'fala, au au ')
+ }
+}
+
+obj1.fala()
+
+
+// com ecmaScript5 atual noo precisamos criar uma propriedade para usar função dentro de objeto 
+
+let obj2 = {
+
+    n:'rex',
+    latir(){ // here 
+        console.log(this.n, 'au au')
+    }
+
+}
+
+obj.latir()
+
+
+    </script>
+</body>
+</html>
