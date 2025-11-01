@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function normal(){   // função normal sem parametro 
+           console.log('func')
+            return 'essa e uma função normal'
+        }
+
+       let f = normal()
+        console.log(f)
+
+       let arrow = ()=>{ // arrow function normal sem funçao recebendo apenas um return
+        console.log('func2')
+        return ' essa e função arrow'
+       }
+
+       let f1 = arrow()
+        console.log(f1)
+
+       let arrow2 = par =>{ //se estiver somente com um parametro pode usar sem o parenteses ()
+
+        console.log('com o parametro' + par)
+          return ' com parametro e return '
+       }
+
+       let f2 = arrow2(' parametro na arrow')
+       console.log(f2)
+
+       let arrow3 = (par1, par2) =>{
+       console.log(par1 + par2)
+       }
+
+       arrow3(1,4)
+       
+
+       let arrow4 = ()=>{
+
+        console.log('recebendo um obj dentro da funçao')
+
+        return {
+            obj1:'Denner'
+        }
+       }
+
+       let f4 = arrow4()
+       console.log(f4)
+       console.log(f4.obj1) // quando se tem um obj dentro de uma função podemos chama-la usando essa sintaxe . ou []  mas o obj no caso obj1
+
+
+           function teste(){
+        console.log(this) // o proprio this recbe o obj porque o ovj esta execultando a função teste, entao o this é o proprio objeto 
+        console.log('teste escopo')
+        console.log('---------')
+        setTimeout(()=>{ // se usar functio normal o this acaba ssofrendo alteração e vir aum obj global window nao mais o obj teste
+          console.log(this)   // se voce nao quer o this 'sofra alteraçao, usar uma arrow  function 
+          console.log('setTimeout com o this sem sofrer alteraçao')
+        }, 2000)
+    }
+
+    let obj = {
+
+        foo:'teste',
+        teste: teste
+    }
+
+    obj.teste()
+
+    </script>
+</body>
+</html>
