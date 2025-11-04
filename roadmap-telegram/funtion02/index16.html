@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Closures em JavaScript são funções que "lembram" do ambiente onde foram criadas, mesmo depois que a função externa que as criou já foi executada. Isso significa que uma função interna tem acesso às variáveis da função externa mesmo depois que essa função externa terminou sua execução, mantendo essas variáveis "vivas".</h3>
+
+    <script>
+        function saudação (n){
+            return function nome() { //Aqui, a função interna retorna uma saudação usando a variável nome que está na função externa, mesmo após a execução de criarSaudacao.
+                console.log('olá' + n)
+              }
+        }
+
+        let clouse = saudação('denner')
+        clouse()
+
+    </script>
+</body>
+</html>
