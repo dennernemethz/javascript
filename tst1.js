@@ -1,3 +1,15 @@
-let endpoint = 'file:///C:/Users/denne/OneDrive/Documentos/estudos/javascript/tt.html'
+let obj = {
+ key:0,
+ soma(n){
+    this.key += n
+ },
+ subtração(n){
+    this.key -= n
+ },
+ log(){
+    console.log(this.key)
+    return this 
+ }
+}
 
-fetch(endpoint) // so com isso ja consumi minha API 
+obj.soma(3).subtração(4).log()
