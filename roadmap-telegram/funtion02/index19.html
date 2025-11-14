@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h3> usando delete</h3>
     <script>
+        // operador espread
 
-const nuns = {
-    num01:'one',
-    num02:'two',
-    num03:'three'
-}
+    function numeros(n1,n2, ...show){
+        console.log(n1)
+        console.log(n2)
+    }    
 
-delete(nuns.num01)
-delete(nuns.num02)
-delete(nuns.num03)
+numeros(1,2,3,4,5,6)
 
 
-console.log(nuns)
+
     </script>
 </body>
 </html>
