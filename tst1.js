@@ -1,11 +1,7 @@
-function Animal(nome, idade){
-    this.nome = nome
-    this.idade = idade
-    ola(){
-        console.log(this.nome, this.idade)
-    }
+function Animal(nome){
+    this.nome= nome
 }
 
-let p1 = new Animal('denner', 10)
+let  p1 = new Animal('denner')
 
-p1.ola()
+console.log(p1)
