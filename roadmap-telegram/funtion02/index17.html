@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
+=======
+<html lang="en">
+>>>>>>> 84c8e807b90b095ec8347226b42d09485224d40a
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +11,7 @@
 </head>
 <body>
     <script>
+<<<<<<< HEAD
 /* 
 função construtora, toda função construtora começa com maiusculo
 
@@ -21,6 +26,49 @@ let rex = new Cachorro('rex') // rex
 let toto = new Cachorro('toto') // toto
 
 
+=======
+        
+
+//ola()
+
+function ola (){
+   console.log('ola')
+}
+
+
+// funçoes declaradas como 'function ola()' são totalmente içadas (hoisting) com seuc corpo completo 
+
+// diferentes de funçoes declaradas com variavel 
+
+
+// ----------
+
+
+// oi() // vai dar indefinido pois o hoisting eleva apenas a declaração da variavel não a atribuição 
+// internamente e como se nao estivesse valor nenhum a variavel e como se voce chamesse algo sem ter nada declarado 
+
+// ex let ola; // aqui nao tem nada declarado a let ola como se fosse indefinido 
+
+
+
+let vars = function oi(){
+   console.log('olá')
+}
+
+
+
+//console.log(n1)
+//console.log(n2)
+//cossole.log(n3)
+
+
+
+var n1 = 'oi' // undefinded
+let n2 = 'ola'  // error
+const n3 = 'hello' // error
+
+// apenas function olá() pode ser usada antes da linha,  o restante não , todas são içadas mas somente uma pode ser usada antes do corpo. 
+>>>>>>> 84c8e807b90b095ec8347226b42d09485224d40a
     </script>
 </body>
 </html>

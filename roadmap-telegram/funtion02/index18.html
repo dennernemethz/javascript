@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// funçoes de fabrica, factory functions aguns exemplos 
+
+ function chamando(nome, idade){ // aqui criamos dois parametros que vão ser chamados no obj
+    return {
+        nome,
+        idade,
+        chama(){ // aqui temos a função fabrica que toda vez que ela for chamada ela vai contruir...
+            console.log(this.nome, this.idade)
+        }
+    }
+}
+
+let pessoa1 = chamando('ana', 25)// criamos uma variavel  para receber a função e seus parametro, padrao
+let pessoa2 = chamando('denner', 30)
+
+pessoa1.chama()// aqui chamamos a varivel que tem a função chamando atribuindo a função de fabrica 'chama'
+// toda vez que voce criar uma variavel para receber a funçao chamando 
+// logo após voce ira atribuir a função fabrica a essa variavel tornando assim sempre um produto, pessoa etc idependente 
+pessoa2.chama()
+pessoa3.chama()
+pessoa4.chama()  // etc e por vai infinitamente 
+
+// --------------------- 
+
+
+function descontosCamisa (nome,preço){
+       return {
+           nome,
+           preço,
+           desconto:0.3,
+           preçoFinal(){
+            return this.preço - this.preço * this.desconto
+           }
+       }
+};
+
+let produto1 = descontosCamisa('camisa', 10)
+
+console.log(produto1.preçoFinal())
+
+    </script>
+</body>
+</html>
