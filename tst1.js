@@ -1,17 +1,14 @@
-function Pai (){
-  this.mensagem = 'Ola do pai'
-}
+function Pessoa (nome, idade) {
+ this.nome=nome
+ this.idade=idade
+  }
 
-Pai.prototype.ola =function(){
-  console.log(this.mensagem)
-}
+Pessoa.prototype.Ola = function () {
+  console.log('Ola meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos de idade')
+  }
 
-function Filho(){
-  Pai.call(this)
-}
+let p1 = new Pessoa('Denner', 30)
+let p2 = new Pessoa('pessoa2 ', 20 )
 
-Filho.prototype = Object.create(Pai.prototype)
-
-
-let f1 =  new Filho()
-f1.ola()
+p1.Ola()
+p2.Ola()
