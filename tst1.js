@@ -1,14 +1,12 @@
-function Pessoa (nome, idade) {
- this.nome=nome
- this.idade=idade
+class Animal{
+  constructor(nome){
+    this.nome = nome
   }
-
-Pessoa.prototype.Ola = function () {
-  console.log('Ola meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos de idade')
+  obtendoTipo(){
+    return this.nome
   }
+}
 
-let p1 = new Pessoa('Denner', 30)
-let p2 = new Pessoa('pessoa2 ', 20 )
+let f1 = new Animal('denner')
 
-p1.Ola()
-p2.Ola()
+console.log(f1.obtendoTipo())
