@@ -1,17 +1,19 @@
-function Pai (){
-  this.mensagem = 'Ola do pai'
+class Pai {
+    constructor(){
+        this.dizendoOla = 'eu sou pai'
+    }
+    ola(){
+        console.log(this.dizendoOla)
+    }
 }
 
-Pai.prototype.ola =function(){
-  console.log(this.mensagem)
+
+class Filho extends Pai{
+    constructor(){
+        super()
+    }
 }
 
-function Filho(){
-  Pai.call(this)
-}
+let f1 = new Filho()
 
-Filho.prototype = Object.create(Pai.prototype)
-
-
-let f1 =  new Filho()
 f1.ola()
