@@ -1,12 +1,11 @@
 class Pai {
-    constructor(){
-        this.dizendoOla = 'eu sou pai'
+    constructor() {
+        this.mensagem = 'ola sou pai '
     }
     ola(){
-        console.log(this.dizendoOla)
+        console.log(this.mensagem)
     }
 }
-
 
 class Filho extends Pai{
     constructor(){
