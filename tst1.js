@@ -1,11 +1,7 @@
-// acessando propriedade staticas
-
-class Propriedade { 
-    static versao = '1.0'
-
-    static mostrarVersao(){
-        console.log('essa e a versão ' + this.versao)
+class Soma { 
+    static  somar(a,b){
+        console.log(a + b)
     }
 }
 
-Propriedade.mostrarVersao()
+Soma.somar(11,2)
