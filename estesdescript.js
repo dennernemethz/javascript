@@ -1,11 +1,13 @@
-class Animal {
-    constructor(){
-        this.nome = 'Denner'
-    }
-    get dizendoOla(){
-        console.log('ola '+ this.nome)
-    }
+class Pai {
+ constructor() {
+    this.nome= 'denner'
+    
+ }
+ get saudação(){
+    console.log('ola ' + this.nome)
+ }
+
 }
 
-let n1 = new Animal()
-n1.dizendoOla
+let p1 = new Pai()
+p1.saudação
