@@ -1,13 +1,10 @@
-class produto {
-   constructor(preco){
-      this.p = preco
-   }
-   set preco(valor){
-      this.p = Number(valor).toFixed(2)
+let numero = {
+   number:1,
+   number2: {
+      altura:167,
+      largura:40
    }
 }
 
-let f1 = new produto()
-f1.preco =10 
 
-console.log(f1.preco)
+console.log(numero.number2.altura)
