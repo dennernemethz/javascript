@@ -1,13 +1,13 @@
-class Pai {
- constructor() {
-    this.nome= 'denner'
-    
- }
- get saudação(){
-    console.log('ola ' + this.nome)
- }
-
+class produto {
+   constructor(preco){
+      this.p = preco
+   }
+   set preco(valor){
+      this.p = Number(valor).toFixed(2)
+   }
 }
 
-let p1 = new Pai()
-p1.saudação
+let f1 = new produto()
+f1.preco =10 
+
+console.log(f1.preco)
