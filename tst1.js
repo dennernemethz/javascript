@@ -1,5 +1,6 @@
-let nomes = ['java','css']
+let nome = ['denner', 'nemeth', 'queiroz']
 
-nomes.map((p)=>{
+
+nome.map((p)=>{
     console.log(p)
 })
