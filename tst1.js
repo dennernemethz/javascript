@@ -1,6 +1,9 @@
-let nome = ['denner', 'nemeth', 'queiroz']
+class pai {
+    saudacao(){
+        console.log('pai dizendo olá')
+    }
+}
 
+let p1 = new pai()
 
-nome.map((p)=>{
-    console.log(p)
-})
+p1.saudacao()
