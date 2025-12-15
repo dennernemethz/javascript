@@ -1,8 +1,7 @@
-let nomes = { 
-  nome1:'denner',
-  nome2:'nemeth'
+let user = {
+  name:'denner'
 }
 
-for (let k in  nomes){
-  console.log(k +': '  + nomes[k])
-}
+let res = Object.assign({}, user)
+
+console.log(res)
